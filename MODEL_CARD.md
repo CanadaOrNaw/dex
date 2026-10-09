@@ -49,6 +49,10 @@ Trained against strictly proper scoring rules (cross-entropy on the chosen optio
 
 Speed on an RTX 3070 Ti: 18 ms for one question on a short text, 95 ms for fifteen; 2.4 GB GPU memory in bfloat16. Picks a different option when the answer order is reversed 7.0% of the time (stock Laya 25.2%, JEV 3.0%). Per-dataset tables, calibration, ablations and failure analysis: [BENCHMARKS.md](https://github.com/CanadaOrNaw/dex/blob/main/BENCHMARKS.md) in the GitHub repository.
 
+## Jev Decision Index (self-run)
+
+Self-run through the edition-0.3 harness on 2026-10-09 (140,620 requests, RTX 3070 Ti): skill **12.99**, raw 32.47 — about 3x stock Laya's 4.43 on the official board, mid-pack of the sub-2B class. Not an official board score (the board mixes in private tests only the maintainer can run); Dex is not on the board until it is evaluated there. Full per-area breakdown: [BENCHMARKS.md](https://github.com/CanadaOrNaw/dex/blob/main/BENCHMARKS.md).
+
 ## Limits
 
 - **No knowledge it was never given.** On medical multiple choice (MedMCQA) Dex scores 30.7% against JEV's 78.7%; on reading an abstract (PubMedQA) 55.0% against 78.3%. More training did not change this: the gap is knowledge, not format.
@@ -60,6 +64,7 @@ Speed on an RTX 3070 Ti: 18 ms for one question on a short text, 95 ms for fifte
 - **Single training run.** We did not measure run-to-run variation.
 - **Our benchmarks.** We built them, scored every system on the same prompts, and report intervals, but benchmark A shares datasets with the training data (different rows) and its routing suite uses a proxy answer key. B and C do not.
 - **Probabilities are temperature-fitted, not guaranteed calibrated.** Calibration error 0.058 across our tests (JEV 0.052, stock Laya 0.092); when Dex is 90%+ sure it is right 93.2% of the time, but it is that sure on only 29% of questions (JEV 63%).
+- **Decision Index coverage gaps.** About 11% of index requests come back unsupported (long texts past 1,792 tokens; API-Bank entirely unanswered), and the index counts unanswered as wrong. That coverage gap, not accuracy, is the biggest drag on the index score above.
 
 ## Licence
 

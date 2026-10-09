@@ -124,3 +124,31 @@ Run-to-run variation (one training run), languages other than English, inputs ov
 ## Method notes
 
 Prompts and human labels are in `benchmarks/data`; Dex's and stock Laya's answers and JEV's results as summary numbers are in `benchmarks/results`. `python benchmarks/report.py` rebuilds every table here.
+
+## Jev Decision Index (self-run, 2026-10-09)
+
+Dex through the [Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index) edition-0.3 harness, run by us on one RTX 3070 Ti over ~4.4 hours (140,620 requests: 125,443 answered, 15,177 unsupported). Served over HTTP from `server/dex_server.py`; unmodified state and questions per request. Skill **12.99**, raw 32.47. Median latency 27.5 ms (p95 331 ms).
+
+| area | benchmarks | skill | raw | coverage |
+|---|---|---|---|---|
+| Knowledge & Reasoning | 11 | 7.42 | 30.29 | 98.7% |
+| Language Understanding | 9 | 14.16 | 33.28 | 93.4% |
+| Retrieval & Classification | 6 | 16.19 | 35.16 | 80.8% |
+| Tools & Automation | 5 | 18.47 | 27.67 | 75.7% |
+| Arts & Human Taste | 6 | 7.94 | 39.41 | 83.3% |
+| **Full (balanced)** | **37** | **12.99** | **32.47** | **89.2%** |
+
+For context, official board scores (2026-10-07 snapshot) around us:
+
+| model | params | board skill |
+|---|---|---|
+| this-that 1.2 | 1.88B | 24.56 |
+| jiwo 0.8B | 870M | 24.32 |
+| EXAONE-4.0-1.2B-JEV | 1.28B | 23.31 |
+| Bekko System One 400M | 400M | 15.24 |
+| **Dex (self-run, not board)** | **1.1B** | **12.99** |
+| Tev1-0.8B-experimental | 873M | 12.02 |
+| Laya | ~420M | 4.43 |
+| Jev (reference) | - | 60.11 |
+
+Read this honestly: the official Full score is 20% public benchmarks plus 50% private same-skill tests and 30% private new-domain tasks, and the private parts cannot be self-run — so our number is not directly comparable to board numbers, and Dex is not on the board until the maintainer evaluates it. The biggest drag on our score is coverage, not accuracy: ~11% unsupported (long texts past 1,792 tokens; API-Bank entirely unanswered), and the index counts unanswered as wrong.

@@ -53,6 +53,10 @@ Dex closes about 40% of the gap between stock Laya and JEV overall, and 81% of i
 | GPU memory (bfloat16 / fp32) | 2.4 GB | 1.7 GB | - |
 | picks a different option when the answer order is reversed | 7.0% | 25.2% | 3.0% |
 
+## Decision Index (self-run, 2026-10-09)
+
+We ran Dex through the [Jev Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index) edition-0.3 harness ourselves: 140,620 requests over ~4.4 hours on one RTX 3070 Ti, served from this repo's server. Skill **12.99** (raw 32.47) — about 3x stock Laya's board score (4.43), mid-pack of the sub-2B class whose leaders sit near 24.5. This is our own run, not an official board score: the official Full score mixes in private tests only the maintainer can run, so treat the comparison as approximate until Dex is evaluated on the board. Per-area skills and method notes: [BENCHMARKS.md](BENCHMARKS.md).
+
 ## What Dex is, and how it was made
 
 - **Architecture.** The [Laya](https://github.com/NandhaKishorM/laya) design: a bidirectional encoder reads the state and the questions together and a small typed head scores every option, so all questions are answered in one pass and the output can only be a valid option, level or probability. Laya's body is ModernBERT-large (395M). Dex swaps it for the 1.1B [Ettin](https://huggingface.co/jhu-clsp/ettin-encoder-1b) encoder; the decision head is trained from scratch. 784M of the 1.1B parameters are fine-tuned (embeddings and the lowest 7 of 28 layers are frozen).
@@ -71,6 +75,7 @@ Dex closes about 40% of the gap between stock Laya and JEV overall, and 81% of i
 - **Single training run.** We did not measure run-to-run variation.
 - **Our benchmarks.** We built them, scored every system on the same prompts, and report intervals, but benchmark A shares datasets with the training data (different rows) and its routing suite uses a proxy answer key. B and C do not.
 - **Probabilities are temperature-fitted, not guaranteed calibrated.** Calibration error 0.058 across our tests (JEV 0.052, stock Laya 0.092); when Dex is 90%+ sure it is right 93.2% of the time, but it is that sure on only 29% of questions (JEV 63%).
+- **Decision Index coverage gaps.** About 11% of index requests come back unsupported (long texts past 1,792 tokens; API-Bank entirely unanswered), and the index counts unanswered as wrong. That coverage gap, not accuracy, is the biggest drag on the index score above.
 
 ## Where JEV leads, and where stock Laya wins
 

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="700" viewBox="0 0 820 700" font-family="Helvetica,Arial,sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="10" y="22" font-size="15" font-weight="bold" fill="#222">Exam datasets: accuracy against the human label</text>
+<rect x="250" y="32" width="12" height="12" fill="#7a8794"/><text x="267" y="42" fill="#333">JEV</text>
+<rect x="370" y="32" width="12" height="12" fill="#2f6fed"/><text x="387" y="42" fill="#333">Dex</text>
+<rect x="490" y="32" width="12" height="12" fill="#d98a2b"/><text x="507" y="42" fill="#333">Stock Laya</text>
+<text x="10" y="97.0" fill="#333">cve</text>
+<rect x="250" y="60" width="146.9" height="18" fill="#7a8794"/><text x="401.9" y="73" fill="#333">28.8%</text>
+<rect x="250" y="82" width="175.8" height="18" fill="#2f6fed"/><text x="430.8" y="95" fill="#333">34.5%</text>
+<rect x="250" y="104" width="207.5" height="18" fill="#d98a2b"/><text x="462.5" y="117" fill="#333">40.7%</text>
+<text x="10" y="177.0" fill="#333">dbpedia</text>
+<rect x="250" y="140" width="499.8" height="18" fill="#7a8794"/><text x="754.8" y="153" fill="#333">98.0%</text>
+<rect x="250" y="162" width="486.2" height="18" fill="#2f6fed"/><text x="741.2" y="175" fill="#333">95.3%</text>
+<rect x="250" y="184" width="436.9" height="18" fill="#d98a2b"/><text x="691.9" y="197" fill="#333">85.7%</text>
+<text x="10" y="257.0" fill="#333">hate</text>
+<rect x="250" y="220" width="455.5" height="18" fill="#7a8794"/><text x="710.5" y="233" fill="#333">89.3%</text>
+<rect x="250" y="242" width="440.3" height="18" fill="#2f6fed"/><text x="695.3" y="255" fill="#333">86.3%</text>
+<rect x="250" y="264" width="425.0" height="18" fill="#d98a2b"/><text x="680.0" y="277" fill="#333">83.3%</text>
+<text x="10" y="337.0" fill="#333">jailbreak</text>
+<rect x="250" y="300" width="479.3" height="18" fill="#7a8794"/><text x="734.3" y="313" fill="#333">94.0%</text>
+<rect x="250" y="322" width="455.4" height="18" fill="#2f6fed"/><text x="710.4" y="335" fill="#333">89.3%</text>
+<rect x="250" y="344" width="503.2" height="18" fill="#d98a2b"/><text x="758.2" y="357" fill="#333">98.7%</text>
+<text x="10" y="417.0" fill="#333">medmcqa</text>
+<rect x="250" y="380" width="401.2" height="18" fill="#7a8794"/><text x="656.2" y="393" fill="#333">78.7%</text>
+<rect x="250" y="402" width="156.4" height="18" fill="#2f6fed"/><text x="411.4" y="415" fill="#333">30.7%</text>
+<rect x="250" y="424" width="166.6" height="18" fill="#d98a2b"/><text x="421.6" y="437" fill="#333">32.7%</text>
+<text x="10" y="497.0" fill="#333">msmarco</text>
+<rect x="250" y="460" width="253.1" height="18" fill="#7a8794"/><text x="508.1" y="473" fill="#333">49.6%</text>
+<rect x="250" y="482" width="201.0" height="18" fill="#2f6fed"/><text x="456.0" y="495" fill="#333">39.4%</text>
+<rect x="250" y="504" width="122.8" height="18" fill="#d98a2b"/><text x="377.8" y="517" fill="#333">24.1%</text>
+<text x="10" y="577.0" fill="#333">pubmedqa</text>
+<rect x="250" y="540" width="399.5" height="18" fill="#7a8794"/><text x="654.5" y="553" fill="#333">78.3%</text>
+<rect x="250" y="562" width="280.5" height="18" fill="#2f6fed"/><text x="535.5" y="575" fill="#333">55.0%</text>
+<rect x="250" y="584" width="269.4" height="18" fill="#d98a2b"/><text x="524.5" y="597" fill="#333">52.8%</text>
+<text x="10" y="657.0" fill="#333">yahoo</text>
+<rect x="250" y="620" width="383.8" height="18" fill="#7a8794"/><text x="638.8" y="633" fill="#333">75.3%</text>
+<rect x="250" y="642" width="349.7" height="18" fill="#2f6fed"/><text x="604.7" y="655" fill="#333">68.6%</text>
+<rect x="250" y="664" width="339.4" height="18" fill="#d98a2b"/><text x="594.4" y="677" fill="#333">66.6%</text>
+</svg>

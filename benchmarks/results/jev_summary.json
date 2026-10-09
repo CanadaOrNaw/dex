@@ -1,0 +1,113 @@
+{
+ "calibration": {
+  "accuracy": 0.817533320818472,
+  "ece": 0.05175520931105688,
+  "sure_accuracy": 0.9453519453519453,
+  "sure_share": 0.6320630749014454
+ },
+ "cells": {
+  "A": [
+   1244,
+   1053
+  ],
+  "A|1 routing (proxy gold)": [
+   120,
+   106
+  ],
+  "A|10 security severity": [
+   100,
+   25
+  ],
+  "A|2 command gating": [
+   120,
+   110
+  ],
+  "A|3 injection screening": [
+   120,
+   104
+  ],
+  "A|4 support triage": [
+   100,
+   100
+  ],
+  "A|5 moderation and spam": [
+   159,
+   143
+  ],
+  "A|6 bulk classification": [
+   145,
+   119
+  ],
+  "A|7 verification": [
+   160,
+   155
+  ],
+  "A|8 work correctness": [
+   120,
+   109
+  ],
+  "A|9 intent and skill selection": [
+   100,
+   82
+  ],
+  "B": [
+   1737,
+   1468
+  ],
+  "B|held-out tasks": [
+   1737,
+   1468
+  ],
+  "C": [
+   2346,
+   1834
+  ],
+  "C|x_cve": [
+   177,
+   51
+  ],
+  "C|x_dbpedia": [
+   300,
+   294
+  ],
+  "C|x_hate": [
+   234,
+   209
+  ],
+  "C|x_jailbreak": [
+   299,
+   281
+  ],
+  "C|x_medmcqa": [
+   300,
+   236
+  ],
+  "C|x_msmarco": [
+   137,
+   68
+  ],
+  "C|x_pubmedqa": [
+   600,
+   470
+  ],
+  "C|x_yahoo": [
+   299,
+   225
+  ]
+ },
+ "disagree": {
+  "dex": {
+   "JEV only": 878,
+   "both right": 3477,
+   "both wrong": 646,
+   "model only": 326
+  },
+  "stock-laya": {
+   "JEV only": 1317,
+   "both right": 3038,
+   "both wrong": 601,
+   "model only": 371
+  }
+ },
+ "note": "JEV's results as summary numbers: [questions, correct] per test and per use case/dataset, agreement counts against each model, and calibration."
+}

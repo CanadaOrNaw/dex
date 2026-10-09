@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use Dex, please cite it as below, and cite Ettin and Laya."
+title: "Dex: an open-source, Jev-compatible System 1 decision model on an Ettin-1B encoder"
+type: software
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-10-09
+authors:
+  - name: "The Dex authors"
+references:
+  - type: article
+    title: "Seq vs Seq: An Open Suite of Paired Encoders and Decoders"
+    authors:
+      - family-names: Weller
+        given-names: Orion
+    year: 2025
+    url: "https://arxiv.org/abs/2507.11412"

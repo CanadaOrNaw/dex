@@ -1,0 +1,6 @@
+# Dex needs the open Laya runtime (typed-decision head and scoring), PyTorch and Transformers.
+laya>=0.3.11   # tested with laya 0.3.11 / 0.4.1, torch 2.14, transformers 5.17 / 5.19
+torch>=2.4
+transformers>=5.0
+safetensors
+numpy

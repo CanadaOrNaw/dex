@@ -1,0 +1,16 @@
+# systemd user unit: copy to ~/.config/systemd/user/dex.service, then
+#   systemctl --user daemon-reload && systemctl --user enable --now dex.service
+[Unit]
+Description=Dex, an open-source Jev-compatible System 1 decision model (127.0.0.1:18766)
+After=network.target
+
+[Service]
+Type=simple
+Environment=HF_HUB_OFFLINE=1
+Environment=DEX_MODEL=%h/dex/model
+ExecStart=%h/dex/.venv/bin/python %h/dex/server/dex_server.py 18766
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

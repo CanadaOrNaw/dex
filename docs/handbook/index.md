@@ -1,12 +1,8 @@
 ---
-title: Dex typed decisions
-description: Choose a safe first result, client workflow, or maintainer task for Dex.
-kind: overview
-source_ref:
-- CONTEXT.md#L3-L44
-- README.md#L5-L31
-- BENCHMARKS.md#L106-L154
-- RELEASE_NOTES.md#L1-L9
+title: "Dex typed decisions"
+description: "Choose a safe first result, client workflow, or maintainer task for Dex."
+kind: "overview"
+source_ref: ["CONTEXT.md", "README.md#L5-L31", "BENCHMARKS.md#L106-L154", "RELEASE_NOTES.md#L1-L9", "AGENTS.md"]
 ---
 
 # Dex
@@ -37,3 +33,7 @@ The October 8–9 benchmark report is historical evidence, not a fresh installat
 ## Before any runtime action
 
 Loading weights, starting a listener, sending inference requests, installing dependencies and running GPU measurements need a separate authorized task. Source defaults to loopback with no token; the container instead binds all interfaces. Do not expose the service by changing a host value alone. See [security](concepts/security-and-compatibility.md).
+
+## Canonical model identity
+
+The small agent entry now points to `MODEL_CARD.md` and the artifact configuration: the documented release uses the Ettin-1B encoder with the Laya runtime. This removes the conflicting short “Laya-1B fine-tune” lineage claim; no weights, loaded model, runtime behavior or fresh capability was verified or changed. Cards/config remain the identity authority.

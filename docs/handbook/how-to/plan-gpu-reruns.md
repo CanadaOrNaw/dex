@@ -1,13 +1,8 @@
 ---
-title: Plan GPU speed and order reruns
-description: Review workload, arguments and output gaps before requesting a new measurement.
-kind: how-to
-source_ref:
-- benchmarks/speed.py#L1-L79
-- benchmarks/order.py#L1-L84
-- benchmarks/report.py#L196-L210
-- BENCHMARKS.md#L120-L154
-- CONTEXT.md#L39-L44
+title: "Plan GPU speed and order reruns"
+description: "Review workload, arguments and output gaps before requesting a new measurement."
+kind: "how-to"
+source_ref: ["benchmarks/speed.py#L1-L79", "benchmarks/order.py#L1-L84", "benchmarks/report.py#L196-L210", "BENCHMARKS.md#L120-L154", "CONTEXT.md"]
 ---
 
 # Plan GPU speed and order reruns

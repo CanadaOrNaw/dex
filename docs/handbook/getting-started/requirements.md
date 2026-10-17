@@ -1,15 +1,8 @@
 ---
-title: Requirements and environment
-description: Know which setup inputs exist, what is unverified and why installation
-  is not the first safe check.
-kind: how-to
-source_ref:
-- requirements.txt#L1-L6
-- Dockerfile#L1-L10
-- README.md#L7-L31
-- deploy/dex.service#L1-L16
-- .gitignore#L1-L4
-- CONTEXT.md#L39-L44
+title: "Requirements and environment"
+description: "Know which setup inputs exist, what is unverified and why installation is not the first safe check."
+kind: "how-to"
+source_ref: ["requirements.txt#L1-L6", "Dockerfile#L1-L10", "README.md#L7-L31", "deploy/dex.service#L1-L16", ".gitignore#L1-L4", "CONTEXT.md"]
 ---
 
 # Requirements and environment

@@ -2,7 +2,7 @@
 
 Workspace contract and model-identity caveat: [CONTEXT.md](CONTEXT.md).
 
-Dex-1B: a fine-tuned Laya-1B typed decision model, served over HTTP.
+Dex-1B: typed-decision release with an Ettin-1B encoder and the Laya runtime, as specified in `MODEL_CARD.md` and `model/encoder/config.json`; served by the HTTP adapter. This source identity does not certify a loaded service or model capability.
 Public model repo (GitHub + HuggingFace `CanadaOrNaw/dex-1b`).
 
 - Model + cards: `model/`, `MODEL_CARD.md`, `DATA_CARD.md`, `BENCHMARKS.md`

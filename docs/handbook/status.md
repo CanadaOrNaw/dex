@@ -1,16 +1,8 @@
 ---
-title: Status and verification limits
-description: Source-reviewed behavior, historical evidence, documentation checks and
-  outstanding owner decisions.
-kind: status
-source_ref:
-- CONTEXT.md#L24-L44
-- BENCHMARKS.md#L3-L11
-- BENCHMARKS.md#L120-L154
-- RELEASE_NOTES.md#L1-L9
-- server/dex_server.py#L32-L108
-- docs/verification/examples/offline_examples.py
-- docs/verification/examples/test_offline_examples.py
+title: "Status and verification limits"
+description: "Source-reviewed behavior, historical evidence, documentation checks and outstanding owner decisions."
+kind: "status"
+source_ref: ["CONTEXT.md", "BENCHMARKS.md#L3-L11", "BENCHMARKS.md#L120-L154", "RELEASE_NOTES.md#L1-L9", "server/dex_server.py#L32-L108", "docs/verification/examples/offline_examples.py", "docs/verification/examples/test_offline_examples.py"]
 ---
 
 # Status and verification limits
@@ -24,7 +16,7 @@ source_ref:
 
 ## Failed, limited and unknown
 
-Saved evaluation reports weak knowledge/code-correctness performance and tasks where stock Laya wins. Typed output is not proof of correctness/calibration. Short model identity wording conflicts with cards/root contract; actual weight provenance/checksum match is unverified.
+Saved evaluation reports weak knowledge/code-correctness performance and tasks where stock Laya wins. Typed output is not proof of correctness/calibration. The earlier short model-identity wording has been reconciled with the canonical card/root route: Ettin encoder with the Laya runtime. Actual loaded-weight provenance/checksum match remains unverified; no model was run or altered.
 
 There was no fresh failed server run: missing live checks are unknown, not failures. Supported dependency/host/device versions and exact upstream Laya validation/extras semantics were not checked. Static error/auth/exposure gaps are described in [security](concepts/security-and-compatibility.md), not silently fixed.
 

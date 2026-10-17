@@ -1,14 +1,8 @@
 ---
-title: Project and collaboration overview
-description: Purpose, working evidence, decisions, contribution routes and honest
-  demonstrations.
-kind: overview
-source_ref:
-- CONTEXT.md#L3-L44
-- AGENTS.md#L5-L13
-- README.md#L33-L91
-- RELEASE_NOTES.md#L1-L9
-- DATA_CARD.md#L3-L30
+title: "Project and collaboration overview"
+description: "Purpose, working evidence, decisions, contribution routes and honest demonstrations."
+kind: "overview"
+source_ref: ["CONTEXT.md", "AGENTS.md", "README.md#L33-L91", "RELEASE_NOTES.md#L1-L9", "DATA_CARD.md#L3-L30"]
 ---
 
 # Project and collaboration overview

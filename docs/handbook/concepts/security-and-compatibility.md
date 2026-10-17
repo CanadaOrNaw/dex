@@ -1,16 +1,8 @@
 ---
-title: Security, privacy and compatibility
-description: Understand exposure, data handling, errors and dependency assumptions
-  before using Dex.
-kind: concept
-source_ref:
-- server/dex_server.py#L29-L108
-- Dockerfile#L1-L10
-- deploy/dex.service#L1-L16
-- requirements.txt#L1-L6
-- DATA_CARD.md#L7-L30
-- CONTEXT.md#L19-L44
-- README.md#L30-L30
+title: "Security, privacy and compatibility"
+description: "Understand exposure, data handling, errors and dependency assumptions before using Dex."
+kind: "concept"
+source_ref: ["server/dex_server.py#L29-L108", "Dockerfile#L1-L10", "deploy/dex.service#L1-L16", "requirements.txt#L1-L6", "DATA_CARD.md#L7-L30", "CONTEXT.md", "README.md#L30-L30"]
 ---
 
 # Security, privacy and compatibility

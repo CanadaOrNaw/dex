@@ -1,13 +1,8 @@
 ---
-title: Call Dex and handle errors
-description: Use real client interfaces, keep tokens private and distinguish HTTP
-  shape from decision quality.
-kind: how-to
-source_ref:
-- examples/client.py#L5-L20
-- examples/curl.sh#L3-L10
-- server/dex_server.py#L69-L98
-- CONTEXT.md#L39-L44
+title: "Call Dex and handle errors"
+description: "Use real client interfaces, keep tokens private and distinguish HTTP shape from decision quality."
+kind: "how-to"
+source_ref: ["examples/client.py#L5-L20", "examples/curl.sh#L3-L10", "server/dex_server.py#L69-L98", "CONTEXT.md"]
 ---
 
 # Call Dex and handle errors

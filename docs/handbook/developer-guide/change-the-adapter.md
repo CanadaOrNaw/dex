@@ -1,15 +1,8 @@
 ---
-title: Change the HTTP adapter
-description: Find the owning layer and update every affected client, test and reader
-  contract.
-kind: developer
-source_ref:
-- server/dex_server.py#L32-L108
-- examples/client.py#L5-L20
-- examples/curl.sh#L3-L10
-- tests/test_server.py#L8-L45
-- CONTEXT.md#L24-L44
-- .githooks/docs-pre-commit#L1-L4
+title: "Change the HTTP adapter"
+description: "Find the owning layer and update every affected client, test and reader contract."
+kind: "developer"
+source_ref: ["server/dex_server.py#L32-L108", "examples/client.py#L5-L20", "examples/curl.sh#L3-L10", "tests/test_server.py#L8-L45", "CONTEXT.md", ".githooks/docs-pre-commit#L1-L4"]
 ---
 
 # Change the HTTP adapter

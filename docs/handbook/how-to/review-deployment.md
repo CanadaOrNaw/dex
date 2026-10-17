@@ -1,14 +1,8 @@
 ---
-title: Review deployment definitions
-description: Compare container and user-unit defaults without installing, activating
-  or exposing a service.
-kind: how-to
-source_ref:
-- Dockerfile#L1-L10
-- deploy/dex.service#L1-L16
-- deploy/CONTEXT.md#L14-L26
-- server/dex_server.py#L69-L108
-- CONTEXT.md#L39-L44
+title: "Review deployment definitions"
+description: "Compare container and user-unit defaults without installing, activating or exposing a service."
+kind: "how-to"
+source_ref: ["Dockerfile#L1-L10", "deploy/dex.service#L1-L16", "deploy/CONTEXT.md#L14-L26", "server/dex_server.py#L69-L108", "CONTEXT.md"]
 ---
 
 # Review deployment definitions

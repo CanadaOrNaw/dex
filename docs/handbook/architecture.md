@@ -1,14 +1,8 @@
 ---
-title: Architecture and request lifecycle
-description: Trace model loading, HTTP validation, serialized scoring and saved evidence
-  boundaries.
-kind: concept
-source_ref:
-- server/dex_server.py#L22-L108
-- benchmarks/report.py#L59-L107
-- benchmarks/report.py#L135-L216
-- Dockerfile#L1-L10
-- CONTEXT.md#L17-L44
+title: "Architecture and request lifecycle"
+description: "Trace model loading, HTTP validation, serialized scoring and saved evidence boundaries."
+kind: "concept"
+source_ref: ["server/dex_server.py#L22-L108", "benchmarks/report.py#L59-L107", "benchmarks/report.py#L135-L216", "Dockerfile#L1-L10", "CONTEXT.md"]
 ---
 
 # Architecture and request lifecycle

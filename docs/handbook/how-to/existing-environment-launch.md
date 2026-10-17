@@ -1,14 +1,8 @@
 ---
-title: Review an existing-environment launch
-description: Prepare the real launch command without treating documentation as runtime
-  authorization.
-kind: how-to
-source_ref:
-- server/dex_server.py#L33-L57
-- server/dex_server.py#L104-L108
-- README.md#L7-L31
-- CONTEXT.md#L39-L44
-- requirements.txt#L1-L6
+title: "Review an existing-environment launch"
+description: "Prepare the real launch command without treating documentation as runtime authorization."
+kind: "how-to"
+source_ref: ["server/dex_server.py#L33-L57", "server/dex_server.py#L104-L108", "README.md#L7-L31", "CONTEXT.md", "requirements.txt#L1-L6"]
 ---
 
 # Review an existing-environment launch

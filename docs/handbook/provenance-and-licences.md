@@ -1,19 +1,8 @@
 ---
-title: Provenance and licences
-description: Keep model identity, training claims, dataset permissions and dated release
-  evidence separate.
-kind: reference
-source_ref:
-- AGENTS.md#L5-L6
-- CONTEXT.md#L26-L44
-- MODEL_CARD.md#L1-L71
-- DATA_CARD.md#L3-L30
-- NOTICE#L1-L39
-- LICENSE
-- CITATION.cff#L1-L17
-- RELEASE_NOTES.md#L1-L9
-- model/rl_agent_config.json#L1-L33
-- model/SHA256SUMS#L1-L1
+title: "Provenance and licences"
+description: "Keep model identity, training claims, dataset permissions and dated release evidence separate."
+kind: "reference"
+source_ref: ["AGENTS.md", "CONTEXT.md", "MODEL_CARD.md#L1-L71", "DATA_CARD.md#L3-L30", "NOTICE#L1-L39", "LICENSE", "CITATION.cff#L1-L17", "RELEASE_NOTES.md#L1-L9", "model/rl_agent_config.json#L1-L33", "model/SHA256SUMS#L1-L1"]
 ---
 
 # Provenance and licences

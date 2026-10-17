@@ -1,12 +1,8 @@
 ---
-title: Handbook source and review contract
-description: Explain canonical reader inputs, private verification, generated exclusions
-  and review ownership.
-kind: overview
-source_ref:
-- CONTEXT.md#L3-L44
-- docs/CONTEXT.md#L3-L11
-- AGENTS.md#L12-L13
+title: "Handbook source and review contract"
+description: "Explain canonical reader inputs, private verification, generated exclusions and review ownership."
+kind: "overview"
+source_ref: ["CONTEXT.md", "docs/CONTEXT.md#L3-L11", "AGENTS.md"]
 ---
 
 # Handbook source and review contract

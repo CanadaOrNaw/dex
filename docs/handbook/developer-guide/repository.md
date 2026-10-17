@@ -1,18 +1,8 @@
 ---
-title: Repository and module map
-description: Locate every first-party executable module, its dependencies, owner and
-  real extension points.
-kind: developer
-source_ref:
-- server/dex_server.py#L22-L108
-- examples/client.py#L1-L20
-- examples/curl.sh#L1-L10
-- tests/test_server.py#L1-L45
-- benchmarks/report.py#L1-L216
-- benchmarks/speed.py#L1-L79
-- benchmarks/order.py#L1-L84
-- requirements.txt#L1-L6
-- CONTEXT.md#L6-L44
+title: "Repository and module map"
+description: "Locate every first-party executable module, its dependencies, owner and real extension points."
+kind: "developer"
+source_ref: ["server/dex_server.py#L22-L108", "examples/client.py#L1-L20", "examples/curl.sh#L1-L10", "tests/test_server.py#L1-L45", "benchmarks/report.py#L1-L216", "benchmarks/speed.py#L1-L79", "benchmarks/order.py#L1-L84", "requirements.txt#L1-L6", "CONTEXT.md"]
 ---
 
 # Repository and module map

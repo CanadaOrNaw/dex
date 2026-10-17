@@ -1,14 +1,8 @@
 ---
-title: Workflow guide
-description: Choose an existing workflow and keep offline reading separate from live
-  runtime work.
-kind: overview
-source_ref:
-- README.md#L7-L31
-- README.md#L84-L87
-- CONTEXT.md#L17-L44
-- examples/client.py#L5-L20
-- tests/test_server.py#L1-L45
+title: "Workflow guide"
+description: "Choose an existing workflow and keep offline reading separate from live runtime work."
+kind: "overview"
+source_ref: ["README.md#L7-L31", "README.md#L84-L87", "CONTEXT.md", "examples/client.py#L5-L20", "tests/test_server.py#L1-L45"]
 ---
 
 # Workflow guide

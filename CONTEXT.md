@@ -23,12 +23,11 @@ benchmark row payloads stay in place; do not copy them into a docs portal.
 
 ## Process
 
-Read the cards and honest limits before repeating a capability claim. **Identity
-conflict requires verification:** AGENTS calls Dex a fine-tuned Laya-1B; README and
-MODEL_CARD describe an Ettin-1B encoder using the Laya runtime, and MODEL_CARD declares
-`base_model: jhu-clsp/ettin-encoder-1b`. These documentary sources disagree with the
-short agent description; the loaded artifact was not verified here. Do not silently
-change model behavior or claim a new training/weight identity from this contract.
+Read `MODEL_CARD.md` and the selected artifact config before repeating a capability
+claim. The canonical source identity is the Ettin-1B encoder with the Laya runtime;
+AGENTS routes to that card rather than maintaining an incompatible model lineage.
+A saved config/card does not verify a loaded artifact, fresh benchmark or running
+service. Do not change weights or behavior as a contract repair.
 
 ## Outputs
 

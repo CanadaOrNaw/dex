@@ -1,0 +1,2016 @@
+{
+  "schema": 1,
+  "project": "dex",
+  "reviewed_at": "2026-10-17T14:42:59.745303+00:00",
+  "snapshot": {
+    "source_hashes": {
+      ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+      ".gitignore": "8d1f358064bad2c639a13e128ad7a78ecfe89cf9dc16236064be610aa763def7",
+      "AGENTS.md": "1695c01e2c562a4e3bc7f27ab832869b93d4c4881dfd5773db6186aade711731",
+      "BENCHMARKS.md": "aba2552f37597a91733224b1e049f7be809cf36946ad9b0fda22286ee98904d8",
+      "CITATION.cff": "221378464ec04dc777451f437befb22911ae687adec663cbbee34a90edc31dca",
+      "CONTEXT.md": "e44884505d3b728fc2cbabffc70a155d76879b2aade39289efe5f23ce6951b4e",
+      "DATA_CARD.md": "6c9db65734c7eae73a92c18f278239f89e8b64fa7047347028bd3f08ef56ed0d",
+      "Dockerfile": "15b7d804ae01ded4f2b3924a1d2709316aa35bfe8260fc5bbe8f8921e3067407",
+      "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "MODEL_CARD.md": "13a2ae1faac67c8de2ab4c0c1f16d81d9a7806890ef396d34197fe2bad5ca432",
+      "NOTICE": "37e961c9e0c0ca3f8b8e5ff065f75576eaae447ac704acd7b46a9a511280a5e3",
+      "README.md": "7ca68b0005a45bd7627db8489ec5c63f98bbb10723164a1b8ac6796100884d25",
+      "RELEASE_NOTES.md": "a6283c207e926a31d2367354e5807082ba5f3c5059e9e504d8fb768a600b009a",
+      "benchmarks/CONTEXT.md": "3fa19a947876007c86d8baacd5c02ce9a4e1a82827c7579b2a28e9f196ace6aa",
+      "benchmarks/order.py": "f8f5d1a4ed3de62bf8c438c27377166f85de708a559a9eca2f96656e57c63674",
+      "benchmarks/report.py": "629a1804db45062cac31a0a5b2f6658c104c5afe8ef1934fda0efde00130e239",
+      "benchmarks/results/jev_summary.json": "c73bf1be847cc9ab508894bb087ff64b4a66841ab81bb0da4fd4d3b220726d49",
+      "benchmarks/results/order.json": "9bc7c6f7e2ff362429a53fcd6177e1bc3b194bdbe7f1e0bd3fed98f39615df76",
+      "benchmarks/results/speed.json": "f4e1467e285bc4624b901e95386d8b11bd8b1b881445300eae311d5993df3097",
+      "benchmarks/results/tables.json": "c262e7ab2a1e6afa3d05e12ce62d66dc2657cb783c8629e309ecdb85ce0ebb13",
+      "benchmarks/results/tables.md": "441422df7957d436d7146ce23502cb96e50625b6303d1729cf7c9bf1176661ef",
+      "benchmarks/speed.py": "d02c6c957d2cec24a7faccac61068ba78ea24c31843d74f86f39b68c2201dee2",
+      "deploy/CONTEXT.md": "b05285b33142bcf5e102b8df0d949928704f4fe2131c98c964145fb5d0bbc6b6",
+      "deploy/dex.service": "0f296c01790982b55d568210217e993f2866dd3bb42946e1a25c6a286da9a5fb",
+      "docs/CONTEXT.md": "bd4318cfacf69d28dfbd2f6d262a2308fac02d1e00bb4399d386457bd8a8d77d",
+      "docs/verification/examples/offline_examples.py": "60d44bc94712df87ffd7430542626fdd34da1e4a0154b45621ac8f708c05f591",
+      "docs/verification/examples/test_offline_examples.py": "7df6d8aad591eec746d2cfec65789596ce4d26dec2c450f61d2f1f1545bd9d82",
+      "examples/CONTEXT.md": "777a64d51a42deb2b6a15cab218ddefed419eb1088c0f749b5afe4f27245bfae",
+      "examples/client.py": "d46b4e0b43920f4a20ac7e612314131fda61fc5dcb5388da1f0d7cdaf0a35b77",
+      "examples/curl.sh": "9dbd83d03265071f2290c93bb074663afe7f379adbb70b886f7102b63c1a8c25",
+      "model/SHA256SUMS": "9788416b40d6cb61588d5eedb9d1ae2b5648b4159b1acef0d1ee6e4bb22c76c4",
+      "model/encoder/config.json": "9210c6819f57796f75b6c92e74c662ebd686454d1d915c8c915ed252c3dada15",
+      "model/rl_agent_config.json": "e8752cb73c9097d350de495c64d0445e633a22a2f986da82eace7f91c338a821",
+      "model/tokenizer/tokenizer_config.json": "08d4cf3ac4dca381759441b85b91a6d40e688471dcd33d15d6649eb0a9a854d1",
+      "requirements.txt": "c1e9219416871a2eeab6021fcebf1850873b74a66cbfa3d7adc8aac37bef7b4f",
+      "server/CONTEXT.md": "6257d1a20ffaeea1e9bd4ce3334a79e6c61e48b45b72aa06cdfdb806eb45af85",
+      "server/dex_server.py": "861b5805746c9bc40defce618590efd635a65a56c3909a59148594c3e75802e3",
+      "tests/CONTEXT.md": "5d62d4b76e668db890baaa2c4700782d1dded7d92d1898036985572d22ff230e",
+      "tests/test_server.py": "4685fc6f9aaf734271dae2fd3f2f93d1562fbf8de5621293c8df6ce18a2e7246"
+    },
+    "doc_hashes": {
+      "CONTEXT.md": "359dfc4bc8220ff2d41d500c5e1ee3dcb3e7281590c0007788103de964d44f24",
+      "architecture.md": "5dd8fcef5bf4bee363f16ca3da1858fd834f3e60e5ebdece108f03259b8dbe0b",
+      "capabilities-and-limits.md": "66429a523537270469a13f3f19e0af2bdcf18fc74873e1cb4c4c6f3ea9bc3cb0",
+      "collaboration.md": "0844c5c122bfad37f03ea849e7b98cf8afd6a063b31ba91da7cd921f89e4623e",
+      "concepts/security-and-compatibility.md": "72f53d2f3bf6bbc889501f293fb3234e6ab9e528fe4d0f89da32d3a7b5392c00",
+      "developer-guide/change-the-adapter.md": "638ba1baf17d4d02fb0766a98717340afec2d4f2646b95a6dc7af562cb0848d4",
+      "developer-guide/maintain-evaluation.md": "75ef37a00893685e58a722a34080bebea3594d07cd3d1a1ee1f7dd6135956f41",
+      "developer-guide/repository.md": "fc3149657751deebc6afda1db1d426bae787c7d52a31fc9c794f67051b372fb1",
+      "developer-guide/testing.md": "2d1e2165aeca535aaf198fdc61311644b1446f4bca93062a159c66396dfcaa5a",
+      "getting-started/requirements.md": "b7085569dde09e20fab3bb64a5f12c5764ef9899b04c71f5db97fd9579218b77",
+      "guide.md": "1968badbfa60e2c08772815a018165d853917c949755b51b6d26fd955eff8b0e",
+      "how-to/call-and-handle-errors.md": "ea322cdf0fa40f21b9eb1977c477cf2b61add7870932bd110d86badccb27a829",
+      "how-to/check-an-authorized-server.md": "b4fff5f3fb44fe0b6af4a91a676697e7323c887251a8fcbeaaabada75a7c67e7",
+      "how-to/existing-environment-launch.md": "4e5319016c38eb51199209da10c1144b3386c424438e7130dc80300281b82521",
+      "how-to/plan-gpu-reruns.md": "4a025f1969667d3fc65687fcbd3350592b40427882b7f28b46bbc19f3df48d23",
+      "how-to/rebuild-saved-report.md": "e4a9b9cc2c4b50613fe26204c354ac6fd3c400c9ca15384d5d2fe4df2715487c",
+      "how-to/review-deployment.md": "a973c974f50d5fbcc2940d0f17131696fb5f515354e4e87d6568345ec4b4217b",
+      "index.md": "0ff051332f8a504a39f21150baf901e0aa84245ff2f389ed935e79d92054d772",
+      "provenance-and-licences.md": "cadda1e636347bfca38aa4b0b76321e799e659900c87a4e9058c5a21abd4e954",
+      "reference/commands.md": "6734a86279c7c762f1d44240e83fef4768f5a5c12b7a4e58ebe72b7e53d2fd3a",
+      "reference/configuration.md": "d653be1dc77e6a7066160f0b111e1a9f5316e0d553abbe895cb24f021ed87fe2",
+      "reference/evidence-schemas-and-scoring.md": "e0e98a4852c68da60306ea790dc2f8a70bca6cbdc48a2ca50f1fb887cda2dec9",
+      "reference/http.md": "eda4d5a63517e18d5ba1ecbadc9ed6946040a95f07facc4abb74958367a35b45",
+      "reference/model-and-deployment-metadata.md": "827d4c30cdf154fb469164c856a85692522b65f28892c6d27325592b9691f57c",
+      "reference/question-answer-shapes.md": "0b60841ade6be39e99c8736a7010c19db870de9e9cd4ef85653077cd58ba76bf",
+      "sidebar.json": "62e31ce0aed6e5236a1dffb42280d906e15b1f10f383f5d0d730578181485362",
+      "status.md": "5d4c41e512c45a9a4360fe99c964c7320eae65c2a42b4f287b7063efaf15de16",
+      "tutorials/read-a-decision-offline.md": "e762a475e7787b658c871affdf40bb06b4b0ce8a54c5a9986af71a49f860f743",
+      "tutorials/trace-saved-evidence.md": "1453d0958f12a626a929670d154b3bcd67b3d842fba5a60e59bc3845d89caae0"
+    },
+    "manifest_hash": "fb75371ecfff5d70abf50169e0d1d2640b71d8014c804fade6bca6901369d353",
+    "commit": "e646d9ada02891819becc37608729220ee4febe3"
+  },
+  "impact": {
+    "base": "Original independent review full source/content/tasks plus focused parent-authorized Task5E/FIXROUND1 R1–R4 correction recheck; no broad reaudit.; final recursive Task5E bounded ignore/configuration/manifest recheck.",
+    "changed_paths": [
+      ".gitignore",
+      "docs/handbook/reference/configuration.md",
+      "docs/handbook/reference/evidence-schemas-and-scoring.md",
+      "docs/handbook/tutorials/trace-saved-evidence.md",
+      "docs/handbook/developer-guide/repository.md",
+      "docs/handbook/status.md",
+      "docs/verification/manifest.json",
+      "docs/verification/review.json"
+    ],
+    "affected_pages": [
+      "reference/configuration",
+      "reference/evidence-schemas-and-scoring",
+      "tutorials/trace-saved-evidence",
+      "developer-guide/repository",
+      "status"
+    ],
+    "affected_interfaces": [
+      "report-pure-functions",
+      "report-joins",
+      "report-rendering",
+      "docs-git-tracking"
+    ],
+    "no_doc_impact": [
+      "No product module/client/live-test/dependency/deployment/model/raw-evidence/fixture behavior change.",
+      "Legacy generated products remain excluded, unread/unhashed and not attributed to Dex author.",
+      "Source bindings unchanged except authorized .gitignore delta; navigation and unaffected reader bytes unchanged."
+    ]
+  },
+  "checks": [
+    {
+      "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py shape",
+      "environment": "Existing Dex .venv/bin/python from project root; -B; reviewed stdlib docs fixtures",
+      "effects": "AST-select reviewed pure source functions; synthetic memory/stdout only; no runtime/module import/network/raw payload/file/bytecode action",
+      "exit": 0,
+      "outcome": "{\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}",
+      "evidence": "dex-independent-review.json:initial_fixture_checks; initial independent trial before FIXROUND1"
+    },
+    {
+      "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py scoring",
+      "environment": "Existing Dex .venv/bin/python from project root; -B; reviewed stdlib docs fixtures",
+      "effects": "AST-select reviewed pure source functions; synthetic memory/stdout only; no runtime/module import/network/raw payload/file/bytecode action",
+      "exit": 0,
+      "outcome": "{\"correct\": 3, \"predictions\": [\"refund\", 2, true, null], \"scored\": 3}",
+      "evidence": "dex-independent-review.json:initial_fixture_checks; initial independent trial before FIXROUND1"
+    },
+    {
+      "command": ".venv/bin/python -B -m unittest discover -s docs/verification/examples -p test_offline_examples.py -v",
+      "environment": "Existing Dex .venv/bin/python from project root; -B; reviewed stdlib docs fixtures",
+      "effects": "AST-select reviewed pure source functions; synthetic memory/stdout only; no runtime/module import/network/raw payload/file/bytecode action",
+      "exit": 0,
+      "outcome": "test_scoring_matches_human_labels_and_rejects_missing_answer (test_offline_examples.OfflineExamples.test_scoring_matches_human_labels_and_rejects_missing_answer) ... ok\ntest_shape_uses_real_filter_and_preserves_input (test_offline_examples.OfflineExamples.test_shape_uses_real_filter_and_preserves_input) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nOK",
+      "evidence": "dex-independent-review.json:initial_fixture_checks; initial independent trial before FIXROUND1"
+    },
+    {
+      "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py shape",
+      "environment": "Existing Dex .venv/bin/python from project root; -B; unchanged reviewed fixture/selected-source hashes",
+      "effects": "Same reviewed unchanged fixture/selected-source hashes; synthetic memory/stdout only, -B, no runtime/rawpayload/network/files",
+      "exit": 0,
+      "outcome": "{\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}",
+      "evidence": "dex-independent-review.json:fixround1.fixture_checks"
+    },
+    {
+      "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py scoring",
+      "environment": "Existing Dex .venv/bin/python from project root; -B; unchanged reviewed fixture/selected-source hashes",
+      "effects": "Same reviewed unchanged fixture/selected-source hashes; synthetic memory/stdout only, -B, no runtime/rawpayload/network/files",
+      "exit": 0,
+      "outcome": "{\"correct\": 3, \"predictions\": [\"refund\", 2, true, null], \"scored\": 3}",
+      "evidence": "dex-independent-review.json:fixround1.fixture_checks"
+    },
+    {
+      "command": ".venv/bin/python -B -m unittest discover -s docs/verification/examples -p test_offline_examples.py -v",
+      "environment": "Existing Dex .venv/bin/python from project root; -B; unchanged reviewed fixture/selected-source hashes",
+      "effects": "Same reviewed unchanged fixture/selected-source hashes; synthetic memory/stdout only, -B, no runtime/rawpayload/network/files",
+      "exit": 0,
+      "outcome": "test_scoring_matches_human_labels_and_rejects_missing_answer (test_offline_examples.OfflineExamples.test_scoring_matches_human_labels_and_rejects_missing_answer) ... ok\ntest_shape_uses_real_filter_and_preserves_input (test_offline_examples.OfflineExamples.test_shape_uses_real_filter_and_preserves_input) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nOK",
+      "evidence": "dex-independent-review.json:fixround1.fixture_checks"
+    },
+    {
+      "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py snapshot --project dex",
+      "environment": "Official shared adapter native /usr/bin/python3 -B; cwd Dex; parent-authorized read-only collect",
+      "effects": "Parent-authorized read-only native shared adapter collect/snapshot/check; no build/prepare/release/export/index/runtime action",
+      "exit": 0,
+      "outcome": "Snapshot matches all independently computed39source/29doc/manifest hashes exactly.",
+      "evidence": "dex-independent-review.json:fixround1.portal_checks"
+    },
+    {
+      "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py check --project dex --json",
+      "environment": "Official shared adapter native /usr/bin/python3 -B; cwd Dex; parent-authorized read-only collect",
+      "effects": "Parent-authorized read-only native shared adapter collect/snapshot/check; no build/prepare/release/export/index/runtime action",
+      "exit": 1,
+      "outcome": "{\n  \"projects\": {\n    \"dex\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}",
+      "evidence": "dex-independent-review.json:fixround1.portal_checks"
+    },
+    {
+      "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py snapshot --project dex",
+      "environment": "Official shared adapter /usr/bin/python3 -B; Dex cwd; read-only parent-authorized integration contract",
+      "effects": "Collect/snapshot/check only; no build/prepare/release/export/index/runtime or other product reads",
+      "exit": 0,
+      "outcome": "Official current snapshot0 exactly matches all independent current source/doc/manifest hashes; no semantic/runtime/build proof inferred.",
+      "evidence": "dex-independent-review.json:final_recursive_Task5E.portal_checks"
+    },
+    {
+      "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py check --project dex --json",
+      "environment": "Official shared adapter /usr/bin/python3 -B; Dex cwd; read-only parent-authorized integration contract",
+      "effects": "Collect/snapshot/check only; no build/prepare/release/export/index/runtime or other product reads",
+      "exit": 1,
+      "outcome": "{\n  \"projects\": {\n    \"dex\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+      "evidence": "dex-independent-review.json:final_recursive_Task5E.portal_checks"
+    }
+  ],
+  "claim_review": {
+    "reviewer": "Dex independent source/content/task reviewer, Prime child session 01a14a38-cead-7476-bef3-1b6407ecadc7 (not Dex author)",
+    "changed_claims": [
+      "three-exact-aliases",
+      "path-before-auth",
+      "positive-byte-length-max1000000",
+      "locked-system-one-delegation",
+      "runtime-usage-cost-zero",
+      "default-vs-extras-answer-boundary",
+      "unauthenticated-health",
+      "agent-loaded-model-label-device-fixed-dtype",
+      "not-provenance-or-quality",
+      "401-404-413-422-conditions",
+      "truncated-exception-privacy",
+      "length-outside-try-nonobject-other-exceptions-unhandled",
+      "per-type-present-field-whitelist",
+      "unknown-type-key-error",
+      "no-validation-or-input-mutation",
+      "extras-bypass",
+      "agent-cpu-encoder-bf16-conditional-cuda",
+      "load-warmup-before-listen",
+      "port-argv-default18766",
+      "no-argparse-help",
+      "uncaught-startup-failure",
+      "DEX_MODEL-default-effect-read-time",
+      "no-env-file-loader-or-precedence-stack",
+      "DEX_DEVICE-default-effect-read-time",
+      "no-env-file-loader-or-precedence-stack",
+      "DEX_HOST-default-effect-read-time",
+      "no-env-file-loader-or-precedence-stack",
+      "DEX_TOKEN-default-effect-read-time",
+      "no-env-file-loader-or-precedence-stack",
+      "DEX_EXTRAS-default-effect-read-time",
+      "no-env-file-loader-or-precedence-stack",
+      "NAME-model-label",
+      "MAX_BODY-bytes",
+      "POST_PATHS-literal",
+      "global-LOCK-scoring-only",
+      "state-questions-url-token-signature",
+      "optional-bearer-timeout60",
+      "answers-only",
+      "no-retry-or-error-translation",
+      "fixed-synthetic-main",
+      "fixed-loopback-three-types",
+      "no-bearer-no-curl-http-fail",
+      "formatter-pipeline-not-success-proof",
+      "base-url-argv-default",
+      "12named-checks",
+      "live-top-level-effects",
+      "exit0-or1-plus-uncaught-errors",
+      "no-auth-extras-off",
+      "coverage-and-gaps",
+      "no-args-or-dry-run",
+      "reads-retained-data-and-aggregates",
+      "writes-four-fixed-outputs",
+      "no-inference-or-prose-index-rewrite",
+      "uncaught-file-schema-math-errors",
+      "jl-json-lines",
+      "wilson-z1point96",
+      "pred-choice-score-argmax-noul-threshold",
+      "conf-noul-max-probability",
+      "cell-n-a",
+      "ece15bins",
+      "conf-no-None-error-guard-distinct-from-pred",
+      "A-single-qid-B-q-C-external-gold",
+      "row-id-system-answer-joins",
+      "missing-files-conditional-load",
+      "missing-error-answer-skipped-denominator",
+      "pool-and-group-counts",
+      "SYS-NAME-fixed-systems",
+      "trusted-label-SVG-interpolation-fixed-palette",
+      "tables-md-headline-json-two-svgs",
+      "fixed-published-speed-order-inputs-not-reruns",
+      "calibration-eager-pred-conf-can-fail-before-value-filter-empty-subset-math-failures",
+      "stock-required-dex-out-defaults",
+      "argparse-help-usage2-torch-import-first",
+      "gpu-load-effects",
+      "no-HTTP-Jev-main-despite-docstring",
+      "separate-rerun-file",
+      "questions-synthetic-short-long-workload",
+      "3warmup15reps-1-3-5-10-15",
+      "median-sorted-index-p95",
+      "gpu-process-allocation-not-baseline-subtracted",
+      "local-dex-stock-only",
+      "stock-required-n400-out-default",
+      "no-dex-no-Jev-parameter",
+      "argparse-usage2-torch-first",
+      "no-n-positivity-zero-denominator-error",
+      "load-server-first-glob",
+      "A-B-choice-atleast3",
+      "seed3-firstN",
+      "criteria-reversed-same-keys-text",
+      "null-skip-flip-accuracy-original-reversed",
+      "cells-question-correct-pool-label",
+      "disagreement-counts",
+      "calibration-summary-not-recollection",
+      "gpu-weights-memory-cells-array",
+      "published-Jev-api-not-current-rerun",
+      "questions-flip-original-reversed-accuracy",
+      "published-Jev-not-current-rerun",
+      "headline-rates-only-historical-not-recomputed",
+      "all-encoder-head-limits-costs-temperatures-model-training-fields",
+      "runtime-owned-not-public-adapter-options",
+      "metadata-not-weight-attestation",
+      "all-top-level-encoder-settings",
+      "token-position-dimensions-architecture-version",
+      "not-runtime-input-support-or-provenance-proof",
+      "all-tokenizer-settings",
+      "length8192-local-files-only-false-distinct-runtime-limit",
+      "recorded-checksum-not-compared",
+      "no-weight-read",
+      "minimum-only-five-packages",
+      "comment-tested-versions-not-reverified",
+      "no-lock-or-supported-host-matrix",
+      "python312-base-copy-model-server",
+      "cpu-offline-bind-all-env",
+      "expose-and-cmd18766",
+      "no-fresh-build-or-installed-proof",
+      "home-dex-paths-offline-env-exec",
+      "restart-onfailure5-defaulttarget-network",
+      "activation-comments-not-authorization",
+      "no-TLS-token-hardening-policy",
+      "preserve-Laya-Ettin-conflict",
+      "runtime-costly-eval-publication-approval",
+      "weights-rows-no-copy",
+      "training-data-absent",
+      "dataset-licences-retained",
+      "public-PII-possible",
+      "no-typed-no-leakage-guarantee",
+      "dated-A-B-C-cohorts",
+      "single-run-English-token-option-concurrency-limits",
+      "Index-selfrun-not-board-unsupported-wrong",
+      "wrapper-presence-not-effective-hook-enforcement",
+      "no-staging-or-factory-execution",
+      "AST-select-pure-functions-no-module-import",
+      "synthetic-data-only",
+      "shape-and-scoring-cli",
+      "no-bytecode-with-B",
+      "no-product-quality-proof",
+      "two-tests-red-green",
+      "author-only-not-independent-acceptance",
+      "model-venv-bytecode-remain-ignored",
+      "new-generated-private-doc-paths-ignored",
+      "exact-manifest-review-two-safe-fixture-exceptions-only",
+      "assets-not-approved",
+      "ignored-does-not-mean-untracked-or-accepted-no-stage-removal"
+    ],
+    "source_observations": "Initial independent full first-party source/page/39interface review plus scoped FIXROUND1 R1–R4 recheck. HTTP/settings/auth/body/filter/errors/lifecycle/dependencies/deploy/evidence/scoring/provenance exclusions agree. Current40interface observations in interface_observations; exact corrected calibration control-flow and ignore-boundary claims compared to owning source, no product fix or raw rerun. All39source/29doc/manifest bindings independently match official snapshot. Final recursive Task5E: independently read only25line .gitignore delta +configuration source_ref/prose/map and verified exact current binding; explicit recursive claims match source patterns and preserve no-security/no-untrack/no-acceptance limits.",
+    "test_observations": "Docs-first first-safe-result then adapter-change-impact notes recorded before implementation reads, no author coaching; mandatory author report/audit were background, so not blind. Initial and fresh FIXROUND1 native shape/scoring and2fixturetests all exit0 with expected output; no live tests. Official native portal snapshot0 exactmatch and check1 expectedpending author changes-required, not platform failure or product acceptance.",
+    "findings": [
+      "DEX-R1: resolved by focused FIXROUND1; original finding retained in review_round_history.",
+      "DEX-R2: resolved by focused FIXROUND1; original finding retained in review_round_history.",
+      "DEX-R3: resolved by focused FIXROUND1; original finding retained in review_round_history.",
+      "DEX-R4: resolved by focused FIXROUND1; original finding retained in review_round_history."
+    ],
+    "resolutions": [
+      "DEX-R1: C gold-key table uses escaped id\\|qid; static table delimiter count3 matches header; source key unchanged.",
+      "DEX-R2: Reference distinguishes system/qid guards and predNone denominator skip from eager pred+conf calibration with no None/error guard; malformed noul/empty subsets explicitly can fail. Tutorial narrows skip and links real anchor; synthetic pred-only scope explicit. Compared current report.py31-47,84-97,181-190; no product change.",
+      "DEX-R3: Repository/status now qualify no-generated-write by Dex authoring actor and explicitly disclose separate parent legacy regeneration/exclusion, no byte-preservation/product proof.",
+      "DEX-R4: Author reports parent Task5E authority; current ignore28line delta independently read and configuration source_ref/prose/mapping correctly bound. Exact canonical author39source/29doc/manifest snapshot matches. No Git/index/effective-ignore-control test by reviewer; parent owns those separate gates.",
+      "Final recursive Task5E: source8d1f3580...; configurationd653be1d...; manifestfb75371e...; only declared source/page delta; native snapshot0exactmatch; authorreceipt3f4a1f00... remains changes-required until faithful landing."
+    ],
+    "independent_evidence": {
+      "reviewer": "Dex independent source/content/task reviewer, Prime child session 01a14a38-cead-7476-bef3-1b6407ecadc7 (not Dex author)",
+      "role_and_write_boundary": "Independent review only; write only /tmp/hermes-docs-redo-2026-10-16/dex-independent-review.md and .json; canonical owner later normalizes actual evidence after reviewer confirmation.",
+      "spec_verdict": "Accepted for source/content/task contract including minimal final recursive-ignore source/configuration/manifest delta. No broad reaudit or new runtime/product/fixture claim.",
+      "quality_verdict": "Accepted as useful task-first project handbook; required reference rendering/failure-scope issues fixed minimally. No broad rewrite or product change requested.",
+      "snapshot_commit_note": "Commit copied from existing author receipt for context; no git/index/revision verification by reviewer.",
+      "control_input_hashes": {
+        "/tmp/hermes-docs-redo-2026-10-16/rollout-briefs/project-dex.md": "304cd9ed6b72608d68820e6973ab7df39317c39adf1984ce3934cb9fc034ed1c",
+        "/tmp/hermes-docs-redo-2026-10-16/project-review-contract.md": "6ed1d0868b0a2f4c6faefbadee206643e347c416031261d8e539bc03e7c6d6e9",
+        "/tmp/hermes-docs-redo-2026-10-16/project-author-contract.md": "cc5cc457c6b4e0ddf77089da3698e22f480d182e603b1784e57348e6386e7768",
+        "/tmp/hermes-docs-redo-2026-10-16/author-dex-report.md": "8577f5f1195e60e8d637460bce2bd1e820e0b1bfe9ea6514a12e4b2d41eaeb2f",
+        "/tmp/hermes-docs-redo-2026-10-16/audits/dex.json": "01d767f09c0dd3bdd6232d7b163554b33264adab86e6694f743f2278167ca9f0",
+        "/tmp/hermes-docs-redo-2026-10-16/audits/dex.md": "ef2b1dc9ffb262d41d66d6f07e2d443bae0a10838fd7a4eb27d1c8a3de2701fd",
+        "/home/zack/Projects/dex/docs/verification/review.json": "3f4a1f000306f4f21039bec61db42ce162413d21cbc10de50350176560e01bf0",
+        "/home/zack/Projects/dex/docs/verification/author-checks.txt": "ae71e952365f7b3ba3872f28b17996fc43caa31ca1d6469d10f03fb50a4de744"
+      },
+      "fixture_side_effect_inspection": {
+        "read_files": [
+          "docs/verification/examples/offline_examples.py",
+          "docs/verification/examples/test_offline_examples.py"
+        ],
+        "selected_functions": [
+          "server/dex_server.py:jev_shape",
+          "benchmarks/report.py:pred"
+        ],
+        "inspection": "Both fixtures are stdlib-only. source_functions reads and AST-parses the two named full source texts, selects top-level function definitions, compiles only selected functions. Reviewed current selected functions: no imports, model calls, network, writes, retained-payload reads or subprocess. Tests import only offline_examples. -B suppresses bytecode.",
+        "limit": "AST selection is safe for these reviewed current bytes, not a general sandbox for future source edits."
+      },
+      "coverage": {
+        "manifest_sources": [
+          ".githooks/docs-pre-commit",
+          ".gitignore",
+          "AGENTS.md",
+          "BENCHMARKS.md",
+          "CITATION.cff",
+          "CONTEXT.md",
+          "DATA_CARD.md",
+          "Dockerfile",
+          "LICENSE",
+          "MODEL_CARD.md",
+          "NOTICE",
+          "README.md",
+          "RELEASE_NOTES.md",
+          "benchmarks/CONTEXT.md",
+          "benchmarks/order.py",
+          "benchmarks/report.py",
+          "benchmarks/results/jev_summary.json",
+          "benchmarks/results/order.json",
+          "benchmarks/results/speed.json",
+          "benchmarks/results/tables.json",
+          "benchmarks/results/tables.md",
+          "benchmarks/speed.py",
+          "deploy/CONTEXT.md",
+          "deploy/dex.service",
+          "docs/CONTEXT.md",
+          "examples/CONTEXT.md",
+          "examples/client.py",
+          "examples/curl.sh",
+          "model/SHA256SUMS",
+          "model/encoder/config.json",
+          "model/rl_agent_config.json",
+          "model/tokenizer/tokenizer_config.json",
+          "requirements.txt",
+          "server/CONTEXT.md",
+          "server/dex_server.py",
+          "tests/CONTEXT.md",
+          "tests/test_server.py",
+          "docs/verification/examples/offline_examples.py",
+          "docs/verification/examples/test_offline_examples.py"
+        ],
+        "reader_inputs": [
+          "docs/handbook/CONTEXT.md",
+          "docs/handbook/architecture.md",
+          "docs/handbook/capabilities-and-limits.md",
+          "docs/handbook/collaboration.md",
+          "docs/handbook/concepts/security-and-compatibility.md",
+          "docs/handbook/developer-guide/change-the-adapter.md",
+          "docs/handbook/developer-guide/maintain-evaluation.md",
+          "docs/handbook/developer-guide/repository.md",
+          "docs/handbook/developer-guide/testing.md",
+          "docs/handbook/getting-started/requirements.md",
+          "docs/handbook/guide.md",
+          "docs/handbook/how-to/call-and-handle-errors.md",
+          "docs/handbook/how-to/check-an-authorized-server.md",
+          "docs/handbook/how-to/existing-environment-launch.md",
+          "docs/handbook/how-to/plan-gpu-reruns.md",
+          "docs/handbook/how-to/rebuild-saved-report.md",
+          "docs/handbook/how-to/review-deployment.md",
+          "docs/handbook/index.md",
+          "docs/handbook/provenance-and-licences.md",
+          "docs/handbook/reference/commands.md",
+          "docs/handbook/reference/configuration.md",
+          "docs/handbook/reference/evidence-schemas-and-scoring.md",
+          "docs/handbook/reference/http.md",
+          "docs/handbook/reference/model-and-deployment-metadata.md",
+          "docs/handbook/reference/question-answer-shapes.md",
+          "docs/handbook/sidebar.json",
+          "docs/handbook/status.md",
+          "docs/handbook/tutorials/read-a-decision-offline.md",
+          "docs/handbook/tutorials/trace-saved-evidence.md"
+        ],
+        "all_first_party_product_modules": [
+          "server/dex_server.py",
+          "examples/client.py",
+          "tests/test_server.py",
+          "benchmarks/report.py",
+          "benchmarks/speed.py",
+          "benchmarks/order.py",
+          "examples/curl.sh"
+        ],
+        "additional_docs_fixtures": [
+          "docs/verification/examples/offline_examples.py",
+          "docs/verification/examples/test_offline_examples.py"
+        ],
+        "manifest_exclusions": [
+          {
+            "path": ".git/",
+            "reason": "Git internal objects/index/history; no traversal or writes. HEAD/ref metadata only used for audit revision."
+          },
+          {
+            "path": ".venv/",
+            "reason": "Installed external environment/vendor/runtime state; no source coverage claim. Existing interpreter used only for stdlib offline docs fixtures."
+          },
+          {
+            "path": "server/__pycache__/",
+            "reason": "Generated Python bytecode cache, not authored source."
+          },
+          {
+            "path": "model/model.safetensors",
+            "reason": "Weight bytes and tokenizer vocabulary/merge bulk; not first-party adapter logic. Owner forbids model execution/copying. Metadata only inventoried; no hash computed and no artifact verification claimed."
+          },
+          {
+            "path": "model/tokenizer/tokenizer.json",
+            "reason": "Weight bytes and tokenizer vocabulary/merge bulk; not first-party adapter logic. Owner forbids model execution/copying. Metadata only inventoried; no hash computed and no artifact verification claimed."
+          },
+          {
+            "path": "benchmarks/data/usecases_items.jsonl",
+            "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+          },
+          {
+            "path": "benchmarks/data/heldout_tasks.jsonl",
+            "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+          },
+          {
+            "path": "benchmarks/data/exam_items.jsonl",
+            "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+          },
+          {
+            "path": "benchmarks/data/exam_gold.json",
+            "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+          },
+          {
+            "path": "benchmarks/results/A-stock-laya.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/B-stock-laya.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/C-stock-laya.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/A-ablation-modernbert-wide-instructions.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/B-ablation-modernbert-wide-instructions.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/C-ablation-modernbert-wide-instructions.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/A-dex.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/B-dex.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/C-dex.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/A-ablation-modernbert-base.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/B-ablation-modernbert-base.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/results/C-ablation-modernbert-base.json",
+            "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+          },
+          {
+            "path": "benchmarks/charts/usecases.svg",
+            "reason": "Script-owned SVG output, not authored source. Read generator and saved numerical aggregates; no visual correctness claim."
+          },
+          {
+            "path": "benchmarks/charts/exam.svg",
+            "reason": "Script-owned SVG output, not authored source. Read generator and saved numerical aggregates; no visual correctness claim."
+          },
+          {
+            "path": "docs/handbook/_generated/index.html",
+            "reason": "Factory-owned HTML/PDF/receipt generated snapshots. Existing canonical Markdown reviewed; no rebuilding/rendering/hash acknowledgement under audit-only gate."
+          },
+          {
+            "path": "docs/handbook/_generated/Status.pdf",
+            "reason": "Factory-owned HTML/PDF/receipt generated snapshots. Existing canonical Markdown reviewed; no rebuilding/rendering/hash acknowledgement under audit-only gate."
+          },
+          {
+            "path": "docs/handbook/_generated/receipt.json",
+            "reason": "Factory-owned HTML/PDF/receipt generated snapshots. Existing canonical Markdown reviewed; no rebuilding/rendering/hash acknowledgement under audit-only gate."
+          }
+        ],
+        "excluded_bodies_read_or_hashed": false,
+        "private_control_evidence_read": [
+          "docs/verification/manifest.json",
+          "docs/verification/review.json",
+          "docs/verification/author-checks.txt"
+        ],
+        "metadata_inventory_files": [
+          ".githooks/docs-pre-commit",
+          ".gitignore",
+          "AGENTS.md",
+          "BENCHMARKS.md",
+          "CITATION.cff",
+          "CONTEXT.md",
+          "DATA_CARD.md",
+          "Dockerfile",
+          "LICENSE",
+          "MODEL_CARD.md",
+          "NOTICE",
+          "README.md",
+          "RELEASE_NOTES.md",
+          "benchmarks/CONTEXT.md",
+          "benchmarks/charts/exam.svg",
+          "benchmarks/charts/usecases.svg",
+          "benchmarks/data/exam_gold.json",
+          "benchmarks/data/exam_items.jsonl",
+          "benchmarks/data/heldout_tasks.jsonl",
+          "benchmarks/data/usecases_items.jsonl",
+          "benchmarks/order.py",
+          "benchmarks/report.py",
+          "benchmarks/results/A-ablation-modernbert-base.json",
+          "benchmarks/results/A-ablation-modernbert-wide-instructions.json",
+          "benchmarks/results/A-dex.json",
+          "benchmarks/results/A-stock-laya.json",
+          "benchmarks/results/B-ablation-modernbert-base.json",
+          "benchmarks/results/B-ablation-modernbert-wide-instructions.json",
+          "benchmarks/results/B-dex.json",
+          "benchmarks/results/B-stock-laya.json",
+          "benchmarks/results/C-ablation-modernbert-base.json",
+          "benchmarks/results/C-ablation-modernbert-wide-instructions.json",
+          "benchmarks/results/C-dex.json",
+          "benchmarks/results/C-stock-laya.json",
+          "benchmarks/results/jev_summary.json",
+          "benchmarks/results/order.json",
+          "benchmarks/results/speed.json",
+          "benchmarks/results/tables.json",
+          "benchmarks/results/tables.md",
+          "benchmarks/speed.py",
+          "deploy/CONTEXT.md",
+          "deploy/dex.service",
+          "docs/CONTEXT.md",
+          "docs/handbook/CONTEXT.md",
+          "docs/handbook/_generated/Status.pdf",
+          "docs/handbook/_generated/index.html",
+          "docs/handbook/_generated/receipt.json",
+          "docs/handbook/architecture.md",
+          "docs/handbook/capabilities-and-limits.md",
+          "docs/handbook/collaboration.md",
+          "docs/handbook/concepts/security-and-compatibility.md",
+          "docs/handbook/developer-guide/change-the-adapter.md",
+          "docs/handbook/developer-guide/maintain-evaluation.md",
+          "docs/handbook/developer-guide/repository.md",
+          "docs/handbook/developer-guide/testing.md",
+          "docs/handbook/getting-started/requirements.md",
+          "docs/handbook/guide.md",
+          "docs/handbook/how-to/call-and-handle-errors.md",
+          "docs/handbook/how-to/check-an-authorized-server.md",
+          "docs/handbook/how-to/existing-environment-launch.md",
+          "docs/handbook/how-to/plan-gpu-reruns.md",
+          "docs/handbook/how-to/rebuild-saved-report.md",
+          "docs/handbook/how-to/review-deployment.md",
+          "docs/handbook/index.md",
+          "docs/handbook/provenance-and-licences.md",
+          "docs/handbook/reference/commands.md",
+          "docs/handbook/reference/configuration.md",
+          "docs/handbook/reference/evidence-schemas-and-scoring.md",
+          "docs/handbook/reference/http.md",
+          "docs/handbook/reference/model-and-deployment-metadata.md",
+          "docs/handbook/reference/question-answer-shapes.md",
+          "docs/handbook/sidebar.json",
+          "docs/handbook/status.md",
+          "docs/handbook/tutorials/read-a-decision-offline.md",
+          "docs/handbook/tutorials/trace-saved-evidence.md",
+          "docs/verification/author-checks.txt",
+          "docs/verification/examples/offline_examples.py",
+          "docs/verification/examples/test_offline_examples.py",
+          "docs/verification/manifest.json",
+          "docs/verification/review.json",
+          "examples/CONTEXT.md",
+          "examples/client.py",
+          "examples/curl.sh",
+          "model/SHA256SUMS",
+          "model/encoder/config.json",
+          "model/model.safetensors",
+          "model/rl_agent_config.json",
+          "model/tokenizer/tokenizer.json",
+          "model/tokenizer/tokenizer_config.json",
+          "requirements.txt",
+          "server/CONTEXT.md",
+          "server/dex_server.py",
+          "tests/CONTEXT.md",
+          "tests/test_server.py"
+        ],
+        "unclassified": [],
+        "nested_owner_contracts": [
+          "AGENTS.md",
+          "CONTEXT.md",
+          "server/CONTEXT.md",
+          "benchmarks/CONTEXT.md",
+          "deploy/CONTEXT.md",
+          "examples/CONTEXT.md",
+          "tests/CONTEXT.md",
+          "docs/CONTEXT.md",
+          "docs/handbook/CONTEXT.md"
+        ],
+        "nested_owner_assessment": "All discovered Dex area contracts read. No nested independent project/vendor owner inside admitted first-party tree; .venv external vendor pruned, .git pruned; weight/raw-evidence boundaries remain with root model/evaluation owner. No blanket authored-module exclusions.",
+        "interfaces_current": 40
+      },
+      "collaboration_assessment": {
+        "landing_discoverable": true,
+        "sidebar_discoverable": true,
+        "authority": "Root CONTEXT owns purpose/runtime/evaluation/publication approvals; cards/BENCHMARKS/release notes retain claims/history; handbook status owns source-doc check limits; no duplicate queue. Real implemented decisions and contributor route explained. Synthetic demos not product/human acceptance."
+      },
+      "findings": [
+        {
+          "id": "DEX-R1",
+          "severity": "medium",
+          "blocking": true,
+          "kind": "reader rendering / consumer schema",
+          "paths": [
+            "docs/handbook/reference/evidence-schemas-and-scoring.md:25-29"
+          ],
+          "claim": "C consumer gold key shown as `id|qid` inside a three-column Markdown table without escaping the pipe.",
+          "observed": "The C row has four Markdown cells while its header and preceding rows have three. CommonMark/GFM code spans do not protect table-delimiter pipes. The key is split and the result-join cell shifts/truncates in the rendered reference. Other local tables have consistent delimiter counts.",
+          "source_evidence": [
+            "benchmarks/report.py:74-80 uses gold.get(f\"{r['id']}|{qid}\")"
+          ],
+          "minimal_fix": "Escape the pipe inside the table cell (`id\\|qid`) or move the key example outside the table. Keep actual consumer key unchanged.",
+          "validation": "Static table-cell delimiter inspection; no shared build/browser action. Recheck exact page bytes with adapter/render review after fix.",
+          "status": "resolved",
+          "resolution": "C gold-key table uses escaped id\\|qid; static table delimiter count3 matches header; source key unchanged."
+        },
+        {
+          "id": "DEX-R2",
+          "severity": "medium",
+          "blocking": true,
+          "kind": "source/claim correctness / failure behavior",
+          "paths": [
+            "docs/handbook/reference/evidence-schemas-and-scoring.md:31-47",
+            "docs/handbook/tutorials/trace-saved-evidence.md:46"
+          ],
+          "claim": "“Confidence loops skip missing answers similarly” and unqualified missing/empty/error-skip wording obscure distinct scoring vs calibration failure behavior.",
+          "observed": "score_items guards absent system/qid, then pred returns None for None/error and skips. Calibration main guards only absent system/qid, then evaluates pred and conf together. conf has no None/error guard: None at an existing qid raises on indexing/.get; a noul error/empty object can KeyError before the p-is-not-None check. Thus score_items skip behavior does not guarantee full report/calibration safely skips the same answer. Empty/malformed per-question noul answer is not normalized by pred either. Existing safe fixture tests pred and synthesized denominator, not this calibration path.",
+          "source_evidence": [
+            "benchmarks/report.py:31-47",
+            "benchmarks/report.py:84-97",
+            "benchmarks/report.py:181-190"
+          ],
+          "minimal_fix": "State exact scope: score_items skips absent system/qid and pred=None (including None/error), while malformed typed answers can still raise. Replace “Confidence loops skip missing answers similarly” with the calibration guard/eager conf-call caveat. Narrow tutorial wording to prediction-None skip and point to the failure caveat. Documentation-only correction; do not repair report code in this task.",
+          "validation": "Independent static statement-order/control-flow comparison; not a raw-evidence run or fresh reproduced failure.",
+          "status": "resolved",
+          "resolution": "Reference distinguishes system/qid guards and predNone denominator skip from eager pred+conf calibration with no None/error guard; malformed noul/empty subsets explicitly can fail. Tutorial narrows skip and links real anchor; synthetic pred-only scope explicit. Compared current report.py31-47,84-97,181-190; no product change."
+        },
+        {
+          "id": "DEX-R3",
+          "severity": "low",
+          "blocking": false,
+          "kind": "evidence scope wording",
+          "paths": [
+            "docs/handbook/developer-guide/repository.md:41",
+            "docs/handbook/status.md:49"
+          ],
+          "claim": "Legacy generated products described as “untouched” / “were not edited or rebuilt” without an explicit actor.",
+          "observed": "Author report correctly records external drift. Parent independently disclosed its earlier legacy build regenerated products; this is not a Dex author change, source change or proof. Unqualified reader phrasing can imply byte preservation across the overall work.",
+          "source_evidence": [
+            "author-dex-report.md: Concurrent external generated drift",
+            "Parent message: legacy-retirement-isolation-correction.json disclosure (not opened by reviewer)"
+          ],
+          "minimal_fix": "Qualify only the actor/scope: “not edited or rebuilt by this Dex authoring task; excluded from admission.” Do not restore, inspect, hash or accept generated products.",
+          "validation": "Receipt/parent disclosure comparison only; generated products deliberately unread.",
+          "status": "resolved",
+          "resolution": "Repository/status now qualify no-generated-write by Dex authoring actor and explicitly disclose separate parent legacy regeneration/exclusion, no byte-preservation/product proof."
+        },
+        {
+          "id": "DEX-R4",
+          "severity": "medium",
+          "blocking": true,
+          "kind": "concurrent source drift / receipt binding",
+          "paths": [
+            ".gitignore",
+            "docs/verification/review.json:snapshot.source_hashes[.gitignore]"
+          ],
+          "claim": "Frozen author snapshot remained exact throughout independent review.",
+          "observed": "At final14:25:47Z hash recheck, .gitignore changed externally from a746a57c055d2b7f2386c0e39fd978144142a5efbcdb49ead195b30b4e133272 to7ceaa886f7db8771be9f0b4867b9fe319af66b2a739ac6f3efe2c98757bf1953. Reviewer read the delta: docs generated/private ignore rules plus explicit manifest/review/two-fixture allowlist. Original model/.venv/bytecode rules retained. No docs, manifest or canonical review drift at detection. This is not a reviewer/identified Dex-author write; owner provenance not independently established. Source delta has no observed application-behavior claim effect, but frozen author receipt is stale.",
+          "source_evidence": [
+            ".gitignore current28lines at detection",
+            "docs/verification/review.json prior snapshot",
+            "Independent final exact-byte recheck2026-10-17T14:25:47.904183+00:00"
+          ],
+          "minimal_fix": "Owner confirms authority for concurrent ignore delta, preserves unrelated work and refreshes exact source/author snapshot alongside required prose fixes. Reviewer rechecks exact corrected input set. Do not restore or silently treat prior digest as current.",
+          "validation": "Both before/current text read; before/current SHA256 recorded. No Git/index command executed; no universal privacy enforcement inferred from ignore rules.",
+          "status": "resolved",
+          "resolution": "Author reports parent Task5E authority; current ignore28line delta independently read and configuration source_ref/prose/mapping correctly bound. Exact canonical author39source/29doc/manifest snapshot matches. No Git/index/effective-ignore-control test by reviewer; parent owns those separate gates."
+        }
+      ],
+      "assumptions": [
+        "Current first-party text defines adapter behavior; external runtime/metadata/historical claims retain explicitly narrower evidence.",
+        "Existing native interpreter was used as directed; no version/support health inspection.",
+        "CommonMark/GFM table delimiter rule is used for static DEX-R1; no rendered shared-site proof claimed."
+      ],
+      "constants_changed": [],
+      "effects": {
+        "commands_executed": [
+          ".venv/bin/python -B docs/verification/examples/offline_examples.py shape",
+          ".venv/bin/python -B docs/verification/examples/offline_examples.py scoring",
+          ".venv/bin/python -B -m unittest discover -s docs/verification/examples -p test_offline_examples.py -v"
+        ],
+        "reviewer_writes_only": [
+          "/tmp/hermes-docs-redo-2026-10-16/dex-independent-review.md",
+          "/tmp/hermes-docs-redo-2026-10-16/dex-independent-review.json"
+        ],
+        "canonical_writes": false,
+        "runtime_actions": false,
+        "private_payload_access": false,
+        "product_constants_changed": false,
+        "concurrent_external_source_change": ".gitignore parent Task5E delta independently read; direct parent authority confirmed; exact current source binding accepted for content scope only, no enforcement/index test by reviewer."
+      },
+      "minimal_fix_summary": [],
+      "final_exact_hash_check": {
+        "checked_at": "2026-10-17T14:42:59.745648+00:00",
+        "source_drift": [],
+        "doc_drift": [],
+        "manifest_unchanged": true,
+        "author_receipt_unchanged": true,
+        "native_snapshot_matches": true
+      },
+      "reviewed_initial_snapshot": {
+        "source_hashes": {
+          ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+          ".gitignore": "a746a57c055d2b7f2386c0e39fd978144142a5efbcdb49ead195b30b4e133272",
+          "AGENTS.md": "1695c01e2c562a4e3bc7f27ab832869b93d4c4881dfd5773db6186aade711731",
+          "BENCHMARKS.md": "aba2552f37597a91733224b1e049f7be809cf36946ad9b0fda22286ee98904d8",
+          "CITATION.cff": "221378464ec04dc777451f437befb22911ae687adec663cbbee34a90edc31dca",
+          "CONTEXT.md": "e44884505d3b728fc2cbabffc70a155d76879b2aade39289efe5f23ce6951b4e",
+          "DATA_CARD.md": "6c9db65734c7eae73a92c18f278239f89e8b64fa7047347028bd3f08ef56ed0d",
+          "Dockerfile": "15b7d804ae01ded4f2b3924a1d2709316aa35bfe8260fc5bbe8f8921e3067407",
+          "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "MODEL_CARD.md": "13a2ae1faac67c8de2ab4c0c1f16d81d9a7806890ef396d34197fe2bad5ca432",
+          "NOTICE": "37e961c9e0c0ca3f8b8e5ff065f75576eaae447ac704acd7b46a9a511280a5e3",
+          "README.md": "7ca68b0005a45bd7627db8489ec5c63f98bbb10723164a1b8ac6796100884d25",
+          "RELEASE_NOTES.md": "a6283c207e926a31d2367354e5807082ba5f3c5059e9e504d8fb768a600b009a",
+          "benchmarks/CONTEXT.md": "3fa19a947876007c86d8baacd5c02ce9a4e1a82827c7579b2a28e9f196ace6aa",
+          "benchmarks/order.py": "f8f5d1a4ed3de62bf8c438c27377166f85de708a559a9eca2f96656e57c63674",
+          "benchmarks/report.py": "629a1804db45062cac31a0a5b2f6658c104c5afe8ef1934fda0efde00130e239",
+          "benchmarks/results/jev_summary.json": "c73bf1be847cc9ab508894bb087ff64b4a66841ab81bb0da4fd4d3b220726d49",
+          "benchmarks/results/order.json": "9bc7c6f7e2ff362429a53fcd6177e1bc3b194bdbe7f1e0bd3fed98f39615df76",
+          "benchmarks/results/speed.json": "f4e1467e285bc4624b901e95386d8b11bd8b1b881445300eae311d5993df3097",
+          "benchmarks/results/tables.json": "c262e7ab2a1e6afa3d05e12ce62d66dc2657cb783c8629e309ecdb85ce0ebb13",
+          "benchmarks/results/tables.md": "441422df7957d436d7146ce23502cb96e50625b6303d1729cf7c9bf1176661ef",
+          "benchmarks/speed.py": "d02c6c957d2cec24a7faccac61068ba78ea24c31843d74f86f39b68c2201dee2",
+          "deploy/CONTEXT.md": "b05285b33142bcf5e102b8df0d949928704f4fe2131c98c964145fb5d0bbc6b6",
+          "deploy/dex.service": "0f296c01790982b55d568210217e993f2866dd3bb42946e1a25c6a286da9a5fb",
+          "docs/CONTEXT.md": "bd4318cfacf69d28dfbd2f6d262a2308fac02d1e00bb4399d386457bd8a8d77d",
+          "docs/verification/examples/offline_examples.py": "60d44bc94712df87ffd7430542626fdd34da1e4a0154b45621ac8f708c05f591",
+          "docs/verification/examples/test_offline_examples.py": "7df6d8aad591eec746d2cfec65789596ce4d26dec2c450f61d2f1f1545bd9d82",
+          "examples/CONTEXT.md": "777a64d51a42deb2b6a15cab218ddefed419eb1088c0f749b5afe4f27245bfae",
+          "examples/client.py": "d46b4e0b43920f4a20ac7e612314131fda61fc5dcb5388da1f0d7cdaf0a35b77",
+          "examples/curl.sh": "9dbd83d03265071f2290c93bb074663afe7f379adbb70b886f7102b63c1a8c25",
+          "model/SHA256SUMS": "9788416b40d6cb61588d5eedb9d1ae2b5648b4159b1acef0d1ee6e4bb22c76c4",
+          "model/encoder/config.json": "9210c6819f57796f75b6c92e74c662ebd686454d1d915c8c915ed252c3dada15",
+          "model/rl_agent_config.json": "e8752cb73c9097d350de495c64d0445e633a22a2f986da82eace7f91c338a821",
+          "model/tokenizer/tokenizer_config.json": "08d4cf3ac4dca381759441b85b91a6d40e688471dcd33d15d6649eb0a9a854d1",
+          "requirements.txt": "c1e9219416871a2eeab6021fcebf1850873b74a66cbfa3d7adc8aac37bef7b4f",
+          "server/CONTEXT.md": "6257d1a20ffaeea1e9bd4ce3334a79e6c61e48b45b72aa06cdfdb806eb45af85",
+          "server/dex_server.py": "861b5805746c9bc40defce618590efd635a65a56c3909a59148594c3e75802e3",
+          "tests/CONTEXT.md": "5d62d4b76e668db890baaa2c4700782d1dded7d92d1898036985572d22ff230e",
+          "tests/test_server.py": "4685fc6f9aaf734271dae2fd3f2f93d1562fbf8de5621293c8df6ce18a2e7246"
+        },
+        "doc_hashes": {
+          "CONTEXT.md": "359dfc4bc8220ff2d41d500c5e1ee3dcb3e7281590c0007788103de964d44f24",
+          "architecture.md": "5dd8fcef5bf4bee363f16ca3da1858fd834f3e60e5ebdece108f03259b8dbe0b",
+          "capabilities-and-limits.md": "66429a523537270469a13f3f19e0af2bdcf18fc74873e1cb4c4c6f3ea9bc3cb0",
+          "collaboration.md": "0844c5c122bfad37f03ea849e7b98cf8afd6a063b31ba91da7cd921f89e4623e",
+          "concepts/security-and-compatibility.md": "72f53d2f3bf6bbc889501f293fb3234e6ab9e528fe4d0f89da32d3a7b5392c00",
+          "developer-guide/change-the-adapter.md": "638ba1baf17d4d02fb0766a98717340afec2d4f2646b95a6dc7af562cb0848d4",
+          "developer-guide/maintain-evaluation.md": "75ef37a00893685e58a722a34080bebea3594d07cd3d1a1ee1f7dd6135956f41",
+          "developer-guide/repository.md": "3f336cede612ff94301d45e519c1c816b26ad90d793f432facbc0775d13a5122",
+          "developer-guide/testing.md": "2d1e2165aeca535aaf198fdc61311644b1446f4bca93062a159c66396dfcaa5a",
+          "getting-started/requirements.md": "b7085569dde09e20fab3bb64a5f12c5764ef9899b04c71f5db97fd9579218b77",
+          "guide.md": "1968badbfa60e2c08772815a018165d853917c949755b51b6d26fd955eff8b0e",
+          "how-to/call-and-handle-errors.md": "ea322cdf0fa40f21b9eb1977c477cf2b61add7870932bd110d86badccb27a829",
+          "how-to/check-an-authorized-server.md": "b4fff5f3fb44fe0b6af4a91a676697e7323c887251a8fcbeaaabada75a7c67e7",
+          "how-to/existing-environment-launch.md": "4e5319016c38eb51199209da10c1144b3386c424438e7130dc80300281b82521",
+          "how-to/plan-gpu-reruns.md": "4a025f1969667d3fc65687fcbd3350592b40427882b7f28b46bbc19f3df48d23",
+          "how-to/rebuild-saved-report.md": "e4a9b9cc2c4b50613fe26204c354ac6fd3c400c9ca15384d5d2fe4df2715487c",
+          "how-to/review-deployment.md": "a973c974f50d5fbcc2940d0f17131696fb5f515354e4e87d6568345ec4b4217b",
+          "index.md": "0ff051332f8a504a39f21150baf901e0aa84245ff2f389ed935e79d92054d772",
+          "provenance-and-licences.md": "cadda1e636347bfca38aa4b0b76321e799e659900c87a4e9058c5a21abd4e954",
+          "reference/commands.md": "6734a86279c7c762f1d44240e83fef4768f5a5c12b7a4e58ebe72b7e53d2fd3a",
+          "reference/configuration.md": "89d3707d927eb7f1964b838d8982753307362fca996b1534c1933c0cab012fe7",
+          "reference/evidence-schemas-and-scoring.md": "b3e07f8995a1cdc792b67f0e99bb02e6de1d3aded05f41706e5f528c417fa582",
+          "reference/http.md": "eda4d5a63517e18d5ba1ecbadc9ed6946040a95f07facc4abb74958367a35b45",
+          "reference/model-and-deployment-metadata.md": "827d4c30cdf154fb469164c856a85692522b65f28892c6d27325592b9691f57c",
+          "reference/question-answer-shapes.md": "0b60841ade6be39e99c8736a7010c19db870de9e9cd4ef85653077cd58ba76bf",
+          "sidebar.json": "62e31ce0aed6e5236a1dffb42280d906e15b1f10f383f5d0d730578181485362",
+          "status.md": "6d75bb72e08189ba187126a7f195d954994fc52f3cfb54d4629e4996fd5ede77",
+          "tutorials/read-a-decision-offline.md": "e762a475e7787b658c871affdf40bb06b4b0ce8a54c5a9986af71a49f860f743",
+          "tutorials/trace-saved-evidence.md": "e6b5066efe5d4ce655e1b8d43806ff8bb3f61f3e2283969e54c00d0362e7a506"
+        },
+        "manifest_hash": "2d243153b6355ebcc8e3c4757faf1b044d16c54978b3259cbedb21611d663218",
+        "commit": "e646d9ada02891819becc37608729220ee4febe3"
+      },
+      "snapshot_note": "Current exact final recursive Task5E binding; only .gitignore/configuration/manifest changed since accepted FIXROUND1. Directly read source/claim delta, native official snapshot exactmatch; prior substantive source/tasks/fixture evidence preserved, not restarted.",
+      "canonical_inputs_in_progress": {
+        "state": "superseded: FIXROUND1 freeze verified stable",
+        "previous_notice": {
+          "observed": {
+            "checked_at": "2026-10-17T14:26:46.516305+00:00",
+            "source_drift_from_current_receipt": [],
+            "doc_drift_from_current_receipt": [
+              "reference/configuration.md"
+            ],
+            "manifest_unchanged": false,
+            "author_review_unchanged": true
+          },
+          "author_coordination": "At14:26:46Z follow-up, reference/configuration.md and manifest also changed. Dex author audit-dex then explicitly reported parent Task5E authorization for bounded ignore-boundary documentation/map update and said author receipt/report would refresh changes-required. Do not treat reviewer snapshot as current stable; await author stable-hash notice, then independently recheck ignore/configuration/manifest/receipt/report and required findings.",
+          "acceptance": false
+        }
+      },
+      "review_round_history": [
+        {
+          "round": "initial",
+          "decision": "changes-required",
+          "snapshot": {
+            "source_hashes": {
+              ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+              ".gitignore": "a746a57c055d2b7f2386c0e39fd978144142a5efbcdb49ead195b30b4e133272",
+              "AGENTS.md": "1695c01e2c562a4e3bc7f27ab832869b93d4c4881dfd5773db6186aade711731",
+              "BENCHMARKS.md": "aba2552f37597a91733224b1e049f7be809cf36946ad9b0fda22286ee98904d8",
+              "CITATION.cff": "221378464ec04dc777451f437befb22911ae687adec663cbbee34a90edc31dca",
+              "CONTEXT.md": "e44884505d3b728fc2cbabffc70a155d76879b2aade39289efe5f23ce6951b4e",
+              "DATA_CARD.md": "6c9db65734c7eae73a92c18f278239f89e8b64fa7047347028bd3f08ef56ed0d",
+              "Dockerfile": "15b7d804ae01ded4f2b3924a1d2709316aa35bfe8260fc5bbe8f8921e3067407",
+              "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+              "MODEL_CARD.md": "13a2ae1faac67c8de2ab4c0c1f16d81d9a7806890ef396d34197fe2bad5ca432",
+              "NOTICE": "37e961c9e0c0ca3f8b8e5ff065f75576eaae447ac704acd7b46a9a511280a5e3",
+              "README.md": "7ca68b0005a45bd7627db8489ec5c63f98bbb10723164a1b8ac6796100884d25",
+              "RELEASE_NOTES.md": "a6283c207e926a31d2367354e5807082ba5f3c5059e9e504d8fb768a600b009a",
+              "benchmarks/CONTEXT.md": "3fa19a947876007c86d8baacd5c02ce9a4e1a82827c7579b2a28e9f196ace6aa",
+              "benchmarks/order.py": "f8f5d1a4ed3de62bf8c438c27377166f85de708a559a9eca2f96656e57c63674",
+              "benchmarks/report.py": "629a1804db45062cac31a0a5b2f6658c104c5afe8ef1934fda0efde00130e239",
+              "benchmarks/results/jev_summary.json": "c73bf1be847cc9ab508894bb087ff64b4a66841ab81bb0da4fd4d3b220726d49",
+              "benchmarks/results/order.json": "9bc7c6f7e2ff362429a53fcd6177e1bc3b194bdbe7f1e0bd3fed98f39615df76",
+              "benchmarks/results/speed.json": "f4e1467e285bc4624b901e95386d8b11bd8b1b881445300eae311d5993df3097",
+              "benchmarks/results/tables.json": "c262e7ab2a1e6afa3d05e12ce62d66dc2657cb783c8629e309ecdb85ce0ebb13",
+              "benchmarks/results/tables.md": "441422df7957d436d7146ce23502cb96e50625b6303d1729cf7c9bf1176661ef",
+              "benchmarks/speed.py": "d02c6c957d2cec24a7faccac61068ba78ea24c31843d74f86f39b68c2201dee2",
+              "deploy/CONTEXT.md": "b05285b33142bcf5e102b8df0d949928704f4fe2131c98c964145fb5d0bbc6b6",
+              "deploy/dex.service": "0f296c01790982b55d568210217e993f2866dd3bb42946e1a25c6a286da9a5fb",
+              "docs/CONTEXT.md": "bd4318cfacf69d28dfbd2f6d262a2308fac02d1e00bb4399d386457bd8a8d77d",
+              "docs/verification/examples/offline_examples.py": "60d44bc94712df87ffd7430542626fdd34da1e4a0154b45621ac8f708c05f591",
+              "docs/verification/examples/test_offline_examples.py": "7df6d8aad591eec746d2cfec65789596ce4d26dec2c450f61d2f1f1545bd9d82",
+              "examples/CONTEXT.md": "777a64d51a42deb2b6a15cab218ddefed419eb1088c0f749b5afe4f27245bfae",
+              "examples/client.py": "d46b4e0b43920f4a20ac7e612314131fda61fc5dcb5388da1f0d7cdaf0a35b77",
+              "examples/curl.sh": "9dbd83d03265071f2290c93bb074663afe7f379adbb70b886f7102b63c1a8c25",
+              "model/SHA256SUMS": "9788416b40d6cb61588d5eedb9d1ae2b5648b4159b1acef0d1ee6e4bb22c76c4",
+              "model/encoder/config.json": "9210c6819f57796f75b6c92e74c662ebd686454d1d915c8c915ed252c3dada15",
+              "model/rl_agent_config.json": "e8752cb73c9097d350de495c64d0445e633a22a2f986da82eace7f91c338a821",
+              "model/tokenizer/tokenizer_config.json": "08d4cf3ac4dca381759441b85b91a6d40e688471dcd33d15d6649eb0a9a854d1",
+              "requirements.txt": "c1e9219416871a2eeab6021fcebf1850873b74a66cbfa3d7adc8aac37bef7b4f",
+              "server/CONTEXT.md": "6257d1a20ffaeea1e9bd4ce3334a79e6c61e48b45b72aa06cdfdb806eb45af85",
+              "server/dex_server.py": "861b5805746c9bc40defce618590efd635a65a56c3909a59148594c3e75802e3",
+              "tests/CONTEXT.md": "5d62d4b76e668db890baaa2c4700782d1dded7d92d1898036985572d22ff230e",
+              "tests/test_server.py": "4685fc6f9aaf734271dae2fd3f2f93d1562fbf8de5621293c8df6ce18a2e7246"
+            },
+            "doc_hashes": {
+              "CONTEXT.md": "359dfc4bc8220ff2d41d500c5e1ee3dcb3e7281590c0007788103de964d44f24",
+              "architecture.md": "5dd8fcef5bf4bee363f16ca3da1858fd834f3e60e5ebdece108f03259b8dbe0b",
+              "capabilities-and-limits.md": "66429a523537270469a13f3f19e0af2bdcf18fc74873e1cb4c4c6f3ea9bc3cb0",
+              "collaboration.md": "0844c5c122bfad37f03ea849e7b98cf8afd6a063b31ba91da7cd921f89e4623e",
+              "concepts/security-and-compatibility.md": "72f53d2f3bf6bbc889501f293fb3234e6ab9e528fe4d0f89da32d3a7b5392c00",
+              "developer-guide/change-the-adapter.md": "638ba1baf17d4d02fb0766a98717340afec2d4f2646b95a6dc7af562cb0848d4",
+              "developer-guide/maintain-evaluation.md": "75ef37a00893685e58a722a34080bebea3594d07cd3d1a1ee1f7dd6135956f41",
+              "developer-guide/repository.md": "3f336cede612ff94301d45e519c1c816b26ad90d793f432facbc0775d13a5122",
+              "developer-guide/testing.md": "2d1e2165aeca535aaf198fdc61311644b1446f4bca93062a159c66396dfcaa5a",
+              "getting-started/requirements.md": "b7085569dde09e20fab3bb64a5f12c5764ef9899b04c71f5db97fd9579218b77",
+              "guide.md": "1968badbfa60e2c08772815a018165d853917c949755b51b6d26fd955eff8b0e",
+              "how-to/call-and-handle-errors.md": "ea322cdf0fa40f21b9eb1977c477cf2b61add7870932bd110d86badccb27a829",
+              "how-to/check-an-authorized-server.md": "b4fff5f3fb44fe0b6af4a91a676697e7323c887251a8fcbeaaabada75a7c67e7",
+              "how-to/existing-environment-launch.md": "4e5319016c38eb51199209da10c1144b3386c424438e7130dc80300281b82521",
+              "how-to/plan-gpu-reruns.md": "4a025f1969667d3fc65687fcbd3350592b40427882b7f28b46bbc19f3df48d23",
+              "how-to/rebuild-saved-report.md": "e4a9b9cc2c4b50613fe26204c354ac6fd3c400c9ca15384d5d2fe4df2715487c",
+              "how-to/review-deployment.md": "a973c974f50d5fbcc2940d0f17131696fb5f515354e4e87d6568345ec4b4217b",
+              "index.md": "0ff051332f8a504a39f21150baf901e0aa84245ff2f389ed935e79d92054d772",
+              "provenance-and-licences.md": "cadda1e636347bfca38aa4b0b76321e799e659900c87a4e9058c5a21abd4e954",
+              "reference/commands.md": "6734a86279c7c762f1d44240e83fef4768f5a5c12b7a4e58ebe72b7e53d2fd3a",
+              "reference/configuration.md": "89d3707d927eb7f1964b838d8982753307362fca996b1534c1933c0cab012fe7",
+              "reference/evidence-schemas-and-scoring.md": "b3e07f8995a1cdc792b67f0e99bb02e6de1d3aded05f41706e5f528c417fa582",
+              "reference/http.md": "eda4d5a63517e18d5ba1ecbadc9ed6946040a95f07facc4abb74958367a35b45",
+              "reference/model-and-deployment-metadata.md": "827d4c30cdf154fb469164c856a85692522b65f28892c6d27325592b9691f57c",
+              "reference/question-answer-shapes.md": "0b60841ade6be39e99c8736a7010c19db870de9e9cd4ef85653077cd58ba76bf",
+              "sidebar.json": "62e31ce0aed6e5236a1dffb42280d906e15b1f10f383f5d0d730578181485362",
+              "status.md": "6d75bb72e08189ba187126a7f195d954994fc52f3cfb54d4629e4996fd5ede77",
+              "tutorials/read-a-decision-offline.md": "e762a475e7787b658c871affdf40bb06b4b0ce8a54c5a9986af71a49f860f743",
+              "tutorials/trace-saved-evidence.md": "e6b5066efe5d4ce655e1b8d43806ff8bb3f61f3e2283969e54c00d0362e7a506"
+            },
+            "manifest_hash": "2d243153b6355ebcc8e3c4757faf1b044d16c54978b3259cbedb21611d663218",
+            "commit": "e646d9ada02891819becc37608729220ee4febe3"
+          },
+          "findings": [
+            {
+              "id": "DEX-R1",
+              "severity": "medium",
+              "blocking": true,
+              "kind": "reader rendering / consumer schema",
+              "paths": [
+                "docs/handbook/reference/evidence-schemas-and-scoring.md:25-29"
+              ],
+              "claim": "C consumer gold key shown as `id|qid` inside a three-column Markdown table without escaping the pipe.",
+              "observed": "The C row has four Markdown cells while its header and preceding rows have three. CommonMark/GFM code spans do not protect table-delimiter pipes. The key is split and the result-join cell shifts/truncates in the rendered reference. Other local tables have consistent delimiter counts.",
+              "source_evidence": [
+                "benchmarks/report.py:74-80 uses gold.get(f\"{r['id']}|{qid}\")"
+              ],
+              "minimal_fix": "Escape the pipe inside the table cell (`id\\|qid`) or move the key example outside the table. Keep actual consumer key unchanged.",
+              "validation": "Static table-cell delimiter inspection; no shared build/browser action. Recheck exact page bytes with adapter/render review after fix."
+            },
+            {
+              "id": "DEX-R2",
+              "severity": "medium",
+              "blocking": true,
+              "kind": "source/claim correctness / failure behavior",
+              "paths": [
+                "docs/handbook/reference/evidence-schemas-and-scoring.md:31-47",
+                "docs/handbook/tutorials/trace-saved-evidence.md:46"
+              ],
+              "claim": "“Confidence loops skip missing answers similarly” and unqualified missing/empty/error-skip wording obscure distinct scoring vs calibration failure behavior.",
+              "observed": "score_items guards absent system/qid, then pred returns None for None/error and skips. Calibration main guards only absent system/qid, then evaluates pred and conf together. conf has no None/error guard: None at an existing qid raises on indexing/.get; a noul error/empty object can KeyError before the p-is-not-None check. Thus score_items skip behavior does not guarantee full report/calibration safely skips the same answer. Empty/malformed per-question noul answer is not normalized by pred either. Existing safe fixture tests pred and synthesized denominator, not this calibration path.",
+              "source_evidence": [
+                "benchmarks/report.py:31-47",
+                "benchmarks/report.py:84-97",
+                "benchmarks/report.py:181-190"
+              ],
+              "minimal_fix": "State exact scope: score_items skips absent system/qid and pred=None (including None/error), while malformed typed answers can still raise. Replace “Confidence loops skip missing answers similarly” with the calibration guard/eager conf-call caveat. Narrow tutorial wording to prediction-None skip and point to the failure caveat. Documentation-only correction; do not repair report code in this task.",
+              "validation": "Independent static statement-order/control-flow comparison; not a raw-evidence run or fresh reproduced failure."
+            },
+            {
+              "id": "DEX-R3",
+              "severity": "low",
+              "blocking": false,
+              "kind": "evidence scope wording",
+              "paths": [
+                "docs/handbook/developer-guide/repository.md:41",
+                "docs/handbook/status.md:49"
+              ],
+              "claim": "Legacy generated products described as “untouched” / “were not edited or rebuilt” without an explicit actor.",
+              "observed": "Author report correctly records external drift. Parent independently disclosed its earlier legacy build regenerated products; this is not a Dex author change, source change or proof. Unqualified reader phrasing can imply byte preservation across the overall work.",
+              "source_evidence": [
+                "author-dex-report.md: Concurrent external generated drift",
+                "Parent message: legacy-retirement-isolation-correction.json disclosure (not opened by reviewer)"
+              ],
+              "minimal_fix": "Qualify only the actor/scope: “not edited or rebuilt by this Dex authoring task; excluded from admission.” Do not restore, inspect, hash or accept generated products.",
+              "validation": "Receipt/parent disclosure comparison only; generated products deliberately unread."
+            },
+            {
+              "id": "DEX-R4",
+              "severity": "medium",
+              "blocking": true,
+              "kind": "concurrent source drift / receipt binding",
+              "paths": [
+                ".gitignore",
+                "docs/verification/review.json:snapshot.source_hashes[.gitignore]"
+              ],
+              "claim": "Frozen author snapshot remained exact throughout independent review.",
+              "observed": "At final14:25:47Z hash recheck, .gitignore changed externally from a746a57c055d2b7f2386c0e39fd978144142a5efbcdb49ead195b30b4e133272 to7ceaa886f7db8771be9f0b4867b9fe319af66b2a739ac6f3efe2c98757bf1953. Reviewer read the delta: docs generated/private ignore rules plus explicit manifest/review/two-fixture allowlist. Original model/.venv/bytecode rules retained. No docs, manifest or canonical review drift at detection. This is not a reviewer/identified Dex-author write; owner provenance not independently established. Source delta has no observed application-behavior claim effect, but frozen author receipt is stale.",
+              "source_evidence": [
+                ".gitignore current28lines at detection",
+                "docs/verification/review.json prior snapshot",
+                "Independent final exact-byte recheck2026-10-17T14:25:47.904183+00:00"
+              ],
+              "minimal_fix": "Owner confirms authority for concurrent ignore delta, preserves unrelated work and refreshes exact source/author snapshot alongside required prose fixes. Reviewer rechecks exact corrected input set. Do not restore or silently treat prior digest as current.",
+              "validation": "Both before/current text read; before/current SHA256 recorded. No Git/index command executed; no universal privacy enforcement inferred from ignore rules."
+            }
+          ],
+          "late_input_notice": {
+            "observed": {
+              "checked_at": "2026-10-17T14:26:46.516305+00:00",
+              "source_drift_from_current_receipt": [],
+              "doc_drift_from_current_receipt": [
+                "reference/configuration.md"
+              ],
+              "manifest_unchanged": false,
+              "author_review_unchanged": true
+            },
+            "author_coordination": "At14:26:46Z follow-up, reference/configuration.md and manifest also changed. Dex author audit-dex then explicitly reported parent Task5E authorization for bounded ignore-boundary documentation/map update and said author receipt/report would refresh changes-required. Do not treat reviewer snapshot as current stable; await author stable-hash notice, then independently recheck ignore/configuration/manifest/receipt/report and required findings.",
+            "acceptance": false
+          }
+        }
+      ],
+      "acceptance_scope": "Independent Dex source/content/task acceptance for exact final recursive Task5E snapshot only. Prior R1–R4/content/tasks preserved for unchanged inputs. Not runtime/model/provenance/rights/human/shared-site/effective-ignore/submitted-index acceptance; canonical receipt remains author changes-required until faithful owner normalization.",
+      "analysis_checks": [
+        {
+          "command": "Read-only Python text/inventory/hash inspection in orchestration REPL (not project import/test)",
+          "effects": "os.walk metadata outside named .git/.venv/__pycache__ prunes; read only declared text sources/pages/control receipts; SHA256 only admitted/declared bytes",
+          "exit": null,
+          "outcome": {
+            "inventory_files": 94,
+            "source_inputs": 39,
+            "handbook_inputs": 29,
+            "unclassified": [],
+            "symlinks": [],
+            "author_comparison": {
+              "author_snapshot_source_drift": [],
+              "author_snapshot_doc_drift": [],
+              "author_manifest_matches": true,
+              "original_audit_source_drift": []
+            }
+          }
+        },
+        {
+          "command": "Read-only text frontmatter/source-range/sidebar/link/table-delimiter inspection",
+          "effects": "Only already-read strings inspected; no product execution/render/build",
+          "exit": null,
+          "outcome": {
+            "structure": {
+              "missing_nav": [],
+              "unknown_nav": [],
+              "duplicate_nav": [],
+              "source_ref_findings": []
+            },
+            "links": [],
+            "privacy_markers": "Only public synthetic loopback URL literals in2pages; no machine paths/private links/MDX imports/new assets",
+            "table_width_findings": [
+              {
+                "path": "docs/handbook/reference/evidence-schemas-and-scoring.md",
+                "line": 29,
+                "columns": 4,
+                "previous_columns": 3,
+                "text": "| C exam JSONL + external gold JSON | id, dataset, questions; gold key `id|qid` | `C-<system>.json` row ID -> qid answer; absent gold skipped |"
+              }
+            ]
+          }
+        },
+        {
+          "command": "Native portal snapshot/check",
+          "executed": false,
+          "outcome": "Not run pending exact approved absolute tool path; author relative path insufficient. No inference from author snapshot/check receipt."
+        },
+        {
+          "command": "Final exact byte recheck and late .gitignore delta inspection",
+          "effects": "Read/hashes only; no canonical writes or git/index commands",
+          "outcome": {
+            "id": "DEX-R4",
+            "severity": "medium",
+            "blocking": true,
+            "kind": "concurrent source drift / receipt binding",
+            "paths": [
+              ".gitignore",
+              "docs/verification/review.json:snapshot.source_hashes[.gitignore]"
+            ],
+            "claim": "Frozen author snapshot remained exact throughout independent review.",
+            "observed": "At final14:25:47Z hash recheck, .gitignore changed externally from a746a57c055d2b7f2386c0e39fd978144142a5efbcdb49ead195b30b4e133272 to7ceaa886f7db8771be9f0b4867b9fe319af66b2a739ac6f3efe2c98757bf1953. Reviewer read the delta: docs generated/private ignore rules plus explicit manifest/review/two-fixture allowlist. Original model/.venv/bytecode rules retained. No docs, manifest or canonical review drift at detection. This is not a reviewer/identified Dex-author write; owner provenance not independently established. Source delta has no observed application-behavior claim effect, but frozen author receipt is stale.",
+            "source_evidence": [
+              ".gitignore current28lines at detection",
+              "docs/verification/review.json prior snapshot",
+              "Independent final exact-byte recheck2026-10-17T14:25:47.904183+00:00"
+            ],
+            "minimal_fix": "Owner confirms authority for concurrent ignore delta, preserves unrelated work and refreshes exact source/author snapshot alongside required prose fixes. Reviewer rechecks exact corrected input set. Do not restore or silently treat prior digest as current.",
+            "validation": "Both before/current text read; before/current SHA256 recorded. No Git/index command executed; no universal privacy enforcement inferred from ignore rules."
+          },
+          "exit": null
+        }
+      ],
+      "initial_fixture_checks": [
+        {
+          "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py shape",
+          "cwd": "/home/zack/Projects/dex",
+          "exit_code": 0,
+          "output": "{\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}\n",
+          "duration": 0.048640414024703205
+        },
+        {
+          "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py scoring",
+          "cwd": "/home/zack/Projects/dex",
+          "exit_code": 0,
+          "output": "{\"correct\": 3, \"predictions\": [\"refund\", 2, true, null], \"scored\": 3}\n",
+          "duration": 0.04514714400283992
+        },
+        {
+          "command": ".venv/bin/python -B -m unittest discover -s docs/verification/examples -p test_offline_examples.py -v",
+          "cwd": "/home/zack/Projects/dex",
+          "exit_code": 0,
+          "output": "test_scoring_matches_human_labels_and_rejects_missing_answer (test_offline_examples.OfflineExamples.test_scoring_matches_human_labels_and_rejects_missing_answer) ... ok\ntest_shape_uses_real_filter_and_preserves_input (test_offline_examples.OfflineExamples.test_shape_uses_real_filter_and_preserves_input) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nOK\n",
+          "duration": 0.06622869498096406
+        }
+      ],
+      "interface_observations": [
+        {
+          "interface": "post-decision",
+          "docs": [
+            "reference/http",
+            "reference/question-answer-shapes",
+            "architecture"
+          ],
+          "claims_reviewed": [
+            "three-exact-aliases",
+            "path-before-auth",
+            "positive-byte-length-max1000000",
+            "locked-system-one-delegation",
+            "runtime-usage-cost-zero",
+            "default-vs-extras-answer-boundary"
+          ],
+          "source_evidence": "server/dex_server.py:32-45,78-98",
+          "observation": "Exact aliases; path before auth; byte gate then JSON; only system_one under lock; usage cost0; filter/extras response boundary. Documentation agrees.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "health",
+          "docs": [
+            "reference/http",
+            "concepts/security-and-compatibility"
+          ],
+          "claims_reviewed": [
+            "unauthenticated-health",
+            "agent-loaded-model-label-device-fixed-dtype",
+            "not-provenance-or-quality"
+          ],
+          "source_evidence": "server/dex_server.py:72-76,104-108",
+          "observation": "Health unauthenticated; fixed model/dtype, agent device; load/warmup before main listener. Not a provenance/quality proof; docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "http-errors",
+          "docs": [
+            "reference/http",
+            "how-to/call-and-handle-errors"
+          ],
+          "claims_reviewed": [
+            "401-404-413-422-conditions",
+            "truncated-exception-privacy",
+            "length-outside-try-nonobject-other-exceptions-unhandled"
+          ],
+          "source_evidence": "server/dex_server.py:78-98",
+          "observation": "401/404/413/422 conditions and uncaught length/nonobject/result paths match. Status/error claims are static only.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "jev-shape",
+          "docs": [
+            "reference/question-answer-shapes",
+            "tutorials/read-a-decision-offline",
+            "developer-guide/change-the-adapter"
+          ],
+          "claims_reviewed": [
+            "per-type-present-field-whitelist",
+            "unknown-type-key-error",
+            "no-validation-or-input-mutation",
+            "extras-bypass"
+          ],
+          "source_evidence": "server/dex_server.py:42-45,98",
+          "observation": "New dictionaries whitelist present fields by type, no completeness validation, unknown type can KeyError; extras bypasses. Native synthetic shape agrees.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "load-startup",
+          "docs": [
+            "architecture",
+            "how-to/existing-environment-launch",
+            "reference/commands"
+          ],
+          "claims_reviewed": [
+            "agent-cpu-encoder-bf16-conditional-cuda",
+            "load-warmup-before-listen",
+            "port-argv-default18766",
+            "no-argparse-help",
+            "uncaught-startup-failure"
+          ],
+          "source_evidence": "server/dex_server.py:48-57,104-108",
+          "observation": "CPU Agent then encoder bf16; exact cuda+availability move; import-time settings, int port, warmup/listen. No help parser/runtime run.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "env-dex-model",
+          "docs": [
+            "reference/configuration",
+            "how-to/existing-environment-launch"
+          ],
+          "claims_reviewed": [
+            "DEX_MODEL-default-effect-read-time",
+            "no-env-file-loader-or-precedence-stack"
+          ],
+          "source_evidence": "server/dex_server.py:33,50",
+          "observation": "Import-time repo-relative default directory passed to Agent, no download/loader precedence. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "env-dex-device",
+          "docs": [
+            "reference/configuration",
+            "how-to/existing-environment-launch"
+          ],
+          "claims_reviewed": [
+            "DEX_DEVICE-default-effect-read-time",
+            "no-env-file-loader-or-precedence-stack"
+          ],
+          "source_evidence": "server/dex_server.py:52-56",
+          "observation": "load-time exact cuda default; only available CUDA changes model/device/dtype; otherwise CPU retained. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "env-dex-host",
+          "docs": [
+            "reference/configuration",
+            "how-to/existing-environment-launch"
+          ],
+          "claims_reviewed": [
+            "DEX_HOST-default-effect-read-time",
+            "no-env-file-loader-or-precedence-stack"
+          ],
+          "source_evidence": "server/dex_server.py:108",
+          "observation": "Read at main listener creation, default127.0.0.1; docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "env-dex-token",
+          "docs": [
+            "reference/configuration",
+            "how-to/existing-environment-launch"
+          ],
+          "claims_reviewed": [
+            "DEX_TOKEN-default-effect-read-time",
+            "no-env-file-loader-or-precedence-stack"
+          ],
+          "source_evidence": "server/dex_server.py:34,69-70,78-84",
+          "observation": "Captured import-time optional exact bearer on accepted POST, health unaffected. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "env-dex-extras",
+          "docs": [
+            "reference/configuration",
+            "how-to/existing-environment-launch"
+          ],
+          "claims_reviewed": [
+            "DEX_EXTRAS-default-effect-read-time",
+            "no-env-file-loader-or-precedence-stack"
+          ],
+          "source_evidence": "server/dex_server.py:39-45,98",
+          "observation": "Only exact1 at import, raw runtime answers vs filter. Exact extras inventory not claimed. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "server-constants",
+          "docs": [
+            "reference/configuration",
+            "reference/http"
+          ],
+          "claims_reviewed": [
+            "NAME-model-label",
+            "MAX_BODY-bytes",
+            "POST_PATHS-literal",
+            "global-LOCK-scoring-only"
+          ],
+          "source_evidence": "server/dex_server.py:32-39,85-98",
+          "observation": "NAME dex-1b, MAX_BODY1000000bytes, exact POST_PATHS, global scoring lock. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "decide-client",
+          "docs": [
+            "reference/commands",
+            "how-to/call-and-handle-errors"
+          ],
+          "claims_reviewed": [
+            "state-questions-url-token-signature",
+            "optional-bearer-timeout60",
+            "answers-only",
+            "no-retry-or-error-translation",
+            "fixed-synthetic-main"
+          ],
+          "source_evidence": "examples/client.py:5-20",
+          "observation": "decide(state,questions,url=URL,token=None); optional header, timeout60, answers only; main synthetic fixed request. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "curl-example",
+          "docs": [
+            "reference/commands",
+            "how-to/call-and-handle-errors",
+            "tutorials/read-a-decision-offline"
+          ],
+          "claims_reviewed": [
+            "fixed-loopback-three-types",
+            "no-bearer-no-curl-http-fail",
+            "formatter-pipeline-not-success-proof"
+          ],
+          "source_evidence": "examples/curl.sh:1-10",
+          "observation": "Fixed loopback three-type POST, no auth/fail option, formatter pipeline not HTTP proof. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "live-smoke",
+          "docs": [
+            "reference/commands",
+            "developer-guide/testing",
+            "how-to/check-an-authorized-server"
+          ],
+          "claims_reviewed": [
+            "base-url-argv-default",
+            "12named-checks",
+            "live-top-level-effects",
+            "exit0-or1-plus-uncaught-errors",
+            "no-auth-extras-off",
+            "coverage-and-gaps"
+          ],
+          "source_evidence": "tests/test_server.py:1-45",
+          "observation": "Read as text only: 3inference aliases+invalidPOST+health,12named checks, exact fields/noauth/extras-off, exits logical0/1 but uncaught errors. Docs agree. Never imported/run.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "report-cli",
+          "docs": [
+            "reference/commands",
+            "how-to/rebuild-saved-report",
+            "developer-guide/maintain-evaluation"
+          ],
+          "claims_reviewed": [
+            "no-args-or-dry-run",
+            "reads-retained-data-and-aggregates",
+            "writes-four-fixed-outputs",
+            "no-inference-or-prose-index-rewrite",
+            "uncaught-file-schema-math-errors"
+          ],
+          "source_evidence": "benchmarks/report.py:11-18,59-81,135-216",
+          "observation": "No flags/dry-run; full saved data/results reads, fixed4outputs and chart mkdir; no model/prose/index rewrite. Docs agree, not executed.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "report-pure-functions",
+          "docs": [
+            "reference/evidence-schemas-and-scoring",
+            "tutorials/trace-saved-evidence"
+          ],
+          "claims_reviewed": [
+            "jl-json-lines",
+            "wilson-z1point96",
+            "pred-choice-score-argmax-noul-threshold",
+            "conf-noul-max-probability",
+            "cell-n-a",
+            "ece15bins"
+          ],
+          "source_evidence": "benchmarks/report.py:17-107,181-190",
+          "observation": "Prediction/threshold/Wilson/ECE documented; real pred exercised synthetically. Failure scope differs in eager conf calibration path; DEX-R2 required. FIXROUND1 independently rechecked; DEX-R1/R2 resolved as recorded below.",
+          "verdict": "consistent-with-reviewed-source-after-FIXROUND1"
+        },
+        {
+          "interface": "report-joins",
+          "docs": [
+            "reference/evidence-schemas-and-scoring",
+            "developer-guide/maintain-evaluation"
+          ],
+          "claims_reviewed": [
+            "A-single-qid-B-q-C-external-gold",
+            "row-id-system-answer-joins",
+            "missing-files-conditional-load",
+            "missing-error-answer-skipped-denominator",
+            "pool-and-group-counts"
+          ],
+          "source_evidence": "benchmarks/report.py:55-97",
+          "observation": "A oneqid/Bq/Cexternalgold, existing-result files only, rowid/qid joins and pred-None denominator skip. C Markdown table delimiter defect DEX-R1; narrow empty/error wording DEX-R2. FIXROUND1 independently rechecked; DEX-R1/R2 resolved as recorded below.",
+          "verdict": "consistent-with-reviewed-source-after-FIXROUND1"
+        },
+        {
+          "interface": "report-rendering",
+          "docs": [
+            "reference/evidence-schemas-and-scoring",
+            "how-to/rebuild-saved-report"
+          ],
+          "claims_reviewed": [
+            "SYS-NAME-fixed-systems",
+            "trusted-label-SVG-interpolation-fixed-palette",
+            "tables-md-headline-json-two-svgs",
+            "fixed-published-speed-order-inputs-not-reruns"
+          ],
+          "source_evidence": "benchmarks/report.py:110-211",
+          "observation": "Fixed palette/names, trusted labels interpolated; tables.md+headlineJSON+2SVGs; published speed/order names not reruns. Source read only; no charts read/generated.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "speed-cli",
+          "docs": [
+            "reference/commands",
+            "how-to/plan-gpu-reruns"
+          ],
+          "claims_reviewed": [
+            "stock-required-dex-out-defaults",
+            "argparse-help-usage2-torch-import-first",
+            "gpu-load-effects",
+            "no-HTTP-Jev-main-despite-docstring",
+            "separate-rerun-file"
+          ],
+          "source_evidence": "benchmarks/speed.py:17,57-79",
+          "observation": "Torch import before argparse, required stock, dex/out defaults, localGPU-only current main, no HTTP/Jev loop, separate rerun output. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "speed-method",
+          "docs": [
+            "reference/evidence-schemas-and-scoring",
+            "developer-guide/maintain-evaluation"
+          ],
+          "claims_reviewed": [
+            "questions-synthetic-short-long-workload",
+            "3warmup15reps-1-3-5-10-15",
+            "median-sorted-index-p95",
+            "gpu-process-allocation-not-baseline-subtracted",
+            "local-dex-stock-only"
+          ],
+          "source_evidence": "benchmarks/speed.py:22-54,65-74",
+          "observation": "Synthetic short/long and15questions;3warm+15reps across1/3/5/10/15; median/sorted-indexp95; allocation not baseline-subtracted. Docs agree, no measurements run.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "order-cli",
+          "docs": [
+            "reference/commands",
+            "how-to/plan-gpu-reruns"
+          ],
+          "claims_reviewed": [
+            "stock-required-n400-out-default",
+            "no-dex-no-Jev-parameter",
+            "argparse-usage2-torch-first",
+            "no-n-positivity-zero-denominator-error"
+          ],
+          "source_evidence": "benchmarks/order.py:17,34-84",
+          "observation": "Required stock,n400,out rerun, no dex/Jev flag, no positivity guard, Torch before parse. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "order-method",
+          "docs": [
+            "reference/evidence-schemas-and-scoring",
+            "developer-guide/maintain-evaluation"
+          ],
+          "claims_reviewed": [
+            "load-server-first-glob",
+            "A-B-choice-atleast3",
+            "seed3-firstN",
+            "criteria-reversed-same-keys-text",
+            "null-skip-flip-accuracy-original-reversed"
+          ],
+          "source_evidence": "benchmarks/order.py:22-31,41-79",
+          "observation": "First server glob, A/Bchoice>=3,seed3sliceN, samekey/text reverse,nullchoice skip, flips/accuracy zero denominator risk. Docs agree, no payloads/run.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "jev-summary",
+          "docs": [
+            "reference/evidence-schemas-and-scoring"
+          ],
+          "claims_reviewed": [
+            "cells-question-correct-pool-label",
+            "disagreement-counts",
+            "calibration-summary-not-recollection"
+          ],
+          "source_evidence": "benchmarks/results/jev_summary.json; benchmarks/report.py:139-141,169-179",
+          "observation": "cells/[questions,correct],disagree,calibration fields read and consumer compared. Historical aggregate injection not recollection.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "saved-speed",
+          "docs": [
+            "reference/evidence-schemas-and-scoring"
+          ],
+          "claims_reviewed": [
+            "gpu-weights-memory-cells-array",
+            "published-Jev-api-not-current-rerun"
+          ],
+          "source_evidence": "benchmarks/results/speed.json; benchmarks/report.py:196-204",
+          "observation": "gpu/weights/model gpu_gb+cells lists, published jev_api extra; docs agree; hardware not queried.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "saved-order",
+          "docs": [
+            "reference/evidence-schemas-and-scoring"
+          ],
+          "claims_reviewed": [
+            "questions-flip-original-reversed-accuracy",
+            "published-Jev-not-current-rerun"
+          ],
+          "source_evidence": "benchmarks/results/order.json; benchmarks/report.py:205-208",
+          "observation": "questions/flip/aswritten/reversed per-system summaries include Jev; docs distinguish rerun omission.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "saved-headline",
+          "docs": [
+            "reference/evidence-schemas-and-scoring"
+          ],
+          "claims_reviewed": [
+            "headline-rates-only-historical-not-recomputed"
+          ],
+          "source_evidence": "benchmarks/results/tables.json; benchmarks/report.py:152-154,210-211",
+          "observation": "Only overall headline rates; not original predictions or fresh accuracy. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "runtime-model-config",
+          "docs": [
+            "reference/model-and-deployment-metadata",
+            "provenance-and-licences"
+          ],
+          "claims_reviewed": [
+            "all-encoder-head-limits-costs-temperatures-model-training-fields",
+            "runtime-owned-not-public-adapter-options",
+            "metadata-not-weight-attestation"
+          ],
+          "source_evidence": "model/rl_agent_config.json:1-33",
+          "observation": "All small metadata fields/training values compared; runtime-owned, not public adapter tuning interface or trainer/artifact proof. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "encoder-config",
+          "docs": [
+            "reference/model-and-deployment-metadata"
+          ],
+          "claims_reviewed": [
+            "all-top-level-encoder-settings",
+            "token-position-dimensions-architecture-version",
+            "not-runtime-input-support-or-provenance-proof"
+          ],
+          "source_evidence": "model/encoder/config.json:1-85",
+          "observation": "All top-level fields and nested rope/layer entries compared to metadata prose; observed architecture/dimensions not provenance or supported token limit. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "tokenizer-config",
+          "docs": [
+            "reference/model-and-deployment-metadata"
+          ],
+          "claims_reviewed": [
+            "all-tokenizer-settings",
+            "length8192-local-files-only-false-distinct-runtime-limit"
+          ],
+          "source_evidence": "model/tokenizer/tokenizer_config.json:1-15",
+          "observation": "All keys compared,8192 vs runtime1792 distinct,local_files_onlyfalse metadata not runtime behavior proof. Vocabulary unread.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "weight-checksum",
+          "docs": [
+            "reference/model-and-deployment-metadata",
+            "provenance-and-licences"
+          ],
+          "claims_reviewed": [
+            "recorded-checksum-not-compared",
+            "no-weight-read"
+          ],
+          "source_evidence": "model/SHA256SUMS:1",
+          "observation": "Recorded checksum text only, no weight access/hash/comparison; docs preserve that limit.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "requirements",
+          "docs": [
+            "reference/configuration",
+            "getting-started/requirements"
+          ],
+          "claims_reviewed": [
+            "minimum-only-five-packages",
+            "comment-tested-versions-not-reverified",
+            "no-lock-or-supported-host-matrix"
+          ],
+          "source_evidence": "requirements.txt:1-6",
+          "observation": "5packages minima/unpinned; tested-version comments not independently verified, no lock/support matrix. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "cpu-container",
+          "docs": [
+            "reference/model-and-deployment-metadata",
+            "how-to/review-deployment"
+          ],
+          "claims_reviewed": [
+            "python312-base-copy-model-server",
+            "cpu-offline-bind-all-env",
+            "expose-and-cmd18766",
+            "no-fresh-build-or-installed-proof"
+          ],
+          "source_evidence": "Dockerfile:1-10",
+          "observation": "python3.12-slim,pip resolution,COPYserver/model,cpu/offline1/bindall,18766. Docs distinguish definition from run/build/exposure authorization.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "user-unit",
+          "docs": [
+            "reference/model-and-deployment-metadata",
+            "how-to/review-deployment"
+          ],
+          "claims_reviewed": [
+            "home-dex-paths-offline-env-exec",
+            "restart-onfailure5-defaulttarget-network",
+            "activation-comments-not-authorization",
+            "no-TLS-token-hardening-policy"
+          ],
+          "source_evidence": "deploy/dex.service:1-16",
+          "observation": "%h/dex paths,offline1,ExecStart18766,restartfailure5,network/defaulttarget,no WorkingDirectory/token/TLS/hardening. Docs agree; no service queries.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "identity-authority",
+          "docs": [
+            "provenance-and-licences",
+            "collaboration",
+            "status"
+          ],
+          "claims_reviewed": [
+            "preserve-Laya-Ettin-conflict",
+            "runtime-costly-eval-publication-approval",
+            "weights-rows-no-copy"
+          ],
+          "source_evidence": "AGENTS.md:5; CONTEXT.md:24-44; MODEL_CARD.md:3",
+          "observation": "Laya-vs-Ettin contradiction retained, root human/runtime/evaluation/publication authority and artifact no-copy boundaries preserved. Not resolved by metadata/docs.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "release-and-data-limits",
+          "docs": [
+            "provenance-and-licences",
+            "concepts/security-and-compatibility"
+          ],
+          "claims_reviewed": [
+            "training-data-absent",
+            "dataset-licences-retained",
+            "public-PII-possible",
+            "no-typed-no-leakage-guarantee"
+          ],
+          "source_evidence": "DATA_CARD.md:3-30; NOTICE; LICENSE; CITATION.cff; RELEASE_NOTES.md",
+          "observation": "Absent training data, varied dataset licences/publicPII; typed output not no-leak guarantee. Recorded licensing/history attribution not independent rights clearance. Docs agree.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "historical-benchmark",
+          "docs": [
+            "capabilities-and-limits",
+            "reference/evidence-schemas-and-scoring",
+            "status"
+          ],
+          "claims_reviewed": [
+            "dated-A-B-C-cohorts",
+            "single-run-English-token-option-concurrency-limits",
+            "Index-selfrun-not-board-unsupported-wrong"
+          ],
+          "source_evidence": "BENCHMARKS.md:3-154; README.md:33-91; MODEL_CARD.md:37-71",
+          "observation": "DatedA/B/Ccounts/rates/weaknesses and selfrunIndex qualified; raw accuracy not recomputed. Historical narrative overclaims are not repeated as certainty.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "docs-hook-wrapper",
+          "docs": [
+            "developer-guide/testing",
+            "developer-guide/change-the-adapter"
+          ],
+          "claims_reviewed": [
+            "wrapper-presence-not-effective-hook-enforcement",
+            "no-staging-or-factory-execution"
+          ],
+          "source_evidence": ".githooks/docs-pre-commit:1-4",
+          "observation": "Wrapper delegates external factory; presence is not hook activation or universal enforcement. Not run or edited.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "offline-fixtures",
+          "docs": [
+            "tutorials/read-a-decision-offline",
+            "tutorials/trace-saved-evidence",
+            "developer-guide/testing"
+          ],
+          "claims_reviewed": [
+            "AST-select-pure-functions-no-module-import",
+            "synthetic-data-only",
+            "shape-and-scoring-cli",
+            "no-bytecode-with-B",
+            "no-product-quality-proof"
+          ],
+          "source_evidence": "docs/verification/examples/offline_examples.py:1-56",
+          "observation": "Reviewed stdlib ASTselect real pure functions only/synthetic values, no productmodule import/rawdata/socket/write; native shape/scoring exit0. Not a general sandbox.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "offline-fixture-tests",
+          "docs": [
+            "developer-guide/testing",
+            "status"
+          ],
+          "claims_reviewed": [
+            "two-tests-red-green",
+            "author-only-not-independent-acceptance"
+          ],
+          "source_evidence": "docs/verification/examples/test_offline_examples.py:1-18",
+          "observation": "2whole-result assertions; fresh native test exit0/OK. Author RED history remains author evidence, not independently repeated or product acceptance.",
+          "verdict": "consistent-with-reviewed-source"
+        },
+        {
+          "interface": "docs-git-tracking",
+          "docs": [
+            "reference/configuration#git-tracking-boundary-for-documentation"
+          ],
+          "claims_reviewed": [
+            "model-venv-bytecode-remain-ignored",
+            "recursive-doc-generated-build-node-modules-fixture-and-handbook-env-credentials-log-db-forms-ignored",
+            "exact-manifest-review-two-safe-fixture-exceptions-only",
+            "assets-not-approved",
+            "ignored-does-not-mean-untracked-or-accepted-no-stage-removal"
+          ],
+          "source_evidence": ".gitignore:1-25; current reference/configuration Git tracking boundary; current manifest",
+          "observation": "/docs/**/{_generated,.generated,build,node_modules,.fixture}/ forms recursively cover docs; /docs/handbook/**/ sensitive env/credential/log/db patterns match explicit handbook at-every-depth prose. Original model/venv/bytecode, handbook assets exclusion and manifest/review/twoexactfixture exceptions remain. Ordinary discovery, not file-access/security/tracked-removal/forceadd/acceptance limits retained. No new product behavior.",
+          "verdict": "consistent-with-reviewed-source"
+        }
+      ],
+      "fixround1": {
+        "reviewed_at": "2026-10-17T14:33:33.538805+00:00",
+        "scope": "Only corrected4readerpage deltas plus bounded Task5E config/ignore/map/receipt; unchanged bytes hash-compared, not broadsource reaudit",
+        "parent_authority": "Parent directly confirmed FIXROUND1 R1–R4 and Task5E known7ceaa886 ignore delta; official adapter/schema read-only paths explicitly authorized.",
+        "author_receipt_sha256": "9685532d66a0a7d4a95b3bda8e9e186271e7f9a568d96d6a23f2512fac41b770",
+        "author_report_sha256": "75510b55fbbc0333ff0a3cb473e53cc04b5d04e715032a7cd2855f768a17f780",
+        "comparison": {
+          "author_snapshot_source_drift": [],
+          "author_snapshot_doc_drift": [],
+          "manifest_matches": true,
+          "source_deltas_from_initial": [
+            ".gitignore"
+          ],
+          "doc_deltas_from_initial": [
+            "developer-guide/repository.md",
+            "reference/configuration.md",
+            "reference/evidence-schemas-and-scoring.md",
+            "status.md",
+            "tutorials/trace-saved-evidence.md"
+          ],
+          "author_review_sha256": "9685532d66a0a7d4a95b3bda8e9e186271e7f9a568d96d6a23f2512fac41b770"
+        },
+        "static_findings": [],
+        "resolutions": [
+          {
+            "id": "DEX-R1",
+            "result": "resolved",
+            "observation": "C gold-key table uses escaped id\\|qid; static table delimiter count3 matches header; source key unchanged."
+          },
+          {
+            "id": "DEX-R2",
+            "result": "resolved",
+            "observation": "Reference distinguishes system/qid guards and predNone denominator skip from eager pred+conf calibration with no None/error guard; malformed noul/empty subsets explicitly can fail. Tutorial narrows skip and links real anchor; synthetic pred-only scope explicit. Compared current report.py31-47,84-97,181-190; no product change."
+          },
+          {
+            "id": "DEX-R3",
+            "result": "resolved",
+            "observation": "Repository/status now qualify no-generated-write by Dex authoring actor and explicitly disclose separate parent legacy regeneration/exclusion, no byte-preservation/product proof."
+          },
+          {
+            "id": "DEX-R4",
+            "result": "resolved-for-content-review",
+            "observation": "Author reports parent Task5E authority; current ignore28line delta independently read and configuration source_ref/prose/mapping correctly bound. Exact canonical author39source/29doc/manifest snapshot matches. No Git/index/effective-ignore-control test by reviewer; parent owns those separate gates."
+          }
+        ],
+        "fixture_checks": [
+          {
+            "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py shape",
+            "cwd": "/home/zack/Projects/dex",
+            "exit_code": 0,
+            "output": "{\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}\n",
+            "duration": 0.04615261603612453,
+            "effects": "Same reviewed unchanged fixture/selected-source hashes; synthetic memory/stdout only, -B, no runtime/rawpayload/network/files"
+          },
+          {
+            "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py scoring",
+            "cwd": "/home/zack/Projects/dex",
+            "exit_code": 0,
+            "output": "{\"correct\": 3, \"predictions\": [\"refund\", 2, true, null], \"scored\": 3}\n",
+            "duration": 0.04558559798169881,
+            "effects": "Same reviewed unchanged fixture/selected-source hashes; synthetic memory/stdout only, -B, no runtime/rawpayload/network/files"
+          },
+          {
+            "command": ".venv/bin/python -B -m unittest discover -s docs/verification/examples -p test_offline_examples.py -v",
+            "cwd": "/home/zack/Projects/dex",
+            "exit_code": 0,
+            "output": "test_scoring_matches_human_labels_and_rejects_missing_answer (test_offline_examples.OfflineExamples.test_scoring_matches_human_labels_and_rejects_missing_answer) ... ok\ntest_shape_uses_real_filter_and_preserves_input (test_offline_examples.OfflineExamples.test_shape_uses_real_filter_and_preserves_input) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.006s\n\nOK\n",
+            "duration": 0.06264225393533707,
+            "effects": "Same reviewed unchanged fixture/selected-source hashes; synthetic memory/stdout only, -B, no runtime/rawpayload/network/files"
+          }
+        ],
+        "portal_checks": [
+          {
+            "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py snapshot --project dex",
+            "cwd": "/home/zack/Projects/dex",
+            "exit": 0,
+            "outcome": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"359dfc4bc8220ff2d41d500c5e1ee3dcb3e7281590c0007788103de964d44f24\",\n    \"architecture.md\": \"5dd8fcef5bf4bee363f16ca3da1858fd834f3e60e5ebdece108f03259b8dbe0b\",\n    \"capabilities-and-limits.md\": \"66429a523537270469a13f3f19e0af2bdcf18fc74873e1cb4c4c6f3ea9bc3cb0\",\n    \"collaboration.md\": \"0844c5c122bfad37f03ea849e7b98cf8afd6a063b31ba91da7cd921f89e4623e\",\n    \"concepts/security-and-compatibility.md\": \"72f53d2f3bf6bbc889501f293fb3234e6ab9e528fe4d0f89da32d3a7b5392c00\",\n    \"developer-guide/change-the-adapter.md\": \"638ba1baf17d4d02fb0766a98717340afec2d4f2646b95a6dc7af562cb0848d4\",\n    \"developer-guide/maintain-evaluation.md\": \"75ef37a00893685e58a722a34080bebea3594d07cd3d1a1ee1f7dd6135956f41\",\n    \"developer-guide/repository.md\": \"fc3149657751deebc6afda1db1d426bae787c7d52a31fc9c794f67051b372fb1\",\n    \"developer-guide/testing.md\": \"2d1e2165aeca535aaf198fdc61311644b1446f4bca93062a159c66396dfcaa5a\",\n    \"getting-started/requirements.md\": \"b7085569dde09e20fab3bb64a5f12c5764ef9899b04c71f5db97fd9579218b77\",\n    \"guide.md\": \"1968badbfa60e2c08772815a018165d853917c949755b51b6d26fd955eff8b0e\",\n    \"how-to/call-and-handle-errors.md\": \"ea322cdf0fa40f21b9eb1977c477cf2b61add7870932bd110d86badccb27a829\",\n    \"how-to/check-an-authorized-server.md\": \"b4fff5f3fb44fe0b6af4a91a676697e7323c887251a8fcbeaaabada75a7c67e7\",\n    \"how-to/existing-environment-launch.md\": \"4e5319016c38eb51199209da10c1144b3386c424438e7130dc80300281b82521\",\n    \"how-to/plan-gpu-reruns.md\": \"4a025f1969667d3fc65687fcbd3350592b40427882b7f28b46bbc19f3df48d23\",\n    \"how-to/rebuild-saved-report.md\": \"e4a9b9cc2c4b50613fe26204c354ac6fd3c400c9ca15384d5d2fe4df2715487c\",\n    \"how-to/review-deployment.md\": \"a973c974f50d5fbcc2940d0f17131696fb5f515354e4e87d6568345ec4b4217b\",\n    \"index.md\": \"0ff051332f8a504a39f21150baf901e0aa84245ff2f389ed935e79d92054d772\",\n    \"provenance-and-licences.md\": \"cadda1e636347bfca38aa4b0b76321e799e659900c87a4e9058c5a21abd4e954\",\n    \"reference/commands.md\": \"6734a86279c7c762f1d44240e83fef4768f5a5c12b7a4e58ebe72b7e53d2fd3a\",\n    \"reference/configuration.md\": \"bb865d3845afe790c0222d88cf4b410a7933619c1b7faabed9aba297b629e941\",\n    \"reference/evidence-schemas-and-scoring.md\": \"e0e98a4852c68da60306ea790dc2f8a70bca6cbdc48a2ca50f1fb887cda2dec9\",\n    \"reference/http.md\": \"eda4d5a63517e18d5ba1ecbadc9ed6946040a95f07facc4abb74958367a35b45\",\n    \"reference/model-and-deployment-metadata.md\": \"827d4c30cdf154fb469164c856a85692522b65f28892c6d27325592b9691f57c\",\n    \"reference/question-answer-shapes.md\": \"0b60841ade6be39e99c8736a7010c19db870de9e9cd4ef85653077cd58ba76bf\",\n    \"sidebar.json\": \"62e31ce0aed6e5236a1dffb42280d906e15b1f10f383f5d0d730578181485362\",\n    \"status.md\": \"5d4c41e512c45a9a4360fe99c964c7320eae65c2a42b4f287b7063efaf15de16\",\n    \"tutorials/read-a-decision-offline.md\": \"e762a475e7787b658c871affdf40bb06b4b0ce8a54c5a9986af71a49f860f743\",\n    \"tutorials/trace-saved-evidence.md\": \"1453d0958f12a626a929670d154b3bcd67b3d842fba5a60e59bc3845d89caae0\"\n  },\n  \"manifest_hash\": \"f99b905298c34099324880fc765b431cdee24323667e496cd84246fd7399e464\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"7ceaa886f7db8771be9f0b4867b9fe319af66b2a739ac6f3efe2c98757bf1953\",\n    \"AGENTS.md\": \"1695c01e2c562a4e3bc7f27ab832869b93d4c4881dfd5773db6186aade711731\",\n    \"BENCHMARKS.md\": \"aba2552f37597a91733224b1e049f7be809cf36946ad9b0fda22286ee98904d8\",\n    \"CITATION.cff\": \"221378464ec04dc777451f437befb22911ae687adec663cbbee34a90edc31dca\",\n    \"CONTEXT.md\": \"e44884505d3b728fc2cbabffc70a155d76879b2aade39289efe5f23ce6951b4e\",\n    \"DATA_CARD.md\": \"6c9db65734c7eae73a92c18f278239f89e8b64fa7047347028bd3f08ef56ed0d\",\n    \"Dockerfile\": \"15b7d804ae01ded4f2b3924a1d2709316aa35bfe8260fc5bbe8f8921e3067407\",\n    \"LICENSE\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\",\n    \"MODEL_CARD.md\": \"13a2ae1faac67c8de2ab4c0c1f16d81d9a7806890ef396d34197fe2bad5ca432\",\n    \"NOTICE\": \"37e961c9e0c0ca3f8b8e5ff065f75576eaae447ac704acd7b46a9a511280a5e3\",\n    \"README.md\": \"7ca68b0005a45bd7627db8489ec5c63f98bbb10723164a1b8ac6796100884d25\",\n    \"RELEASE_NOTES.md\": \"a6283c207e926a31d2367354e5807082ba5f3c5059e9e504d8fb768a600b009a\",\n    \"benchmarks/CONTEXT.md\": \"3fa19a947876007c86d8baacd5c02ce9a4e1a82827c7579b2a28e9f196ace6aa\",\n    \"benchmarks/order.py\": \"f8f5d1a4ed3de62bf8c438c27377166f85de708a559a9eca2f96656e57c63674\",\n    \"benchmarks/report.py\": \"629a1804db45062cac31a0a5b2f6658c104c5afe8ef1934fda0efde00130e239\",\n    \"benchmarks/results/jev_summary.json\": \"c73bf1be847cc9ab508894bb087ff64b4a66841ab81bb0da4fd4d3b220726d49\",\n    \"benchmarks/results/order.json\": \"9bc7c6f7e2ff362429a53fcd6177e1bc3b194bdbe7f1e0bd3fed98f39615df76\",\n    \"benchmarks/results/speed.json\": \"f4e1467e285bc4624b901e95386d8b11bd8b1b881445300eae311d5993df3097\",\n    \"benchmarks/results/tables.json\": \"c262e7ab2a1e6afa3d05e12ce62d66dc2657cb783c8629e309ecdb85ce0ebb13\",\n    \"benchmarks/results/tables.md\": \"441422df7957d436d7146ce23502cb96e50625b6303d1729cf7c9bf1176661ef\",\n    \"benchmarks/speed.py\": \"d02c6c957d2cec24a7faccac61068ba78ea24c31843d74f86f39b68c2201dee2\",\n    \"deploy/CONTEXT.md\": \"b05285b33142bcf5e102b8df0d949928704f4fe2131c98c964145fb5d0bbc6b6\",\n    \"deploy/dex.service\": \"0f296c01790982b55d568210217e993f2866dd3bb42946e1a25c6a286da9a5fb\",\n    \"docs/CONTEXT.md\": \"bd4318cfacf69d28dfbd2f6d262a2308fac02d1e00bb4399d386457bd8a8d77d\",\n    \"docs/verification/examples/offline_examples.py\": \"60d44bc94712df87ffd7430542626fdd34da1e4a0154b45621ac8f708c05f591\",\n    \"docs/verification/examples/test_offline_examples.py\": \"7df6d8aad591eec746d2cfec65789596ce4d26dec2c450f61d2f1f1545bd9d82\",\n    \"examples/CONTEXT.md\": \"777a64d51a42deb2b6a15cab218ddefed419eb1088c0f749b5afe4f27245bfae\",\n    \"examples/client.py\": \"d46b4e0b43920f4a20ac7e612314131fda61fc5dcb5388da1f0d7cdaf0a35b77\",\n    \"examples/curl.sh\": \"9dbd83d03265071f2290c93bb074663afe7f379adbb70b886f7102b63c1a8c25\",\n    \"model/SHA256SUMS\": \"9788416b40d6cb61588d5eedb9d1ae2b5648b4159b1acef0d1ee6e4bb22c76c4\",\n    \"model/encoder/config.json\": \"9210c6819f57796f75b6c92e74c662ebd686454d1d915c8c915ed252c3dada15\",\n    \"model/rl_agent_config.json\": \"e8752cb73c9097d350de495c64d0445e633a22a2f986da82eace7f91c338a821\",\n    \"model/tokenizer/tokenizer_config.json\": \"08d4cf3ac4dca381759441b85b91a6d40e688471dcd33d15d6649eb0a9a854d1\",\n    \"requirements.txt\": \"c1e9219416871a2eeab6021fcebf1850873b74a66cbfa3d7adc8aac37bef7b4f\",\n    \"server/CONTEXT.md\": \"6257d1a20ffaeea1e9bd4ce3334a79e6c61e48b45b72aa06cdfdb806eb45af85\",\n    \"server/dex_server.py\": \"861b5805746c9bc40defce618590efd635a65a56c3909a59148594c3e75802e3\",\n    \"tests/CONTEXT.md\": \"5d62d4b76e668db890baaa2c4700782d1dded7d92d1898036985572d22ff230e\",\n    \"tests/test_server.py\": \"4685fc6f9aaf734271dae2fd3f2f93d1562fbf8de5621293c8df6ce18a2e7246\"\n  }\n}\n",
+            "duration": 0.4586443960433826,
+            "effects": "Parent-authorized read-only native shared adapter collect/snapshot/check; no build/prepare/release/export/index/runtime action"
+          },
+          {
+            "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py check --project dex --json",
+            "cwd": "/home/zack/Projects/dex",
+            "exit": 1,
+            "outcome": "{\n  \"projects\": {\n    \"dex\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+            "duration": 0.4367022879887372,
+            "effects": "Parent-authorized read-only native shared adapter collect/snapshot/check; no build/prepare/release/export/index/runtime action"
+          }
+        ],
+        "portal_snapshot_matches_independent_hashes": true,
+        "integration_schema_hashes": {
+          "review.schema.json": "570d6042950937f3505df077f13e31a64ce8dd03977801dbd244fe895a6145d0",
+          "manifest.schema.json": "5fbe3c987a6a8b2c6aa3d2ff4724cd7b5aba8861342598140c8993871a7fc30a"
+        }
+      },
+      "post_acceptance_delta_pending": {
+        "state": "resolved by focused final recursive Task5E source/claim check",
+        "supersedes": "reported pending exact binding notice after FIXROUND1"
+      },
+      "final_recursive_Task5E": {
+        "reviewed_at": "2026-10-17T14:42:59.745303+00:00",
+        "scope": [
+          ".gitignore25current lines",
+          "reference/configuration.md only source_ref/recursive tracking-boundary paragraph",
+          "docs-git-tracking manifest claim",
+          "exact current author/source/doc/manifest bindings"
+        ],
+        "source_observation": "/docs/**/{_generated,.generated,build,node_modules,.fixture}/ forms recursively cover docs; /docs/handbook/**/ sensitive env/credential/log/db patterns match explicit handbook at-every-depth prose. Original model/venv/bytecode, handbook assets exclusion and manifest/review/twoexactfixture exceptions remain. Ordinary discovery, not file-access/security/tracked-removal/forceadd/acceptance limits retained. No new product behavior.",
+        "authority": "Author reports parent independently accepted FINAL Task5E recursive policy; parent explicitly dispatched bounded follow-up. Effective rule/index tests remain parent-owned, not reproduced by this reviewer.",
+        "comparison": {
+          "source_deltas_since_FIXROUND1": [
+            ".gitignore"
+          ],
+          "doc_deltas_since_FIXROUND1": [
+            "reference/configuration.md"
+          ],
+          "current_author_source_drift": [],
+          "current_author_doc_drift": [],
+          "manifest_matches": true,
+          "author_receipt_sha256": "3f4a1f000306f4f21039bec61db42ce162413d21cbc10de50350176560e01bf0",
+          "ignore_lines": 25
+        },
+        "portal_checks": [
+          {
+            "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py snapshot --project dex",
+            "environment": "Official shared adapter /usr/bin/python3 -B; Dex cwd; read-only parent-authorized integration contract",
+            "effects": "Collect/snapshot/check only; no build/prepare/release/export/index/runtime or other product reads",
+            "exit": 0,
+            "outcome": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"359dfc4bc8220ff2d41d500c5e1ee3dcb3e7281590c0007788103de964d44f24\",\n    \"architecture.md\": \"5dd8fcef5bf4bee363f16ca3da1858fd834f3e60e5ebdece108f03259b8dbe0b\",\n    \"capabilities-and-limits.md\": \"66429a523537270469a13f3f19e0af2bdcf18fc74873e1cb4c4c6f3ea9bc3cb0\",\n    \"collaboration.md\": \"0844c5c122bfad37f03ea849e7b98cf8afd6a063b31ba91da7cd921f89e4623e\",\n    \"concepts/security-and-compatibility.md\": \"72f53d2f3bf6bbc889501f293fb3234e6ab9e528fe4d0f89da32d3a7b5392c00\",\n    \"developer-guide/change-the-adapter.md\": \"638ba1baf17d4d02fb0766a98717340afec2d4f2646b95a6dc7af562cb0848d4\",\n    \"developer-guide/maintain-evaluation.md\": \"75ef37a00893685e58a722a34080bebea3594d07cd3d1a1ee1f7dd6135956f41\",\n    \"developer-guide/repository.md\": \"fc3149657751deebc6afda1db1d426bae787c7d52a31fc9c794f67051b372fb1\",\n    \"developer-guide/testing.md\": \"2d1e2165aeca535aaf198fdc61311644b1446f4bca93062a159c66396dfcaa5a\",\n    \"getting-started/requirements.md\": \"b7085569dde09e20fab3bb64a5f12c5764ef9899b04c71f5db97fd9579218b77\",\n    \"guide.md\": \"1968badbfa60e2c08772815a018165d853917c949755b51b6d26fd955eff8b0e\",\n    \"how-to/call-and-handle-errors.md\": \"ea322cdf0fa40f21b9eb1977c477cf2b61add7870932bd110d86badccb27a829\",\n    \"how-to/check-an-authorized-server.md\": \"b4fff5f3fb44fe0b6af4a91a676697e7323c887251a8fcbeaaabada75a7c67e7\",\n    \"how-to/existing-environment-launch.md\": \"4e5319016c38eb51199209da10c1144b3386c424438e7130dc80300281b82521\",\n    \"how-to/plan-gpu-reruns.md\": \"4a025f1969667d3fc65687fcbd3350592b40427882b7f28b46bbc19f3df48d23\",\n    \"how-to/rebuild-saved-report.md\": \"e4a9b9cc2c4b50613fe26204c354ac6fd3c400c9ca15384d5d2fe4df2715487c\",\n    \"how-to/review-deployment.md\": \"a973c974f50d5fbcc2940d0f17131696fb5f515354e4e87d6568345ec4b4217b\",\n    \"index.md\": \"0ff051332f8a504a39f21150baf901e0aa84245ff2f389ed935e79d92054d772\",\n    \"provenance-and-licences.md\": \"cadda1e636347bfca38aa4b0b76321e799e659900c87a4e9058c5a21abd4e954\",\n    \"reference/commands.md\": \"6734a86279c7c762f1d44240e83fef4768f5a5c12b7a4e58ebe72b7e53d2fd3a\",\n    \"reference/configuration.md\": \"d653be1dc77e6a7066160f0b111e1a9f5316e0d553abbe895cb24f021ed87fe2\",\n    \"reference/evidence-schemas-and-scoring.md\": \"e0e98a4852c68da60306ea790dc2f8a70bca6cbdc48a2ca50f1fb887cda2dec9\",\n    \"reference/http.md\": \"eda4d5a63517e18d5ba1ecbadc9ed6946040a95f07facc4abb74958367a35b45\",\n    \"reference/model-and-deployment-metadata.md\": \"827d4c30cdf154fb469164c856a85692522b65f28892c6d27325592b9691f57c\",\n    \"reference/question-answer-shapes.md\": \"0b60841ade6be39e99c8736a7010c19db870de9e9cd4ef85653077cd58ba76bf\",\n    \"sidebar.json\": \"62e31ce0aed6e5236a1dffb42280d906e15b1f10f383f5d0d730578181485362\",\n    \"status.md\": \"5d4c41e512c45a9a4360fe99c964c7320eae65c2a42b4f287b7063efaf15de16\",\n    \"tutorials/read-a-decision-offline.md\": \"e762a475e7787b658c871affdf40bb06b4b0ce8a54c5a9986af71a49f860f743\",\n    \"tutorials/trace-saved-evidence.md\": \"1453d0958f12a626a929670d154b3bcd67b3d842fba5a60e59bc3845d89caae0\"\n  },\n  \"manifest_hash\": \"fb75371ecfff5d70abf50169e0d1d2640b71d8014c804fade6bca6901369d353\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"8d1f358064bad2c639a13e128ad7a78ecfe89cf9dc16236064be610aa763def7\",\n    \"AGENTS.md\": \"1695c01e2c562a4e3bc7f27ab832869b93d4c4881dfd5773db6186aade711731\",\n    \"BENCHMARKS.md\": \"aba2552f37597a91733224b1e049f7be809cf36946ad9b0fda22286ee98904d8\",\n    \"CITATION.cff\": \"221378464ec04dc777451f437befb22911ae687adec663cbbee34a90edc31dca\",\n    \"CONTEXT.md\": \"e44884505d3b728fc2cbabffc70a155d76879b2aade39289efe5f23ce6951b4e\",\n    \"DATA_CARD.md\": \"6c9db65734c7eae73a92c18f278239f89e8b64fa7047347028bd3f08ef56ed0d\",\n    \"Dockerfile\": \"15b7d804ae01ded4f2b3924a1d2709316aa35bfe8260fc5bbe8f8921e3067407\",\n    \"LICENSE\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\",\n    \"MODEL_CARD.md\": \"13a2ae1faac67c8de2ab4c0c1f16d81d9a7806890ef396d34197fe2bad5ca432\",\n    \"NOTICE\": \"37e961c9e0c0ca3f8b8e5ff065f75576eaae447ac704acd7b46a9a511280a5e3\",\n    \"README.md\": \"7ca68b0005a45bd7627db8489ec5c63f98bbb10723164a1b8ac6796100884d25\",\n    \"RELEASE_NOTES.md\": \"a6283c207e926a31d2367354e5807082ba5f3c5059e9e504d8fb768a600b009a\",\n    \"benchmarks/CONTEXT.md\": \"3fa19a947876007c86d8baacd5c02ce9a4e1a82827c7579b2a28e9f196ace6aa\",\n    \"benchmarks/order.py\": \"f8f5d1a4ed3de62bf8c438c27377166f85de708a559a9eca2f96656e57c63674\",\n    \"benchmarks/report.py\": \"629a1804db45062cac31a0a5b2f6658c104c5afe8ef1934fda0efde00130e239\",\n    \"benchmarks/results/jev_summary.json\": \"c73bf1be847cc9ab508894bb087ff64b4a66841ab81bb0da4fd4d3b220726d49\",\n    \"benchmarks/results/order.json\": \"9bc7c6f7e2ff362429a53fcd6177e1bc3b194bdbe7f1e0bd3fed98f39615df76\",\n    \"benchmarks/results/speed.json\": \"f4e1467e285bc4624b901e95386d8b11bd8b1b881445300eae311d5993df3097\",\n    \"benchmarks/results/tables.json\": \"c262e7ab2a1e6afa3d05e12ce62d66dc2657cb783c8629e309ecdb85ce0ebb13\",\n    \"benchmarks/results/tables.md\": \"441422df7957d436d7146ce23502cb96e50625b6303d1729cf7c9bf1176661ef\",\n    \"benchmarks/speed.py\": \"d02c6c957d2cec24a7faccac61068ba78ea24c31843d74f86f39b68c2201dee2\",\n    \"deploy/CONTEXT.md\": \"b05285b33142bcf5e102b8df0d949928704f4fe2131c98c964145fb5d0bbc6b6\",\n    \"deploy/dex.service\": \"0f296c01790982b55d568210217e993f2866dd3bb42946e1a25c6a286da9a5fb\",\n    \"docs/CONTEXT.md\": \"bd4318cfacf69d28dfbd2f6d262a2308fac02d1e00bb4399d386457bd8a8d77d\",\n    \"docs/verification/examples/offline_examples.py\": \"60d44bc94712df87ffd7430542626fdd34da1e4a0154b45621ac8f708c05f591\",\n    \"docs/verification/examples/test_offline_examples.py\": \"7df6d8aad591eec746d2cfec65789596ce4d26dec2c450f61d2f1f1545bd9d82\",\n    \"examples/CONTEXT.md\": \"777a64d51a42deb2b6a15cab218ddefed419eb1088c0f749b5afe4f27245bfae\",\n    \"examples/client.py\": \"d46b4e0b43920f4a20ac7e612314131fda61fc5dcb5388da1f0d7cdaf0a35b77\",\n    \"examples/curl.sh\": \"9dbd83d03265071f2290c93bb074663afe7f379adbb70b886f7102b63c1a8c25\",\n    \"model/SHA256SUMS\": \"9788416b40d6cb61588d5eedb9d1ae2b5648b4159b1acef0d1ee6e4bb22c76c4\",\n    \"model/encoder/config.json\": \"9210c6819f57796f75b6c92e74c662ebd686454d1d915c8c915ed252c3dada15\",\n    \"model/rl_agent_config.json\": \"e8752cb73c9097d350de495c64d0445e633a22a2f986da82eace7f91c338a821\",\n    \"model/tokenizer/tokenizer_config.json\": \"08d4cf3ac4dca381759441b85b91a6d40e688471dcd33d15d6649eb0a9a854d1\",\n    \"requirements.txt\": \"c1e9219416871a2eeab6021fcebf1850873b74a66cbfa3d7adc8aac37bef7b4f\",\n    \"server/CONTEXT.md\": \"6257d1a20ffaeea1e9bd4ce3334a79e6c61e48b45b72aa06cdfdb806eb45af85\",\n    \"server/dex_server.py\": \"861b5805746c9bc40defce618590efd635a65a56c3909a59148594c3e75802e3\",\n    \"tests/CONTEXT.md\": \"5d62d4b76e668db890baaa2c4700782d1dded7d92d1898036985572d22ff230e\",\n    \"tests/test_server.py\": \"4685fc6f9aaf734271dae2fd3f2f93d1562fbf8de5621293c8df6ce18a2e7246\"\n  }\n}\n",
+            "evidence": "dex-independent-review.json:final_recursive_Task5E.portal_checks",
+            "duration": 0.493527262005955
+          },
+          {
+            "command": "/usr/bin/python3 -B /home/zack/Projects/fleet-index/_system/documentation/site/scripts/portal.py check --project dex --json",
+            "environment": "Official shared adapter /usr/bin/python3 -B; Dex cwd; read-only parent-authorized integration contract",
+            "effects": "Collect/snapshot/check only; no build/prepare/release/export/index/runtime or other product reads",
+            "exit": 1,
+            "outcome": "{\n  \"projects\": {\n    \"dex\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+            "evidence": "dex-independent-review.json:final_recursive_Task5E.portal_checks",
+            "duration": 0.48144781799055636
+          }
+        ],
+        "native_snapshot_matches": true,
+        "author_report_sha256": "8577f5f1195e60e8d637460bce2bd1e820e0b1bfe9ea6514a12e4b2d41eaeb2f",
+        "no_new_fixture_or_reader_trial": "Source/fixture/task entrypoint bytes unchanged except stated ignore/configuration prose; prior actual docs-first trials and native fixture evidence retained. No invented rerun or broad audit."
+      }
+    }
+  },
+  "task_trials": [
+    {
+      "id": "first-safe-result",
+      "started_at": "2026-10-17T14:17:29.573419+00:00",
+      "starting_state": "Existing Dex tree; no running-state inspection. Reader entry is docs/handbook/index.md plus sidebar.json. Required author report and audit were read before trial; no first-party implementation file was opened. This is independent of the author, not blind to the requested background.",
+      "choices": [
+        "index.md task table: Get a first safe observable result → tutorials/read-a-decision-offline.md",
+        "Sidebar Getting started offers the same tutorial.",
+        "Follow prerequisites: existing .venv/bin/python, inspect fixture before running, no server/curl/model."
+      ],
+      "docs_consulted": [
+        "docs/handbook/index.md",
+        "docs/handbook/sidebar.json",
+        "docs/handbook/tutorials/read-a-decision-offline.md"
+      ],
+      "command": ".venv/bin/python -B docs/verification/examples/offline_examples.py shape",
+      "expected": "exit 0; {\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}",
+      "pre_source_trial_note": "The route, command, expected output and no-runtime scope are clear. The tutorial says read curl source for question IDs, but executing the safe example needs no source knowledge. Defer curl/server reading until both docs-only trial notes are recorded. Inspect fixture next as explicitly required, then execute command.",
+      "ambiguity": [],
+      "author_help": "None. Required author report was background, not coaching or live assistance.",
+      "result": {
+        "exit_code": 0,
+        "output": "{\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}\n",
+        "matches_expected": true,
+        "interpretation": "Real filter runs on synthetic answers, leaves input unchanged, removes runtime-only keys; no decision correctness or model/runtime evidence."
+      },
+      "reader": "Dex independent source/content/task reviewer, Prime child session 01a14a38-cead-7476-bef3-1b6407ecadc7 (not Dex author)",
+      "task": "first-safe-result",
+      "observed_result": "{\"exit_code\": 0, \"output\": \"{\\\"input_unchanged\\\": true, \\\"runtime_only_removed\\\": true, \\\"types\\\": [\\\"choice\\\", \\\"noul\\\", \\\"score\\\"]}\\n\", \"matches_expected\": true, \"interpretation\": \"Real filter runs on synthetic answers, leaves input unchanged, removes runtime-only keys; no decision correctness or model/runtime evidence.\"}",
+      "author_assistance": "None. Required author report was background, not coaching or live assistance."
+    },
+    {
+      "id": "adapter-change-impact",
+      "started_at": "2026-10-17T14:17:29.573443+00:00",
+      "starting_state": "Same landing/sidebar; no product source read or execution. Concrete task: plan addition of a decision route alias plus a default answer-field change, without editing.",
+      "choices": [
+        "index.md: Change the adapter or evaluation tools → developer-guide/repository.md and change-the-adapter.md",
+        "Read developer-guide/testing.md to choose allowed checks",
+        "Follow reference/http.md and reference/configuration.md for token/extras/error details"
+      ],
+      "docs_consulted": [
+        "docs/handbook/index.md",
+        "docs/handbook/sidebar.json",
+        "docs/handbook/developer-guide/repository.md",
+        "docs/handbook/developer-guide/change-the-adapter.md",
+        "docs/handbook/developer-guide/testing.md",
+        "docs/handbook/reference/http.md",
+        "docs/handbook/reference/configuration.md"
+      ],
+      "command": "No live command. Select only .venv/bin/python -B -m unittest discover -s docs/verification/examples -p test_offline_examples.py -v for approved docs-fixture checking.",
+      "expected": "A source-backed impact plan, not a source change or runtime acceptance.",
+      "pre_source_trial_note": "Route owner POST_PATHS/Handler.do_POST; field owner EXTRAS/jev_shape/response assembly. Review client URLs in examples/client.py and examples/curl.sh, tests/test_server.py alias loop and exact fields, docs fixture, HTTP/type/configuration docs and downstream report consumers. Loading changes also reach load/MODEL_DIR, requirements/deployment/provenance. DEX_TOKEN/DEX_EXTRAS captured at import; live smoke has no bearer and expects extras-off. Preserve length-outside-try, nonobject AttributeError, shaping-outside-try gaps unless authorized fix. Add narrow failing approved check and seek independent source/docs/task review. No server, live smoke, GPU or report invocation in docs work; hashes/hooks are not acceptance.",
+      "ambiguity": [],
+      "author_help": "None; requested author report was background only.",
+      "result": "Docs-only impact plan corroborated by server/report source and fixture inspection. Selected offline unittest command ran with 2 tests OK, exit 0; no adapter code was changed. No product/live tests ran.",
+      "reader": "Dex independent source/content/task reviewer, Prime child session 01a14a38-cead-7476-bef3-1b6407ecadc7 (not Dex author)",
+      "task": "adapter-change-impact",
+      "observed_result": "Docs-only impact plan corroborated by server/report source and fixture inspection. Selected offline unittest command ran with 2 tests OK, exit 0; no adapter code was changed. No product/live tests ran.",
+      "author_assistance": "None; requested author report was background only."
+    }
+  ],
+  "limits": [
+    "No model/server/vendor import, weight or tokenizer vocabulary read/hash, device/GPU/CUDA/service/process queries, network/install/download, container/build/service action, endpoint/live smoke execution, report builder or retained raw prompt/gold/per-item result reads. tests/test_server.py was read as text only; its top-level requests were never imported or run.",
+    "Installed Laya/PyTorch/Transformers internals and model/tokenizer bulk intentionally unread. Detailed upstream validation/scoring/extras, actual host/runtime support, loaded artifact identity and provenance/checksum match remain unverified. Laya/Ettin wording conflict is documented, not resolved.",
+    "Saved aggregate/narrative metrics are historical claims. Raw accuracy/calibration/Index were not recomputed or recollected. Synthetic correct=3 is not model quality.",
+    "No shared-site build/release/UI/search/export/clipboard/browser checks; no Git commands, actual index/stage/commit or runtime/human acceptance. Commit string copied from frozen author receipt is context, not independently verified revision state.",
+    "Legacy _generated products excluded/unread/unhashed. Parent disclosed separate legacy-renderer regeneration; not attributed to Dex author, not restored, reviewed or counted as proof.",
+    "Reader trials were independent of author assistance and product-source reading, but not blind to required brief/author report/original audit. Both pre-source trial notes recorded before fixture/product source opening. No human reader trial claimed.",
+    "Official native read-only portal snapshot/check now independently ran, superseding initial unavailable-path limit. Snapshot identity/structure is not semantic/runtime/build/browser/submitted-index acceptance; check remains expected pending until owner faithfully normalizes accepted evidence.",
+    "FIXROUND1 corrected prose read directly after author freeze; initial docs-first tasks not repeated as blind tasks. Unchanged task entry/navigation/fixture bytes hash-verified; no human/runtime trial claimed.",
+    "Final recursive Task5E acceptance checks source/prose/manifest binding only; no Git effective-ignore/index validation by reviewer. Prior accepted FIXROUND1 tasks/fixtures preserved, not repeated as new blind trials."
+  ],
+  "decision": "accepted"
+}

@@ -1,0 +1,1293 @@
+{
+  "schema": 1,
+  "project": "dex",
+  "author": "assigned Dex documentation author (Prime child); no self-acceptance",
+  "sources": [
+    {
+      "path": ".githooks/docs-pre-commit",
+      "role": "source/config/deployment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": ".gitignore",
+      "role": "source/config/deployment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "owner instructions/current assessment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "role": "benchmark/reuse documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "CITATION.cff",
+      "role": "release/provenance/legal documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "DATA_CARD.md",
+      "role": "release/provenance/legal documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "Dockerfile",
+      "role": "source/config/deployment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "LICENSE",
+      "role": "Apache-2.0 legal text; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "role": "release/provenance/legal documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "NOTICE",
+      "role": "release/provenance/legal documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "README.md",
+      "role": "release/use documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "role": "release/provenance/legal documentation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/order.py",
+      "role": "authored runnable interface; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/report.py",
+      "role": "benchmark report implementation; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/results/jev_summary.json",
+      "role": "saved aggregate evidence; not fresh measurements; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/results/order.json",
+      "role": "saved aggregate evidence; not fresh measurements; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/results/speed.json",
+      "role": "saved aggregate evidence; not fresh measurements; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/results/tables.json",
+      "role": "saved aggregate evidence; not fresh measurements; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/results/tables.md",
+      "role": "saved aggregate evidence; not fresh measurements; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "benchmarks/speed.py",
+      "role": "authored runnable interface; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "deploy/CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "deploy/dex.service",
+      "role": "source/config/deployment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "docs/CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "examples/CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "examples/client.py",
+      "role": "authored runnable interface; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "examples/curl.sh",
+      "role": "authored runnable interface; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "model/SHA256SUMS",
+      "role": "local model metadata; not weight verification; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "model/encoder/config.json",
+      "role": "local model metadata; not weight verification; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "model/rl_agent_config.json",
+      "role": "local model metadata; not weight verification; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "model/tokenizer/tokenizer_config.json",
+      "role": "local model metadata; not weight verification; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "requirements.txt",
+      "role": "source/config/deployment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "server/CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "server/dex_server.py",
+      "role": "source/config/deployment; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "tests/CONTEXT.md",
+      "role": "workspace/area contract; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "tests/test_server.py",
+      "role": "authored runnable interface; full reviewed text, no runtime proof"
+    },
+    {
+      "path": "docs/verification/examples/offline_examples.py",
+      "role": "documentation-only synthetic fixture; AST-selected reviewed pure functions, no module imports/model/API/data-row calls"
+    },
+    {
+      "path": "docs/verification/examples/test_offline_examples.py",
+      "role": "documentation-only fixture tests; author red-green checks, not product integration suite"
+    }
+  ],
+  "excluded": [
+    {
+      "path": ".git/",
+      "reason": "Git internal objects/index/history; no traversal or writes. HEAD/ref metadata only used for audit revision."
+    },
+    {
+      "path": ".venv/",
+      "reason": "Installed external environment/vendor/runtime state; no source coverage claim. Existing interpreter used only for stdlib offline docs fixtures."
+    },
+    {
+      "path": "server/__pycache__/",
+      "reason": "Generated Python bytecode cache, not authored source."
+    },
+    {
+      "path": "model/model.safetensors",
+      "reason": "Weight bytes and tokenizer vocabulary/merge bulk; not first-party adapter logic. Owner forbids model execution/copying. Metadata only inventoried; no hash computed and no artifact verification claimed."
+    },
+    {
+      "path": "model/tokenizer/tokenizer.json",
+      "reason": "Weight bytes and tokenizer vocabulary/merge bulk; not first-party adapter logic. Owner forbids model execution/copying. Metadata only inventoried; no hash computed and no artifact verification claimed."
+    },
+    {
+      "path": "benchmarks/data/usecases_items.jsonl",
+      "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+    },
+    {
+      "path": "benchmarks/data/heldout_tasks.jsonl",
+      "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+    },
+    {
+      "path": "benchmarks/data/exam_items.jsonl",
+      "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+    },
+    {
+      "path": "benchmarks/data/exam_gold.json",
+      "reason": "Saved public-text prompt/label payload; owner contract retains raw rows in place. Consumer schemas reviewed in report/order code and provenance card; no row inspection, copying, hashing or recomputation."
+    },
+    {
+      "path": "benchmarks/results/A-stock-laya.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/B-stock-laya.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/C-stock-laya.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/A-ablation-modernbert-wide-instructions.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/B-ablation-modernbert-wide-instructions.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/C-ablation-modernbert-wide-instructions.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/A-dex.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/B-dex.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/C-dex.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/A-ablation-modernbert-base.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/B-ablation-modernbert-base.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/results/C-ablation-modernbert-base.json",
+      "reason": "Saved per-item model answers, potentially echoing dataset-derived identifiers/results; bulk evidence excluded by owner boundary. Aggregates and consuming code reviewed, individual claims not independently recomputed."
+    },
+    {
+      "path": "benchmarks/charts/usecases.svg",
+      "reason": "Script-owned SVG output, not authored source. Read generator and saved numerical aggregates; no visual correctness claim."
+    },
+    {
+      "path": "benchmarks/charts/exam.svg",
+      "reason": "Script-owned SVG output, not authored source. Read generator and saved numerical aggregates; no visual correctness claim."
+    },
+    {
+      "path": "docs/handbook/_generated/index.html",
+      "reason": "Factory-owned HTML/PDF/receipt generated snapshots. Existing canonical Markdown reviewed; no rebuilding/rendering/hash acknowledgement under audit-only gate."
+    },
+    {
+      "path": "docs/handbook/_generated/Status.pdf",
+      "reason": "Factory-owned HTML/PDF/receipt generated snapshots. Existing canonical Markdown reviewed; no rebuilding/rendering/hash acknowledgement under audit-only gate."
+    },
+    {
+      "path": "docs/handbook/_generated/receipt.json",
+      "reason": "Factory-owned HTML/PDF/receipt generated snapshots. Existing canonical Markdown reviewed; no rebuilding/rendering/hash acknowledgement under audit-only gate."
+    }
+  ],
+  "pages": [
+    {
+      "id": "index",
+      "kind": "overview",
+      "sources": [
+        "CONTEXT.md",
+        "README.md",
+        "BENCHMARKS.md",
+        "RELEASE_NOTES.md"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "kind": "overview",
+      "sources": [
+        "CONTEXT.md",
+        "AGENTS.md",
+        "README.md",
+        "RELEASE_NOTES.md",
+        "DATA_CARD.md"
+      ]
+    },
+    {
+      "id": "capabilities-and-limits",
+      "kind": "concept",
+      "sources": [
+        "README.md",
+        "MODEL_CARD.md",
+        "BENCHMARKS.md",
+        "server/dex_server.py"
+      ]
+    },
+    {
+      "id": "getting-started/requirements",
+      "kind": "how-to",
+      "sources": [
+        "requirements.txt",
+        "Dockerfile",
+        "README.md",
+        "deploy/dex.service",
+        ".gitignore",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "tutorials/read-a-decision-offline",
+      "kind": "tutorial",
+      "sources": [
+        "server/dex_server.py",
+        "examples/curl.sh",
+        "tests/test_server.py",
+        "docs/verification/examples/offline_examples.py",
+        "docs/verification/examples/test_offline_examples.py"
+      ]
+    },
+    {
+      "id": "tutorials/trace-saved-evidence",
+      "kind": "tutorial",
+      "sources": [
+        "benchmarks/report.py",
+        "benchmarks/results/tables.json",
+        "BENCHMARKS.md",
+        "docs/verification/examples/offline_examples.py",
+        "docs/verification/examples/test_offline_examples.py"
+      ]
+    },
+    {
+      "id": "architecture",
+      "kind": "concept",
+      "sources": [
+        "server/dex_server.py",
+        "benchmarks/report.py",
+        "Dockerfile",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "developer-guide/repository",
+      "kind": "developer",
+      "sources": [
+        "server/dex_server.py",
+        "examples/client.py",
+        "examples/curl.sh",
+        "tests/test_server.py",
+        "benchmarks/report.py",
+        "benchmarks/speed.py",
+        "benchmarks/order.py",
+        "requirements.txt",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "developer-guide/testing",
+      "kind": "developer",
+      "sources": [
+        "tests/test_server.py",
+        "tests/CONTEXT.md",
+        "benchmarks/report.py",
+        "benchmarks/speed.py",
+        "benchmarks/order.py",
+        "docs/verification/examples/offline_examples.py",
+        "docs/verification/examples/test_offline_examples.py"
+      ]
+    },
+    {
+      "id": "developer-guide/change-the-adapter",
+      "kind": "developer",
+      "sources": [
+        "server/dex_server.py",
+        "examples/client.py",
+        "examples/curl.sh",
+        "tests/test_server.py",
+        "CONTEXT.md",
+        ".githooks/docs-pre-commit"
+      ]
+    },
+    {
+      "id": "developer-guide/maintain-evaluation",
+      "kind": "developer",
+      "sources": [
+        "benchmarks/report.py",
+        "benchmarks/speed.py",
+        "benchmarks/order.py",
+        "BENCHMARKS.md",
+        "DATA_CARD.md"
+      ]
+    },
+    {
+      "id": "how-to/existing-environment-launch",
+      "kind": "how-to",
+      "sources": [
+        "server/dex_server.py",
+        "README.md",
+        "CONTEXT.md",
+        "requirements.txt"
+      ]
+    },
+    {
+      "id": "how-to/call-and-handle-errors",
+      "kind": "how-to",
+      "sources": [
+        "examples/client.py",
+        "examples/curl.sh",
+        "server/dex_server.py",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "how-to/check-an-authorized-server",
+      "kind": "how-to",
+      "sources": [
+        "tests/test_server.py",
+        "tests/CONTEXT.md",
+        "server/dex_server.py"
+      ]
+    },
+    {
+      "id": "how-to/rebuild-saved-report",
+      "kind": "how-to",
+      "sources": [
+        "benchmarks/report.py",
+        "benchmarks/CONTEXT.md",
+        "DATA_CARD.md",
+        "README.md"
+      ]
+    },
+    {
+      "id": "how-to/plan-gpu-reruns",
+      "kind": "how-to",
+      "sources": [
+        "benchmarks/speed.py",
+        "benchmarks/order.py",
+        "benchmarks/report.py",
+        "BENCHMARKS.md",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "how-to/review-deployment",
+      "kind": "how-to",
+      "sources": [
+        "Dockerfile",
+        "deploy/dex.service",
+        "deploy/CONTEXT.md",
+        "server/dex_server.py",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "reference/http",
+      "kind": "reference",
+      "sources": [
+        "server/dex_server.py",
+        "tests/test_server.py"
+      ]
+    },
+    {
+      "id": "reference/question-answer-shapes",
+      "kind": "reference",
+      "sources": [
+        "examples/curl.sh",
+        "examples/client.py",
+        "server/dex_server.py",
+        "tests/test_server.py",
+        "benchmarks/report.py"
+      ]
+    },
+    {
+      "id": "reference/commands",
+      "kind": "reference",
+      "sources": [
+        "server/dex_server.py",
+        "tests/test_server.py",
+        "examples/client.py",
+        "examples/curl.sh",
+        "benchmarks/report.py",
+        "benchmarks/speed.py",
+        "benchmarks/order.py"
+      ]
+    },
+    {
+      "id": "reference/configuration",
+      "kind": "reference",
+      "sources": [
+        "server/dex_server.py",
+        "requirements.txt",
+        "Dockerfile",
+        "deploy/dex.service",
+        "model/rl_agent_config.json",
+        ".gitignore"
+      ]
+    },
+    {
+      "id": "reference/model-and-deployment-metadata",
+      "kind": "reference",
+      "sources": [
+        "model/rl_agent_config.json",
+        "model/encoder/config.json",
+        "model/tokenizer/tokenizer_config.json",
+        "model/SHA256SUMS",
+        "Dockerfile",
+        "deploy/dex.service",
+        ".gitignore"
+      ]
+    },
+    {
+      "id": "reference/evidence-schemas-and-scoring",
+      "kind": "reference",
+      "sources": [
+        "benchmarks/report.py",
+        "benchmarks/order.py",
+        "benchmarks/speed.py",
+        "benchmarks/results/jev_summary.json",
+        "benchmarks/results/speed.json",
+        "benchmarks/results/order.json",
+        "benchmarks/results/tables.json",
+        "BENCHMARKS.md",
+        "DATA_CARD.md"
+      ]
+    },
+    {
+      "id": "concepts/security-and-compatibility",
+      "kind": "concept",
+      "sources": [
+        "server/dex_server.py",
+        "Dockerfile",
+        "deploy/dex.service",
+        "requirements.txt",
+        "DATA_CARD.md",
+        "CONTEXT.md",
+        "README.md"
+      ]
+    },
+    {
+      "id": "provenance-and-licences",
+      "kind": "reference",
+      "sources": [
+        "AGENTS.md",
+        "CONTEXT.md",
+        "MODEL_CARD.md",
+        "DATA_CARD.md",
+        "NOTICE",
+        "LICENSE",
+        "CITATION.cff",
+        "RELEASE_NOTES.md",
+        "model/rl_agent_config.json",
+        "model/SHA256SUMS"
+      ]
+    },
+    {
+      "id": "status",
+      "kind": "status",
+      "sources": [
+        "CONTEXT.md",
+        "BENCHMARKS.md",
+        "RELEASE_NOTES.md",
+        "server/dex_server.py",
+        "docs/verification/examples/offline_examples.py",
+        "docs/verification/examples/test_offline_examples.py"
+      ]
+    },
+    {
+      "id": "guide",
+      "kind": "overview",
+      "sources": [
+        "README.md",
+        "CONTEXT.md",
+        "examples/client.py",
+        "tests/test_server.py"
+      ]
+    },
+    {
+      "id": "CONTEXT",
+      "kind": "overview",
+      "sources": [
+        "CONTEXT.md",
+        "docs/CONTEXT.md",
+        "AGENTS.md"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "post-decision",
+      "kind": "http-api",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/http",
+        "reference/question-answer-shapes",
+        "architecture"
+      ],
+      "claims": [
+        "three-exact-aliases",
+        "path-before-auth",
+        "positive-byte-length-max1000000",
+        "locked-system-one-delegation",
+        "runtime-usage-cost-zero",
+        "default-vs-extras-answer-boundary"
+      ]
+    },
+    {
+      "id": "health",
+      "kind": "http-api",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/http",
+        "concepts/security-and-compatibility"
+      ],
+      "claims": [
+        "unauthenticated-health",
+        "agent-loaded-model-label-device-fixed-dtype",
+        "not-provenance-or-quality"
+      ]
+    },
+    {
+      "id": "http-errors",
+      "kind": "error-contract",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/http",
+        "how-to/call-and-handle-errors"
+      ],
+      "claims": [
+        "401-404-413-422-conditions",
+        "truncated-exception-privacy",
+        "length-outside-try-nonobject-other-exceptions-unhandled"
+      ]
+    },
+    {
+      "id": "jev-shape",
+      "kind": "python-function",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/question-answer-shapes",
+        "tutorials/read-a-decision-offline",
+        "developer-guide/change-the-adapter"
+      ],
+      "claims": [
+        "per-type-present-field-whitelist",
+        "unknown-type-key-error",
+        "no-validation-or-input-mutation",
+        "extras-bypass"
+      ]
+    },
+    {
+      "id": "load-startup",
+      "kind": "python-runtime-lifecycle",
+      "source": "server/dex_server.py",
+      "docs": [
+        "architecture",
+        "how-to/existing-environment-launch",
+        "reference/commands"
+      ],
+      "claims": [
+        "agent-cpu-encoder-bf16-conditional-cuda",
+        "load-warmup-before-listen",
+        "port-argv-default18766",
+        "no-argparse-help",
+        "uncaught-startup-failure"
+      ]
+    },
+    {
+      "id": "env-dex-model",
+      "kind": "environment",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/configuration",
+        "how-to/existing-environment-launch"
+      ],
+      "claims": [
+        "DEX_MODEL-default-effect-read-time",
+        "no-env-file-loader-or-precedence-stack"
+      ]
+    },
+    {
+      "id": "env-dex-device",
+      "kind": "environment",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/configuration",
+        "how-to/existing-environment-launch"
+      ],
+      "claims": [
+        "DEX_DEVICE-default-effect-read-time",
+        "no-env-file-loader-or-precedence-stack"
+      ]
+    },
+    {
+      "id": "env-dex-host",
+      "kind": "environment",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/configuration",
+        "how-to/existing-environment-launch"
+      ],
+      "claims": [
+        "DEX_HOST-default-effect-read-time",
+        "no-env-file-loader-or-precedence-stack"
+      ]
+    },
+    {
+      "id": "env-dex-token",
+      "kind": "environment",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/configuration",
+        "how-to/existing-environment-launch"
+      ],
+      "claims": [
+        "DEX_TOKEN-default-effect-read-time",
+        "no-env-file-loader-or-precedence-stack"
+      ]
+    },
+    {
+      "id": "env-dex-extras",
+      "kind": "environment",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/configuration",
+        "how-to/existing-environment-launch"
+      ],
+      "claims": [
+        "DEX_EXTRAS-default-effect-read-time",
+        "no-env-file-loader-or-precedence-stack"
+      ]
+    },
+    {
+      "id": "server-constants",
+      "kind": "configuration",
+      "source": "server/dex_server.py",
+      "docs": [
+        "reference/configuration",
+        "reference/http"
+      ],
+      "claims": [
+        "NAME-model-label",
+        "MAX_BODY-bytes",
+        "POST_PATHS-literal",
+        "global-LOCK-scoring-only"
+      ]
+    },
+    {
+      "id": "decide-client",
+      "kind": "python-api",
+      "source": "examples/client.py",
+      "docs": [
+        "reference/commands",
+        "how-to/call-and-handle-errors"
+      ],
+      "claims": [
+        "state-questions-url-token-signature",
+        "optional-bearer-timeout60",
+        "answers-only",
+        "no-retry-or-error-translation",
+        "fixed-synthetic-main"
+      ]
+    },
+    {
+      "id": "curl-example",
+      "kind": "shell-example",
+      "source": "examples/curl.sh",
+      "docs": [
+        "reference/commands",
+        "how-to/call-and-handle-errors",
+        "tutorials/read-a-decision-offline"
+      ],
+      "claims": [
+        "fixed-loopback-three-types",
+        "no-bearer-no-curl-http-fail",
+        "formatter-pipeline-not-success-proof"
+      ]
+    },
+    {
+      "id": "live-smoke",
+      "kind": "cli-test",
+      "source": "tests/test_server.py",
+      "docs": [
+        "reference/commands",
+        "developer-guide/testing",
+        "how-to/check-an-authorized-server"
+      ],
+      "claims": [
+        "base-url-argv-default",
+        "12named-checks",
+        "live-top-level-effects",
+        "exit0-or1-plus-uncaught-errors",
+        "no-auth-extras-off",
+        "coverage-and-gaps"
+      ]
+    },
+    {
+      "id": "report-cli",
+      "kind": "cli",
+      "source": "benchmarks/report.py",
+      "docs": [
+        "reference/commands",
+        "how-to/rebuild-saved-report",
+        "developer-guide/maintain-evaluation"
+      ],
+      "claims": [
+        "no-args-or-dry-run",
+        "reads-retained-data-and-aggregates",
+        "writes-four-fixed-outputs",
+        "no-inference-or-prose-index-rewrite",
+        "uncaught-file-schema-math-errors"
+      ]
+    },
+    {
+      "id": "report-pure-functions",
+      "kind": "python-functions",
+      "source": "benchmarks/report.py",
+      "docs": [
+        "reference/evidence-schemas-and-scoring",
+        "tutorials/trace-saved-evidence"
+      ],
+      "claims": [
+        "jl-json-lines",
+        "wilson-z1point96",
+        "pred-choice-score-argmax-noul-threshold",
+        "conf-noul-max-probability",
+        "cell-n-a",
+        "ece15bins",
+        "conf-no-None-error-guard-distinct-from-pred"
+      ]
+    },
+    {
+      "id": "report-joins",
+      "kind": "data-schema",
+      "source": "benchmarks/report.py",
+      "docs": [
+        "reference/evidence-schemas-and-scoring",
+        "developer-guide/maintain-evaluation"
+      ],
+      "claims": [
+        "A-single-qid-B-q-C-external-gold",
+        "row-id-system-answer-joins",
+        "missing-files-conditional-load",
+        "missing-error-answer-skipped-denominator",
+        "pool-and-group-counts"
+      ]
+    },
+    {
+      "id": "report-rendering",
+      "kind": "generated-output",
+      "source": "benchmarks/report.py",
+      "docs": [
+        "reference/evidence-schemas-and-scoring",
+        "how-to/rebuild-saved-report"
+      ],
+      "claims": [
+        "SYS-NAME-fixed-systems",
+        "trusted-label-SVG-interpolation-fixed-palette",
+        "tables-md-headline-json-two-svgs",
+        "fixed-published-speed-order-inputs-not-reruns",
+        "calibration-eager-pred-conf-can-fail-before-value-filter-empty-subset-math-failures"
+      ]
+    },
+    {
+      "id": "speed-cli",
+      "kind": "cli",
+      "source": "benchmarks/speed.py",
+      "docs": [
+        "reference/commands",
+        "how-to/plan-gpu-reruns"
+      ],
+      "claims": [
+        "stock-required-dex-out-defaults",
+        "argparse-help-usage2-torch-import-first",
+        "gpu-load-effects",
+        "no-HTTP-Jev-main-despite-docstring",
+        "separate-rerun-file"
+      ]
+    },
+    {
+      "id": "speed-method",
+      "kind": "benchmark-schema",
+      "source": "benchmarks/speed.py",
+      "docs": [
+        "reference/evidence-schemas-and-scoring",
+        "developer-guide/maintain-evaluation"
+      ],
+      "claims": [
+        "questions-synthetic-short-long-workload",
+        "3warmup15reps-1-3-5-10-15",
+        "median-sorted-index-p95",
+        "gpu-process-allocation-not-baseline-subtracted",
+        "local-dex-stock-only"
+      ]
+    },
+    {
+      "id": "order-cli",
+      "kind": "cli",
+      "source": "benchmarks/order.py",
+      "docs": [
+        "reference/commands",
+        "how-to/plan-gpu-reruns"
+      ],
+      "claims": [
+        "stock-required-n400-out-default",
+        "no-dex-no-Jev-parameter",
+        "argparse-usage2-torch-first",
+        "no-n-positivity-zero-denominator-error"
+      ]
+    },
+    {
+      "id": "order-method",
+      "kind": "benchmark-schema",
+      "source": "benchmarks/order.py",
+      "docs": [
+        "reference/evidence-schemas-and-scoring",
+        "developer-guide/maintain-evaluation"
+      ],
+      "claims": [
+        "load-server-first-glob",
+        "A-B-choice-atleast3",
+        "seed3-firstN",
+        "criteria-reversed-same-keys-text",
+        "null-skip-flip-accuracy-original-reversed"
+      ]
+    },
+    {
+      "id": "jev-summary",
+      "kind": "saved-schema",
+      "source": "benchmarks/results/jev_summary.json",
+      "docs": [
+        "reference/evidence-schemas-and-scoring"
+      ],
+      "claims": [
+        "cells-question-correct-pool-label",
+        "disagreement-counts",
+        "calibration-summary-not-recollection"
+      ]
+    },
+    {
+      "id": "saved-speed",
+      "kind": "saved-schema",
+      "source": "benchmarks/results/speed.json",
+      "docs": [
+        "reference/evidence-schemas-and-scoring"
+      ],
+      "claims": [
+        "gpu-weights-memory-cells-array",
+        "published-Jev-api-not-current-rerun"
+      ]
+    },
+    {
+      "id": "saved-order",
+      "kind": "saved-schema",
+      "source": "benchmarks/results/order.json",
+      "docs": [
+        "reference/evidence-schemas-and-scoring"
+      ],
+      "claims": [
+        "questions-flip-original-reversed-accuracy",
+        "published-Jev-not-current-rerun"
+      ]
+    },
+    {
+      "id": "saved-headline",
+      "kind": "saved-schema",
+      "source": "benchmarks/results/tables.json",
+      "docs": [
+        "reference/evidence-schemas-and-scoring"
+      ],
+      "claims": [
+        "headline-rates-only-historical-not-recomputed"
+      ]
+    },
+    {
+      "id": "runtime-model-config",
+      "kind": "artifact-metadata",
+      "source": "model/rl_agent_config.json",
+      "docs": [
+        "reference/model-and-deployment-metadata",
+        "provenance-and-licences"
+      ],
+      "claims": [
+        "all-encoder-head-limits-costs-temperatures-model-training-fields",
+        "runtime-owned-not-public-adapter-options",
+        "metadata-not-weight-attestation"
+      ]
+    },
+    {
+      "id": "encoder-config",
+      "kind": "artifact-metadata",
+      "source": "model/encoder/config.json",
+      "docs": [
+        "reference/model-and-deployment-metadata"
+      ],
+      "claims": [
+        "all-top-level-encoder-settings",
+        "token-position-dimensions-architecture-version",
+        "not-runtime-input-support-or-provenance-proof"
+      ]
+    },
+    {
+      "id": "tokenizer-config",
+      "kind": "artifact-metadata",
+      "source": "model/tokenizer/tokenizer_config.json",
+      "docs": [
+        "reference/model-and-deployment-metadata"
+      ],
+      "claims": [
+        "all-tokenizer-settings",
+        "length8192-local-files-only-false-distinct-runtime-limit"
+      ]
+    },
+    {
+      "id": "weight-checksum",
+      "kind": "artifact-manifest",
+      "source": "model/SHA256SUMS",
+      "docs": [
+        "reference/model-and-deployment-metadata",
+        "provenance-and-licences"
+      ],
+      "claims": [
+        "recorded-checksum-not-compared",
+        "no-weight-read"
+      ]
+    },
+    {
+      "id": "requirements",
+      "kind": "dependencies",
+      "source": "requirements.txt",
+      "docs": [
+        "reference/configuration",
+        "getting-started/requirements"
+      ],
+      "claims": [
+        "minimum-only-five-packages",
+        "comment-tested-versions-not-reverified",
+        "no-lock-or-supported-host-matrix"
+      ]
+    },
+    {
+      "id": "cpu-container",
+      "kind": "deployment-config",
+      "source": "Dockerfile",
+      "docs": [
+        "reference/model-and-deployment-metadata",
+        "how-to/review-deployment"
+      ],
+      "claims": [
+        "python312-base-copy-model-server",
+        "cpu-offline-bind-all-env",
+        "expose-and-cmd18766",
+        "no-fresh-build-or-installed-proof"
+      ]
+    },
+    {
+      "id": "user-unit",
+      "kind": "deployment-config",
+      "source": "deploy/dex.service",
+      "docs": [
+        "reference/model-and-deployment-metadata",
+        "how-to/review-deployment"
+      ],
+      "claims": [
+        "home-dex-paths-offline-env-exec",
+        "restart-onfailure5-defaulttarget-network",
+        "activation-comments-not-authorization",
+        "no-TLS-token-hardening-policy"
+      ]
+    },
+    {
+      "id": "identity-authority",
+      "kind": "provenance",
+      "source": "CONTEXT.md",
+      "docs": [
+        "provenance-and-licences",
+        "collaboration",
+        "status"
+      ],
+      "claims": [
+        "preserve-Laya-Ettin-conflict",
+        "runtime-costly-eval-publication-approval",
+        "weights-rows-no-copy"
+      ]
+    },
+    {
+      "id": "release-and-data-limits",
+      "kind": "provenance",
+      "source": "DATA_CARD.md",
+      "docs": [
+        "provenance-and-licences",
+        "concepts/security-and-compatibility"
+      ],
+      "claims": [
+        "training-data-absent",
+        "dataset-licences-retained",
+        "public-PII-possible",
+        "no-typed-no-leakage-guarantee"
+      ]
+    },
+    {
+      "id": "historical-benchmark",
+      "kind": "evidence",
+      "source": "BENCHMARKS.md",
+      "docs": [
+        "capabilities-and-limits",
+        "reference/evidence-schemas-and-scoring",
+        "status"
+      ],
+      "claims": [
+        "dated-A-B-C-cohorts",
+        "single-run-English-token-option-concurrency-limits",
+        "Index-selfrun-not-board-unsupported-wrong"
+      ]
+    },
+    {
+      "id": "docs-hook-wrapper",
+      "kind": "maintenance",
+      "source": ".githooks/docs-pre-commit",
+      "docs": [
+        "developer-guide/testing",
+        "developer-guide/change-the-adapter"
+      ],
+      "claims": [
+        "wrapper-presence-not-effective-hook-enforcement",
+        "no-staging-or-factory-execution"
+      ]
+    },
+    {
+      "id": "offline-fixtures",
+      "kind": "documentation-example",
+      "source": "docs/verification/examples/offline_examples.py",
+      "docs": [
+        "tutorials/read-a-decision-offline",
+        "tutorials/trace-saved-evidence",
+        "developer-guide/testing"
+      ],
+      "claims": [
+        "AST-select-pure-functions-no-module-import",
+        "synthetic-data-only",
+        "shape-and-scoring-cli",
+        "no-bytecode-with-B",
+        "no-product-quality-proof"
+      ]
+    },
+    {
+      "id": "offline-fixture-tests",
+      "kind": "documentation-test",
+      "source": "docs/verification/examples/test_offline_examples.py",
+      "docs": [
+        "developer-guide/testing",
+        "status"
+      ],
+      "claims": [
+        "two-tests-red-green",
+        "author-only-not-independent-acceptance"
+      ]
+    },
+    {
+      "id": "docs-git-tracking",
+      "kind": "source-control-policy",
+      "source": ".gitignore",
+      "docs": [
+        "reference/configuration#git-tracking-boundary-for-documentation"
+      ],
+      "claims": [
+        "model-venv-bytecode-remain-ignored",
+        "recursive-doc-generated-build-node-modules-fixture-and-handbook-env-credentials-log-db-forms-ignored",
+        "exact-manifest-review-two-safe-fixture-exceptions-only",
+        "assets-not-approved",
+        "ignored-does-not-mean-untracked-or-accepted-no-stage-removal"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "offline-shape",
+      "page": "tutorials/read-a-decision-offline",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "docs/verification/examples/offline_examples.py",
+        "shape"
+      ],
+      "effects": "AST-select reviewed pure jev_shape from source, synthetic dictionaries only, stdout only; no module imports/model/API/raw-data/bytecode writes",
+      "expected": "{\"input_unchanged\": true, \"runtime_only_removed\": true, \"types\": [\"choice\", \"noul\", \"score\"]}"
+    },
+    {
+      "id": "offline-scoring",
+      "page": "tutorials/trace-saved-evidence",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "docs/verification/examples/offline_examples.py",
+        "scoring"
+      ],
+      "effects": "AST-select reviewed pure pred function; synthetic labels/answers only, stdout only; no report execution or retained data",
+      "expected": "{\"correct\": 3, \"predictions\": [\"refund\", 2, true, null], \"scored\": 3}"
+    },
+    {
+      "id": "offline-fixture-tests",
+      "page": "developer-guide/testing",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/verification/examples",
+        "-p",
+        "test_offline_examples.py",
+        "-v"
+      ],
+      "effects": "Two docs-fixture checks, source-read and synthetic-memory only, no bytecode/model/API/report/data-row effects",
+      "expected": "Ran 2 tests; OK; exit 0"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "first-safe-result",
+      "role": "first-use",
+      "start": "index",
+      "pages": [
+        "getting-started/requirements",
+        "tutorials/read-a-decision-offline",
+        "reference/question-answer-shapes"
+      ],
+      "success": "Reader runs offline shape command, observes exact three-type/filter/immutability output and explains why it is not inference/quality proof."
+    },
+    {
+      "id": "scoring-denominator",
+      "role": "evaluator",
+      "start": "index",
+      "pages": [
+        "tutorials/trace-saved-evidence",
+        "reference/evidence-schemas-and-scoring",
+        "developer-guide/maintain-evaluation"
+      ],
+      "success": "Reader obtains synthetic predictions/3accepted score, identifies missing-answer skip and why Index/published-Jev/reruns differ."
+    },
+    {
+      "id": "adapter-change-impact",
+      "role": "maintainer",
+      "start": "index",
+      "pages": [
+        "developer-guide/repository",
+        "architecture",
+        "developer-guide/change-the-adapter",
+        "reference/http",
+        "reference/configuration",
+        "developer-guide/testing"
+      ],
+      "success": "Without live actions, reader locates route/filter/loader owners, names client/test/docs impact, token/extras assumptions and current error gaps; requests correct independent/runtime gates."
+    },
+    {
+      "id": "deployment-review",
+      "role": "operator",
+      "start": "index",
+      "pages": [
+        "how-to/review-deployment",
+        "concepts/security-and-compatibility",
+        "reference/model-and-deployment-metadata",
+        "status"
+      ],
+      "success": "Reader identifies bind-all container/no TLS-token, home-path unit mismatch and separate approval/identity prerequisites without activation."
+    }
+  ],
+  "not_applicable": [
+    {
+      "topic": "training-and-release-CLI",
+      "reason": "Training data not released and no authored trainer/publisher exists; metadata described as claims, no invented quickstart."
+    },
+    {
+      "topic": "complete-A-B-C-Jev-Index-collector",
+      "reason": "Consumers/saved summaries exist, collectors/Index harness not shipped in authored tree; reproduction gap explicit."
+    },
+    {
+      "topic": "packaged-SDK-plugin-system",
+      "reason": "Only stdlib helper function/scripts, no installed package dispatcher/plugin registry."
+    },
+    {
+      "topic": "OpenAPI-JSON-Schema",
+      "reason": "No standalone schema files; local handler delegates detailed validation to external Laya."
+    },
+    {
+      "topic": "product-offline-fixture-CI",
+      "reason": "Existing product test is live-only; new fixtures are docs-only pure-function checks, no CI workflow claim."
+    }
+  ]
+}

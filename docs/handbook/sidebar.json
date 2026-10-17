@@ -1,0 +1,61 @@
+[
+  "index",
+  "collaboration",
+  "capabilities-and-limits",
+  {
+    "type": "category",
+    "label": "Getting started",
+    "collapsed": false,
+    "items": [
+      "getting-started/requirements",
+      "tutorials/read-a-decision-offline",
+      "tutorials/trace-saved-evidence"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "How-to guides",
+    "items": [
+      "how-to/existing-environment-launch",
+      "how-to/call-and-handle-errors",
+      "how-to/check-an-authorized-server",
+      "how-to/rebuild-saved-report",
+      "how-to/plan-gpu-reruns",
+      "how-to/review-deployment"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Architecture and development",
+    "items": [
+      "architecture",
+      "developer-guide/repository",
+      "developer-guide/testing",
+      "developer-guide/change-the-adapter",
+      "developer-guide/maintain-evaluation"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Technical reference",
+    "items": [
+      "reference/http",
+      "reference/question-answer-shapes",
+      "reference/commands",
+      "reference/configuration",
+      "reference/model-and-deployment-metadata",
+      "reference/evidence-schemas-and-scoring"
+    ]
+  },
+  "concepts/security-and-compatibility",
+  "provenance-and-licences",
+  "status",
+  {
+    "type": "category",
+    "label": "Handbook source and previous route",
+    "items": [
+      "guide",
+      "CONTEXT"
+    ]
+  }
+]

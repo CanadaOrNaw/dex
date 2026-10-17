@@ -1,0 +1,33 @@
+{
+  "encoder": "jhu-clsp/ettin-encoder-1b",
+  "head_layers": 2,
+  "max_len": 1792,
+  "head_max_len": 1024,
+  "max_prefixes": 6,
+  "act_costs": {
+    "escalate": 0.5
+  },
+  "cost_wrong_act": 3.0,
+  "amp_dtype": "bf16",
+  "temperature": [
+    1.15,
+    1.2514300346374512,
+    1.983399510383606
+  ],
+  "temperature_by_options": {},
+  "model_name": "dex-1b",
+  "description": "Dex: open-source, Jev-compatible, non-autoregressive System 1 decision model on an Ettin-1B encoder",
+  "base_encoder": "jhu-clsp/ettin-encoder-1b",
+  "training": {
+    "method": "trained against strictly proper scoring rules: cross-entropy on the chosen option plus KL to the target probabilities; decision head trained from scratch",
+    "epochs": 3,
+    "batch": 64,
+    "encoder_lr": 4e-05,
+    "head_lr": 0.0002,
+    "option_shuffle_augmentation": 0.3,
+    "seed": 8,
+    "frozen": "embeddings and the lowest 7 of 28 encoder layers (784M of 1.11B parameters trained)",
+    "selected_epoch": 3,
+    "temperature_fit_on": "validation split (choice questions)"
+  }
+}

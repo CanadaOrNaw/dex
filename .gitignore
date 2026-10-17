@@ -2,3 +2,24 @@ model/
 .venv/
 __pycache__/
 *.pyc
+
+# Only canonical review inputs; generated and private documentation stay ignored.
+/docs/verification/*
+!/docs/verification/manifest.json
+!/docs/verification/review.json
+/docs/handbook/assets/
+/docs/**/_generated/
+/docs/**/.generated/
+/docs/**/build/
+/docs/**/node_modules/
+/docs/**/.fixture/
+/docs/handbook/**/.env*
+/docs/handbook/**/*.env
+/docs/handbook/**/credentials*
+/docs/handbook/**/*.log
+/docs/handbook/**/*.db
+/.docs-check/
+!/docs/verification/examples/
+/docs/verification/examples/*
+!/docs/verification/examples/offline_examples.py
+!/docs/verification/examples/test_offline_examples.py
